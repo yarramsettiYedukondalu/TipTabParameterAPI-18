@@ -1,0 +1,185 @@
+[
+    {
+        "EnquiryID": 01,
+        "RestaurantID": 01,
+        "UserName": "Ahmed",
+        "Email": "ahmed@example.com",
+        "ContactNumber": "+966501234567",
+        "Message": "Interested in your restaurant's menu.",
+        "EnquiryDate": "2023-12-11"
+    },
+    {
+        "EnquiryID": 02,
+        "RestaurantID": 10,
+        "UserName": "Fatima",
+        "Email": "fatima@example.com",
+        "ContactNumber": "+966502345678",
+        "Message": "Looking to make a reservation.",
+        "EnquiryDate": "2023-12-12"
+    },
+    {
+        "EnquiryID": 03,
+        "RestaurantID": 10,
+        "UserName": "Majid",
+        "Email": "majid@example.com",
+        "ContactNumber": "+966503456789",
+        "Message": "Inquiring about your special events.",
+        "EnquiryDate": "2023-12-13"
+    },
+    {
+        "EnquiryID": 04,
+        "RestaurantID": 04,
+        "UserName": "Sara",
+        "Email": "sara@example.com",
+        "ContactNumber": "+966504567890",
+        "Message": "Interested in your catering services.",
+        "EnquiryDate": "2023-12-14"
+    },
+    {
+        "EnquiryID": 05,
+        "RestaurantID": 03,
+        "UserName": "Khalid",
+        "Email": "khalid@example.com",
+        "ContactNumber": "+966505678901",
+        "Message": "Looking for information on your promotions.",
+        "EnquiryDate": "2023-12-15"
+    },
+    {
+        "EnquiryID": 06,
+        "RestaurantID": 1006,
+        "UserName": "Aisha",
+        "Email": "aisha@example.com",
+        "ContactNumber": "+966506789012",
+        "Message": "Inquiring about your opening hours.",
+        "EnquiryDate": "2023-12-16"
+    },
+    {
+        "EnquiryID": 07,
+        "RestaurantID": 05,
+        "UserName": "Omar",
+        "Email": "omar@example.com",
+        "ContactNumber": "+966507890123",
+        "Message": "Interested in your delivery options.",
+        "EnquiryDate": "2023-12-17"
+    },
+    {
+        "EnquiryID": 08,
+        "RestaurantID": 05,
+        "UserName": "Layla",
+        "Email": "layla@example.com",
+        "ContactNumber": "+966508901234",
+        "Message": "Looking for information on your menu.",
+        "EnquiryDate": "2023-12-18"
+    },
+    {
+        "EnquiryID": 09,
+        "RestaurantID": 12,
+        "UserName": "Ali",
+        "Email": "ali@example.com",
+        "ContactNumber": "+966509012345",
+        "Message": "Inquiring about your private events.",
+        "EnquiryDate": "2023-12-19"
+    },
+    {
+        "EnquiryID": 10,
+        "RestaurantID": 11,
+        "UserName": "Noura",
+        "Email": "noura@example.com",
+        "ContactNumber": "+966501112233",
+        "Message": "Interested in your loyalty program.",
+        "EnquiryDate": "2023-12-20"
+    },
+    
+    {
+        "EnquiryID": 11,
+        "RestaurantID": 1,
+        "UserName": "Fahad",
+        "Email": "fahad@example.com",
+        "ContactNumber": "+966501234567",
+        "Message": "Inquiring about your special offers.",
+        "EnquiryDate": "2023-12-21"
+    },
+    {
+        "EnquiryID": 12,
+        "RestaurantID": 15,
+        "UserName": "Lina",
+        "Email": "lina@example.com",
+        "ContactNumber": "+966502345678",
+        "Message": "Looking for information on your dessert menu.",
+        "EnquiryDate": "2023-12-22"
+    },
+    {
+        "EnquiryID": 13,
+        "RestaurantID": 13,
+        "UserName": "Saad",
+        "Email": "saad@example.com",
+        "ContactNumber": "+966503456789",
+        "Message": "Interested in your outdoor seating options.",
+        "EnquiryDate": "2023-12-23"
+    },
+    {
+        "EnquiryID": 14,
+        "RestaurantID": 1,
+        "UserName": "Huda",
+        "Email": "huda@example.com",
+        "ContactNumber": "+966504567890",
+        "Message": "Inquiring about your vegetarian menu.",
+        "EnquiryDate": "2023-12-24"
+    },
+    {
+        "EnquiryID": 15,
+        "RestaurantID": 17,
+        "UserName": "Mazen",
+        "Email": "mazen@example.com",
+        "ContactNumber": "+966505678901",
+        "Message": "Interested in your online ordering system.",
+        "EnquiryDate": "2023-12-25"
+    },
+    {
+        "EnquiryID": 16,
+        "RestaurantID": 06,
+        "UserName": "Nada",
+        "Email": "nada@example.com",
+        "ContactNumber": "+966506789012",
+        "Message": "Looking for information on your business lunch options.",
+        "EnquiryDate": "2023-12-26"
+    },
+    {
+        "EnquiryID": 17,
+        "RestaurantID": 08,
+        "UserName": "Khaled",
+        "Email": "khaled@example.com",
+        "ContactNumber": "+966507890123",
+        "Message": "Inquiring about your reservation policies.",
+        "EnquiryDate": "2023-12-27"
+    },
+    {
+        "EnquiryID": 18,
+        "RestaurantID": 01,
+        "UserName": "Reem",
+        "Email": "reem@example.com",
+        "ContactNumber": "+966508901234",
+        "Message": "Interested in your event catering services.",
+        "EnquiryDate": "2023-12-28"
+    },
+    {
+        "EnquiryID": 19,
+        "RestaurantID": 10,
+        "UserName": "Hamad",
+        "Email": "hamad@example.com",
+        "ContactNumber": "+966509012345",
+        "Message": "Looking for information on your location.",
+        "EnquiryDate": "2023-12-29"
+    },
+    {
+        "EnquiryID": 20,
+        "RestaurantID": 12,
+        "UserName": "Maya",
+        "Email": "maya@example.com",
+        "ContactNumber": "+966501234567",
+        "Message": "Inquiring about your loyalty program.",
+        "EnquiryDate": "2023-12-30"
+    }
+]
+ 
+ 

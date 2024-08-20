@@ -1,0 +1,165 @@
+[
+    {
+        "RewardID": 11,
+        "UserID": 22,
+        "RestaurantID": 33,
+        "PointsEarned": "50",
+        "DateEarned": "2023-01-20",
+        "Disabled": false
+    },
+    {
+        "RewardID": 12,
+        "UserID": 23,
+        "RestaurantID": 34,
+        "PointsEarned": "30",
+        "DateEarned": "2023-02-15",
+        "Disabled": false
+    },
+    {
+        "RewardID": 13,
+        "UserID": 24,
+        "RestaurantID": 35,
+        "PointsEarned": "45",
+        "DateEarned": "2023-03-05",
+        "Disabled": false
+    },
+    {
+        "RewardID": 14,
+        "UserID": 25,
+        "RestaurantID": 36,
+        "PointsEarned": "20",
+        "DateEarned": "2023-04-10",
+        "Disabled": false
+    },
+    {
+        "RewardID": 15,
+        "UserID": 26,
+        "RestaurantID": 37,
+        "PointsEarned": "40",
+        "DateEarned": "2023-05-25",
+        "Disabled": false
+    },
+    {
+        "RewardID": 16,
+        "UserID": 27,
+        "RestaurantID": 38,
+        "PointsEarned": "25",
+        "DateEarned": "2023-06-10",
+        "Disabled": false
+    },
+    {
+        "RewardID": 17,
+        "UserID": 28,
+        "RestaurantID": 39,
+        "PointsEarned": "60",
+        "DateEarned": "2023-07-15",
+        "Disabled": false
+    },
+    {
+        "RewardID": 18,
+        "UserID": 29,
+        "RestaurantID": 40,
+        "PointsEarned": "35",
+        "DateEarned": "2023-08-05",
+        "Disabled": false
+    },
+    {
+        "RewardID": 19,
+        "UserID": 30,
+        "RestaurantID": 41,
+        "PointsEarned": "55",
+        "DateEarned": "2023-09-20",
+        "Disabled": false
+    },
+    {
+        "RewardID": 20,
+        "UserID": 31,
+        "RestaurantID": 42,
+        "PointsEarned": "70",
+        "DateEarned": "2023-10-15",
+        "Disabled": false
+    }
+    
+    {
+        "RewardID": 21,
+        "UserID": 32,
+        "RestaurantID": 43,
+        "PointsEarned": "40",
+        "DateEarned": "2023-11-05",
+        "Disabled": false
+    },
+    {
+        "RewardID": 22,
+        "UserID": 33,
+        "RestaurantID": 44,
+        "PointsEarned": "25",
+        "DateEarned": "2023-12-20",
+        "Disabled": false
+    },
+    {
+        "RewardID": 23,
+        "UserID": 34,
+        "RestaurantID": 45,
+        "PointsEarned": "50",
+        "DateEarned": "2024-01-10",
+        "Disabled": false
+    },
+    {
+        "RewardID": 24,
+        "UserID": 35,
+        "RestaurantID": 46,
+        "PointsEarned": "30",
+        "DateEarned": "2024-02-15",
+        "Disabled": false
+    },
+    {
+        "RewardID": 25,
+        "UserID": 36,
+        "RestaurantID": 47,
+        "PointsEarned": "45",
+        "DateEarned": "2024-03-05",
+        "Disabled": false
+    },
+    {
+        "RewardID": 26,
+        "UserID": 37,
+        "RestaurantID": 48,
+        "PointsEarned": "20",
+        "DateEarned": "2024-04-10",
+        "Disabled": false
+    },
+    {
+        "RewardID": 27,
+        "UserID": 38,
+        "RestaurantID": 49,
+        "PointsEarned": "35",
+        "DateEarned": "2024-05-25",
+        "Disabled": false
+    },
+    {
+        "RewardID": 28,
+        "UserID": 39,
+        "RestaurantID": 50,
+        "PointsEarned": "55",
+        "DateEarned": "2024-06-10",
+        "Disabled": false
+    },
+    {
+        "RewardID": 29,
+        "UserID": 40,
+        "RestaurantID": 51,
+        "PointsEarned": "70",
+        "DateEarned": "2024-07-15",
+        "Disabled": false
+    },
+    {
+        "RewardID": 30,
+        "UserID": 41,
+        "RestaurantID": 52,
+        "PointsEarned": "45",
+        "DateEarned": "2024-08-05",
+        "Disabled": false
+    }
+    
+    
+]

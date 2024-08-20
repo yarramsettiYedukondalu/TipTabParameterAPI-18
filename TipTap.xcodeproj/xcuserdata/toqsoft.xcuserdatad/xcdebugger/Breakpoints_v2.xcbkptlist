@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2D2B7D01-7748-468C-B41F-E0EF642B2448"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "B12D52EC-3BB8-4480-B3C1-85546A16D6B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "106AA686-9621-4135-93B0-2B52FE51695C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/LeftMenu/FavoritesVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "433"
+            endingLineNumber = "433"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "939F0472-7CB7-4BD3-A603-0D09558E82B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/TabBar/CustomPopupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "dismissButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78D4CA68-71C0-4A53-A15F-7FF47353C025"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Model/JSONParse.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "567"
+            endingLineNumber = "567"
+            landmarkName = "averageRating(forItemID:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A51FE286-CC7A-4534-90B8-DC8477BF6368"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/Location.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B75C91B-AD11-48B6-89C2-D641BD918261"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/FeaturedCuisinesDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E667E5DA-488C-4F2A-83C7-1645FE550842"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/FeaturedCuisinesDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/FeaturedCuisinesDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 5053df1f7c8e7f1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 77960e7124fedce1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 95d75351bb73b8f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 2eade2b37cbc08ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - fbda49f73723783b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__deallocating_deinit"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - d7cfef3ca40f971c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - f00a3e52fc7f34fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 124b637263f250f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - a931d290a43de0f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 7c4679d4efa29038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__deallocating_deinit"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 538a8cf3f1c31854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 744f5d9da9b3bf34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 960e00bd363edfbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 2d74b15ff1f16b3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - f8031a1bba6e1f70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__deallocating_deinit"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 221d0656d3005e62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 5d8d7388b70fd26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - e7998a1814fd998d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 5ce33bfad3322929"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 899490be98ad5946"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__deallocating_deinit"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 297770b02cd3f2a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - eb2a1de74a3526b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - ecf3fcfeeb2e354a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 57894d1c2ce18664"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 82fee658677ef581"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__deallocating_deinit"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 9f5ee0f1152ecbf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - b89b319f4d5e6950"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TipTap.FeaturedCuisinesDetailVC"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 5ada6cbfd2d30c1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - e1a0dd5d151cbd5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TipTap.FeaturedCuisinesDetailVC&gt;"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5A5DD028-F637-4967-BC68-9456B4C37A67 - 34d776195e83ccd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.__deallocating_deinit"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D44F7662-1E22-41F0-9327-11C14ED39945"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/FeaturedCuisinesDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 6b1abf54e4a75a6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 6b1abf54e4a75a6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - ef5fdc9bb16ba0b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - ef5fdc9bb16ba0b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 9ec8563e93a8e2a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 9ec8563e93a8e2a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 95a220d86c7b45e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 95a220d86c7b45e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+               <Location
+                  uuid = "D44F7662-1E22-41F0-9327-11C14ED39945 - 238bb09955867e19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FeaturedCuisinesDetailVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FeaturedCuisinesDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "996">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/TrendingThisWeekVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "menuButtonAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6 - b38158cf7515bec5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.TrendingThisWeekVC.filterBtnAct(Any) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/TrendingThisWeekVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6 - b38158cf7515bee2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.TrendingThisWeekVC.filterBtnAct(Any) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/TrendingThisWeekVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6 - f573c484221ca89c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.TrendingThisWeekVC.filterBtnAct(Any) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/TrendingThisWeekVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6 - 421c03e645b0c33d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.TrendingThisWeekVC.filterBtnAct(Any) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/TrendingThisWeekVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6 - feb6a9d0c546a9c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.TrendingThisWeekVC.filterBtnAct(Any) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/TrendingThisWeekVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "BF1EBAFF-EC96-4FD6-A087-108186C837E6 - f93715e006e09d32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.TrendingThisWeekVC.filterBtnAct(Any) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/TrendingThisWeekVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/FilterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - d18f48640c2d71d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - d18f48640c2d7130"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - d18f48640c2d7130"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - c72c0e2c916cb268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - c72c0e2c916cb268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - 4e6d85d15e425d1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - 4e6d85d15e425d1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - 3cdb4d981dea87f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - 3cdb4d981dea87f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "EAC287F3-D0EC-416C-92EF-26508E16948B - df7a0fc42f6d7df2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/New Group/FilterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - d18f48640c2d7038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - d18f48640c2d7038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabNewFinal21FebMorning/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - c72c0e2c916cbd50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - c72c0e2c916cbd50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - 4e6d85d15e425c05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - 4e6d85d15e425c05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalBuildForTesting23Feb%203/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - 3cdb4d981dea86fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - 3cdb4d981dea86fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabFinalImageCache/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "AC81480E-A937-4AD6-8B01-8ED8037F37EB - df7a0fc42f6d7cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.FilterVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/New%20Group/FilterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "175C81C5-076F-4B8B-9D03-19E37D5B5109"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Cells/MostSalesTVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "updateFavoriteStatus(itemId:restaurantId:isFavorite:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "175C81C5-076F-4B8B-9D03-19E37D5B5109 - 57d25ee202f5b811"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.MostSalesTVC.updateFavoriteStatus(itemId: Swift.String, restaurantId: Swift.String, isFavorite: Swift.Bool, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Cells/MostSalesTVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "201"
+                  endingLineNumber = "201"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "175C81C5-076F-4B8B-9D03-19E37D5B5109 - 57d25ee202f5bb9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.MostSalesTVC.updateFavoriteStatus(itemId: Swift.String, restaurantId: Swift.String, isFavorite: Swift.Bool, completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Cells/MostSalesTVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "220"
+                  endingLineNumber = "220"
+                  offsetFromSymbolStart = "508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A47FC5FB-7137-475D-8521-00861D6400D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Views/GoogleSignInVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "postUserData(firstName:lastName:email:userImage:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Views/WaiterDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "SubmitReviewButtonAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - 4575440b46eb4711"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.WaiterDetailsVC.postCommentToWaiterRating(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "3120">
+               </Location>
+               <Location
+                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - c889a5885b4cfb94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - c889a5885b4cfb94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - 94e3de6a11f3340b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - 94e3de6a11f3340b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FC103AC-E4B6-4191-A732-54B9B5A51D92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Views/WaiterDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
+            landmarkName = "WaiterDetailsVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7FC103AC-E4B6-4191-A732-54B9B5A51D92 - 94e3de6a11f335d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "286"
+                  endingLineNumber = "286"
+                  offsetFromSymbolStart = "1332">
+               </Location>
+               <Location
+                  uuid = "7FC103AC-E4B6-4191-A732-54B9B5A51D92 - 94e3de6a11f335d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "286"
+                  endingLineNumber = "286"
+                  offsetFromSymbolStart = "1192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69504DDF-E047-48FC-B8B9-227C3E553748"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Model/FavButtonActions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "fetchUserFavouriteItemIdToDelete(restaurantID:itemId:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "69504DDF-E047-48FC-B8B9-227C3E553748 - cf67d23b7b9f2f14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1364">
+               </Location>
+               <Location
+                  uuid = "69504DDF-E047-48FC-B8B9-227C3E553748 - cf67d23b7b9f2f14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Model/FavButtonActions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "fetchUserFavouriteItemIdToDelete(restaurantID:itemId:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - 14d72df45c5ffd87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - 5c44ddea682b7958"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TipTap.fetchuserFavouriteItemApiResponse, TipTap.APIError&gt;) -&gt; () in TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - 14d72df45c5ffda6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - 5c44ddea682b797f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TipTap.fetchuserFavouriteItemApiResponse, TipTap.APIError&gt;) -&gt; () in TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - 14d72df45c5ffda6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1380">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - cf67d23b7b9f2f3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1380">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - 87f422254febab0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TipTap.fetchuserFavouriteItemApiResponse, TipTap.APIError&gt;) -&gt; () in TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "7B6CCBDB-8484-43E7-B738-4D19BA915821 - cf67d23b7b9f2f3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.fetchUserFavouriteItemIdToDelete(restaurantID: Swift.String, itemId: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Model/FavButtonActions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49960DEE-9381-4CBB-A131-885C99333317"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Cells/SignatureDishesCVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "favouriteBtnAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FFFCCDF-A4A6-44A8-8711-CA90E97EA59B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Cells/SignatureDishesListViewCVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4334FB0E-09E9-4D13-A74F-4480A9DF2BA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/LeftMenu/VisitedVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4334FB0E-09E9-4D13-A74F-4480A9DF2BA1 - b7dcaa44e066d63a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in TipTap.VisitedVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/LeftMenu/VisitedVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1080">
+               </Location>
+               <Location
+                  uuid = "4334FB0E-09E9-4D13-A74F-4480A9DF2BA1 - b7dcaa44e066d6db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in TipTap.VisitedVC.viewDidLoad() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/LeftMenu/VisitedVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F27FDDE-6323-4DB8-87CB-89B220735A14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Notification/NotificationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20B5993C-E576-4E3F-B507-0053966D270D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "GoogleProfileSplashScreenCVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - 5ca21b2e666718bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - 5ca21b2e666718df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - 31053fd4005925e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI%202/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - a455e8aafa548b58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toqsoft/Desktop/Kondalu/TipTabParameterAPI%202/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

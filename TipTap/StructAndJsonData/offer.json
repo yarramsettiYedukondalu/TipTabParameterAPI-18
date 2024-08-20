@@ -1,0 +1,223 @@
+[
+    {
+        "ItemOfferID": 1,
+        "RestaurantID": 2,
+        "ItemID": 1,
+        "OfferTitle": "Big Shawarma Roll",
+        "Description": "With extra mayonnaise",
+        "Discount": 10.00,
+        "StartDate": "2023-12-08",
+        "EndDate": "2023-12-10",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 2,
+        "RestaurantID": 3,
+        "ItemID": 2,
+        "OfferTitle": "Pizza Combo Deal",
+        "Description": "Buy one, get one free on Margherita Pizza",
+        "Discount": 50.00,
+        "StartDate": "2023-12-12",
+        "EndDate": "2023-12-15",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 3,
+        "RestaurantID": 4,
+        "ItemID": 3,
+        "OfferTitle": "Dessert Delight",
+        "Description": "20% off on Chocolate Fudge Cake",
+        "Discount": 20.00,
+        "StartDate": "2023-12-18",
+        "EndDate": "2023-12-20",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 4,
+        "RestaurantID": 5,
+        "ItemID": 4,
+        "OfferTitle": "Sushi Feast",
+        "Description": "Special price on Sushi Platter for two",
+        "Discount": 15.00,
+        "StartDate": "2023-12-22",
+        "EndDate": "2023-12-25",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 5,
+        "RestaurantID": 6,
+        "ItemID": 5,
+        "OfferTitle": "BBQ Ribs Bonanza",
+        "Description": "Get a free appetizer with every order of BBQ Ribs",
+        "Discount": 0.00,
+        "StartDate": "2023-12-28",
+        "EndDate": "2023-12-30",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 6,
+        "RestaurantID": 7,
+        "ItemID": 6,
+        "OfferTitle": "Thai Tuesday",
+        "Description": "50% off on Pad Thai every Tuesday",
+        "Discount": 50.00,
+        "StartDate": "2024-01-03",
+        "EndDate": "2024-01-05",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 7,
+        "RestaurantID": 8,
+        "ItemID": 7,
+        "OfferTitle": "Mediterranean Lunch Special",
+        "Description": "Lunch combo with Mediterranean Salad and main course",
+        "Discount": 15.00,
+        "StartDate": "2024-01-08",
+        "EndDate": "2024-01-10",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 8,
+        "RestaurantID": 9,
+        "ItemID": 8,
+        "OfferTitle": "Steakhouse Date Night",
+        "Description": "Special pricing on Filet Mignon for couples",
+        "Discount": 25.00,
+        "StartDate": "2024-01-15",
+        "EndDate": "2024-01-17",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 9,
+        "RestaurantID": 10,
+        "ItemID": 9,
+        "OfferTitle": "Pasta Paradise",
+        "Description": "Free dessert with every order of Spaghetti Bolognese",
+        "Discount": 0.00,
+        "StartDate": "2024-01-20",
+        "EndDate": "2024-01-22",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 10,
+        "RestaurantID": 11,
+        "ItemID": 10,
+        "OfferTitle": "Mexican Fiesta",
+        "Description": "Fajitas and Margaritas combo at a special price",
+        "Discount": 20.00,
+        "StartDate": "2024-01-25",
+        "EndDate": "2024-01-27",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 11,
+        "RestaurantID": 12,
+        "ItemID": 11,
+        "OfferTitle": "Sushi Masterclass",
+        "Description": "Learn to make your own sushi with a special discount",
+        "Discount": 30.00,
+        "StartDate": "2024-02-01",
+        "EndDate": "2024-02-03",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 12,
+        "RestaurantID": 13,
+        "ItemID": 12,
+        "OfferTitle": "Italian Romance",
+        "Description": "Candlelit dinner with a complimentary glass of wine",
+        "Discount": 0.00,
+        "StartDate": "2024-02-08",
+        "EndDate": "2024-02-10",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 13,
+        "RestaurantID": 14,
+        "ItemID": 13,
+        "OfferTitle": "Mezze Madness",
+        "Description": "Special price on Hummus Platter for groups",
+        "Discount": 15.00,
+        "StartDate": "2024-02-15",
+        "EndDate": "2024-02-17",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 14,
+        "RestaurantID": 15,
+        "ItemID": 14,
+        "OfferTitle": "Pho Friday",
+        "Description": "Discounts on Pho Soup every Friday",
+        "Discount": 10.00,
+        "StartDate": "2024-02-22",
+        "EndDate": "2024-02-24",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 15,
+        "RestaurantID": 16,
+        "ItemID": 15,
+        "OfferTitle": "Tropical Dessert",
+        "Description": "Mango Sticky Rice at a special price",
+        "Discount": 20.00,
+        "StartDate": "2024-02-29",
+        "EndDate": "2024-03-02",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 16,
+        "RestaurantID": 17,
+        "ItemID": 16,
+        "OfferTitle": "Burger Bonanza",
+        "Description": "Buy one gourmet burger, get one free",
+        "Discount": 100.00,
+        "StartDate": "2024-03-07",
+        "EndDate": "2024-03-09",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 17,
+        "RestaurantID": 18,
+        "ItemID": 17,
+        "OfferTitle": "Falafel Fridays",
+        "Description": "Special deals on Falafel Wrap every Friday",
+        "Discount": 15.00,
+        "StartDate": "2024-03-14",
+        "EndDate": "2024-03-16",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 18,
+        "RestaurantID": 19,
+        "ItemID": 18,
+        "OfferTitle": "Seafood Extravaganza",
+        "Description": "Discounts on Ceviche and other seafood delights",
+        "Discount": 20.00,
+        "StartDate": "2024-03-21",
+        "EndDate": "2024-03-23",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 19,
+        "RestaurantID": 20,
+        "ItemID": 19,
+        "OfferTitle": "Caprese Combo",
+        "Description": "Caprese Salad and Margherita Pizza combo",
+        "Discount": 15.00,
+        "StartDate": "2024-03-28",
+        "EndDate": "2024-03-30",
+        "Disable": false
+    },
+    {
+        "ItemOfferID": 20,
+        "RestaurantID": 21,
+        "ItemID": 20,
+        "OfferTitle": "Middle Eastern Delights",
+        "Description": "Experience Dolma and other Middle Eastern specialties at a special price",
+        "Discount": 25.00,
+        "StartDate": "2024-04-04",
+        "EndDate": "2024-04-06",
+        "Disable": false
+    }
+]
+ 

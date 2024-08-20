@@ -1,0 +1,183 @@
+[
+    {
+        "VisitID": 11,
+        "UserID": 22,
+        "RestaurantID": 33,
+        "VisitDate": "2023-01-15",
+        "Review": "Had a wonderful dining experience!",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 12,
+        "UserID": 23,
+        "RestaurantID": 34,
+        "VisitDate": "2023-02-10",
+        "Review": "Great food and attentive service.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 13,
+        "UserID": 24,
+        "RestaurantID": 35,
+        "VisitDate": "2023-03-25",
+        "Review": "Lovely atmosphere and delicious cuisine.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 14,
+        "UserID": 25,
+        "RestaurantID": 36,
+        "VisitDate": "2023-04-05",
+        "Review": "Excellent service and menu variety.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 15,
+        "UserID": 26,
+        "RestaurantID": 37,
+        "VisitDate": "2023-05-20",
+        "Review": "Impressed by the quality of the dishes.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 16,
+        "UserID": 27,
+        "RestaurantID": 38,
+        "VisitDate": "2023-06-15",
+        "Review": "Attentive staff and cozy ambiance.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 17,
+        "UserID": 28,
+        "RestaurantID": 39,
+        "VisitDate": "2023-07-10",
+        "Review": "Enjoyed the special menu items.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 18,
+        "UserID": 29,
+        "RestaurantID": 40,
+        "VisitDate": "2023-08-25",
+        "Review": "Pleasant dining experience with friends.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 19,
+        "UserID": 30,
+        "RestaurantID": 41,
+        "VisitDate": "2023-09-05",
+        "Review": "Great value for money and friendly staff.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 20,
+        "UserID": 31,
+        "RestaurantID": 42,
+        "VisitDate": "2023-10-20",
+        "Review": "Tried the new menu items and loved them.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 21,
+        "UserID": 32,
+        "RestaurantID": 43,
+        "VisitDate": "2023-11-05",
+        "Review": "Exceptional service and exquisite dishes.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 22,
+        "UserID": 33,
+        "RestaurantID": 44,
+        "VisitDate": "2023-12-20",
+        "Review": "Cozy atmosphere and a great wine selection.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 23,
+        "UserID": 34,
+        "RestaurantID": 45,
+        "VisitDate": "2024-01-10",
+        "Review": "Attentive staff and impressive presentation.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 24,
+        "UserID": 35,
+        "RestaurantID": 46,
+        "VisitDate": "2024-02-15",
+        "Review": "Satisfied with the quality of ingredients used.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 25,
+        "UserID": 36,
+        "RestaurantID": 47,
+        "VisitDate": "2024-03-05",
+        "Review": "Unique menu options and friendly staff.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 26,
+        "UserID": 37,
+        "RestaurantID": 48,
+        "VisitDate": "2024-04-10",
+        "Review": "The dessert menu is a must-try.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 27,
+        "UserID": 38,
+        "RestaurantID": 49,
+        "VisitDate": "2024-05-25",
+        "Review": "Impressed by the chef's specials.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 28,
+        "UserID": 39,
+        "RestaurantID": 50,
+        "VisitDate": "2024-06-10",
+        "Review": "The staff was knowledgeable about the menu.",
+        "Rating": 4,
+        "Disabled": false
+    },
+    {
+        "VisitID": 29,
+        "UserID": 40,
+        "RestaurantID": 51,
+        "VisitDate": "2024-07-15",
+        "Review": "Good value for money and a great view.",
+        "Rating": 5,
+        "Disabled": false
+    },
+    {
+        "VisitID": 30,
+        "UserID": 41,
+        "RestaurantID": 52,
+        "VisitDate": "2024-08-05",
+        "Review": "The ambiance is perfect for a romantic dinner.",
+        "Rating": 4,
+        "Disabled": false
+    }
+    
+]

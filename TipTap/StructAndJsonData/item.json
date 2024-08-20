@@ -1,0 +1,223 @@
+[
+    {
+        "ItemID": 1,
+        "RestaurantID": 2,
+        "ItemTitle": "Shawarma",
+        "CategoryID": 2,
+        "CusineTitle": "Indian",
+        "IsSignatureItem": true,
+        "Description": "Savory grilled meat wrapped in a warm flatbread, served with flavorful sauces and toppings.",
+        "itemImage": "52e9380a-453c-4099-be5d-4f1edca4c481_QuickBite3.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 2,
+        "RestaurantID": 3,
+        "ItemTitle": "Margherita Pizza",
+        "CategoryID": 12,
+        "CusineTitle": "Italian",
+        "IsSignatureItem": true,
+        "Description": "Classic pizza topped with fresh tomatoes, mozzarella, and basil.",
+        "itemImage": "c85756bd-0f3d-4a6a-b226-92c5515b1645_PizzaExpress1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 3,
+        "RestaurantID": 4,
+        "ItemTitle": "Chocolate Fudge Cake",
+        "CategoryID": 8,
+        "CusineTitle": "Desserts",
+        "IsSignatureItem": true,
+        "Description": "Indulge in a rich and decadent chocolate fudge cake, served with a scoop of vanilla ice cream.",
+        "itemImage": "7f10befe-4a21-4eb2-aef2-9189811e7b69_CheesecakeFactory2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 4,
+        "RestaurantID": 5,
+        "ItemTitle": "Sushi Platter",
+        "CategoryID": 23,
+        "CusineTitle": "Japanese",
+        "IsSignatureItem": true,
+        "Description": "A delightful assortment of fresh and expertly crafted sushi rolls.",
+        "itemImage": "b20a243e-5033-4fe5-a097-1e2f5c1b1868_SushiExpress1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 5,
+        "RestaurantID": 6,
+        "ItemTitle": "BBQ Ribs",
+        "CategoryID": 11,
+        "CusineTitle": "American",
+        "IsSignatureItem": true,
+        "Description": "Tender and succulent barbecue ribs, glazed with a smoky barbecue sauce.",
+        "itemImage": "c773fc4b-37c7-4a51-b6e6-0ab3fc41e487_OutbackSteakhouse1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 6,
+        "RestaurantID": 7,
+        "ItemTitle": "Pad Thai",
+        "CategoryID": 13,
+        "CusineTitle": "Thai",
+        "IsSignatureItem": true,
+        "Description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a flavorful sauce.",
+        "itemImage": "c879394a-6dd5-4c3b-80ea-38c13a2bc56a_ThaiExpress2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 7,
+        "RestaurantID": 8,
+        "ItemTitle": "Mediterranean Salad",
+        "CategoryID": 15,
+        "CusineTitle": "Mediterranean",
+        "IsSignatureItem": true,
+        "Description": "A refreshing salad with mixed greens, olives, feta cheese, and a zesty Mediterranean dressing.",
+        "itemImage": "ab57535d-51f3-4e3d-bb3b-97b01f8d95d6_ArabianDelights3.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 8,
+        "RestaurantID": 9,
+        "ItemTitle": "Filet Mignon",
+        "CategoryID": 17,
+        "CusineTitle": "Steakhouse",
+        "IsSignatureItem": true,
+        "Description": "A tender and juicy filet mignon steak, cooked to perfection.",
+        "itemImage": "c83253d3-453b-4a9f-aac9-1be3670c9e07_Steakhouse1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 9,
+        "RestaurantID": 10,
+        "ItemTitle": "Spaghetti Bolognese",
+        "CategoryID": 19,
+        "CusineTitle": "Italian",
+        "IsSignatureItem": true,
+        "Description": "Classic Italian spaghetti with a rich and savory Bolognese meat sauce.",
+        "itemImage": "4fda0fc2-5bd0-4dbb-832d-7d734b3270d7_PastaPresto1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 10,
+        "RestaurantID": 11,
+        "ItemTitle": "Fajitas",
+        "CategoryID": 35,
+        "CusineTitle": "Mexican",
+        "IsSignatureItem": true,
+        "Description": "Sizzling fajitas with grilled chicken, bell peppers, onions, and all the fixings.",
+        "itemImage": "dece87f1-3c02-4eaf-82d4-57e21651f181_MexicanGrill1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 11,
+        "RestaurantID": 12,
+        "ItemTitle": "Vegetarian Sushi Roll",
+        "CategoryID": 38,
+        "CusineTitle": "Japanese",
+        "IsSignatureItem": true,
+        "Description": "Delicious and creative vegetarian sushi roll with avocado, cucumber, and other fresh ingredients.",
+        "itemImage": "f3e9a4a3-3c3d-47aa-a440-d8c871c7c7c2_SushiMaster2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 12,
+        "RestaurantID": 13,
+        "ItemTitle": "Chicken Alfredo",
+        "CategoryID": 9,
+        "CusineTitle": "Italian",
+        "IsSignatureItem": true,
+        "Description": "Creamy Alfredo sauce with tender grilled chicken served over fettuccine pasta.",
+        "itemImage": "8a0a16b2-54b2-4bbf-9fe2-38f76d596687_PastaPalace1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 13,
+        "RestaurantID": 14,
+        "ItemTitle": "Hummus Platter",
+        "CategoryID": 16,
+        "CusineTitle": "Mediterranean",
+        "IsSignatureItem": true,
+        "Description": "A delightful assortment of hummus varieties served with pita bread and vegetables.",
+        "itemImage": "7cb59365-3b1b-46c1-b39a-ae1c25e0e31e_ArabianDelights1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 14,
+        "RestaurantID": 15,
+        "ItemTitle": "Pho Soup",
+        "CategoryID": 13,
+        "CusineTitle": "Vietnamese",
+        "IsSignatureItem": true,
+        "Description": "Traditional Vietnamese noodle soup with aromatic broth, rice noodles, and herbs.",
+        "itemImage": "b63eb3a1-177f-44f9-b983-70bf7754604c_VietnameseCuisine2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 15,
+        "RestaurantID": 16,
+        "ItemTitle": "Mango Sticky Rice",
+        "CategoryID": 10,
+        "CusineTitle": "Thai",
+        "IsSignatureItem": true,
+        "Description": "Sweet and fragrant Thai dessert featuring sticky rice topped with ripe mango slices.",
+        "itemImage": "24a3c19f-6f44-47a3-b656-2f40fb2d74e6_ThaiExpress3.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 16,
+        "RestaurantID": 17,
+        "ItemTitle": "Gourmet Burger",
+        "CategoryID": 7,
+        "CusineTitle": "American",
+        "IsSignatureItem": true,
+        "Description": "Juicy and flavorful gourmet burger with premium toppings and condiments.",
+        "itemImage": "82abac5a-1f1f-46c3-b465-8c1ce1bbf0f4_BurgerBistro2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 17,
+        "RestaurantID": 18,
+        "ItemTitle": "Falafel Wrap",
+        "CategoryID": 6,
+        "CusineTitle": "Middle Eastern",
+        "IsSignatureItem": true,
+        "Description": "A delicious wrap filled with crispy falafel, fresh vegetables, and tahini sauce.",
+        "itemImage": "9d6e916c-8fe4-4ed8-967e-63096c178c8b_ArabianDelights2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 18,
+        "RestaurantID": 19,
+        "ItemTitle": "Ceviche",
+        "CategoryID": 5,
+        "CusineTitle": "Peruvian",
+        "IsSignatureItem": true,
+        "Description": "Fresh and zesty Peruvian ceviche with marinated fish, citrus, and spices.",
+        "itemImage": "6f90733f-b86d-4a09-ae7b-c982847226ea_SeafoodDelight1.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 19,
+        "RestaurantID": 20,
+        "ItemTitle": "Caprese Salad",
+        "CategoryID": 12,
+        "CusineTitle": "Italian",
+        "IsSignatureItem": true,
+        "Description": "A light and refreshing salad featuring tomatoes, fresh mozzarella, and basil.",
+        "itemImage": "ad31b11b-206d-4be2-9968-f5a44a869eaf_PastaPresto2.png",
+        "Disable": false
+    },
+    {
+        "ItemID": 20,
+        "RestaurantID": 21,
+        "ItemTitle": "Dolma",
+        "CategoryID": 14,
+        "CusineTitle": "Middle Eastern",
+        "IsSignatureItem": true,
+        "Description": "Grape leaves stuffed with a flavorful mixture of rice, pine nuts, and herbs.",
+        "itemImage": "24a5a96a-aa03-4085-9d10-3ed5e63d4ea0_ArabianDelights4.png",
+        "Disable": false
+    }
+]
+ 

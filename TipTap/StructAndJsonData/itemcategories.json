@@ -1,0 +1,143 @@
+[
+    {
+        "CategoryID": 1,
+        "RestaurantID": 1,
+        "Categorytitle": "Fine Dining, Non Veg",
+        "Description": "Elegance, exclusivity, and class",
+        "disable": false
+    },
+    {
+        "CategoryID": 2,
+        "RestaurantID": 1,
+        "Categorytitle": "Casual Dining, Veg",
+        "Description": "Relaxed atmosphere with vegetarian options",
+        "disable": false
+    },
+    {
+        "CategoryID": 3,
+        "RestaurantID": 2,
+        "Categorytitle": "Fast Food",
+        "Description": "Quick and delicious meals on the go",
+        "disable": false
+    },
+    {
+        "CategoryID": 4,
+        "RestaurantID": 2,
+        "Categorytitle": "Coffee Shop",
+        "Description": "A cozy spot for coffee lovers",
+        "disable": false
+    },
+    {
+        "CategoryID": 5,
+        "RestaurantID": 3,
+        "Categorytitle": "Seafood",
+        "Description": "Fresh and flavorful seafood dishes",
+        "disable": false
+    },
+    {
+        "CategoryID": 6,
+        "RestaurantID": 3,
+        "Categorytitle": "Vegetarian",
+        "Description": "A variety of delicious vegetarian options",
+        "disable": false
+    },
+    {
+        "CategoryID": 7,
+        "RestaurantID": 4,
+        "Categorytitle": "Family-Friendly",
+        "Description": "A welcoming environment for families",
+        "disable": false
+    },
+    {
+        "CategoryID": 8,
+        "RestaurantID": 4,
+        "Categorytitle": "Desserts",
+        "Description": "Indulge in sweet treats and desserts",
+        "disable": false
+    },
+    {
+        "CategoryID": 9,
+        "RestaurantID": 5,
+        "Categorytitle": "International Cuisine",
+        "Description": "Explore flavors from around the world",
+        "disable": false
+    },
+    {
+        "CategoryID": 10,
+        "RestaurantID": 5,
+        "Categorytitle": "Healthy Options",
+        "Description": "Nutritious and delicious choices for a healthy lifestyle",
+        "disable": false
+    },
+    {
+        "CategoryID": 11,
+        "RestaurantID": 6,
+        "Categorytitle": "Barbecue",
+        "Description": "Savor the smoky goodness of barbecue dishes",
+        "disable": false
+    },
+    {
+        "CategoryID": 12,
+        "RestaurantID": 6,
+        "Categorytitle": "Gourmet Pizzas",
+        "Description": "Delicious and unique pizza creations",
+        "disable": false
+    },
+    {
+        "CategoryID": 13,
+        "RestaurantID": 7,
+        "Categorytitle": "Asian Fusion",
+        "Description": "A blend of flavors from various Asian cuisines",
+        "disable": false
+    },
+    {
+        "CategoryID": 14,
+        "RestaurantID": 7,
+        "Categorytitle": "Outdoor Dining",
+        "Description": "Enjoy your meal in a beautiful outdoor setting",
+        "disable": false
+    },
+    {
+        "CategoryID": 15,
+        "RestaurantID": 8,
+        "Categorytitle": "Mediterranean",
+        "Description": "Savor the tastes of the Mediterranean region",
+        "disable": false
+    },
+    {
+        "CategoryID": 16,
+        "RestaurantID": 8,
+        "Categorytitle": "Vegan",
+        "Description": "Delicious and satisfying vegan options",
+        "disable": false
+    },
+    {
+        "CategoryID": 17,
+        "RestaurantID": 9,
+        "Categorytitle": "Steakhouse",
+        "Description": "Indulge in premium cuts of meat",
+        "disable": false
+    },
+    {
+        "CategoryID": 18,
+        "RestaurantID": 9,
+        "Categorytitle": "Live Music",
+        "Description": "Enjoy your meal with live musical performances",
+        "disable": false
+    },
+    {
+        "CategoryID": 19,
+        "RestaurantID": 10,
+        "Categorytitle": "Italian Cuisine",
+        "Description": "Authentic Italian flavors and dishes",
+        "disable": false
+    },
+    {
+        "CategoryID": 20,
+        "RestaurantID": 10,
+        "Categorytitle": "Buffet",
+        "Description": "A variety of options for a satisfying buffet experience",
+        "disable": false
+    }
+]
+ 

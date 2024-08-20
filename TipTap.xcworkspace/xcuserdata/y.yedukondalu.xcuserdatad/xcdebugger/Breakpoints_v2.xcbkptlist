@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3E9C53C7-9792-4A4A-9F54-DECB5122CC2F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B5900C6-43C4-4F34-BFC7-9A9D088A0056"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Payment/PaymentDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C82D8DD9-6A84-4542-AEE4-7CADEAEFC180"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Views/RestaurantHomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3755"
+            endingLineNumber = "3755"
+            landmarkName = "openOptions(cell:options:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C82D8DD9-6A84-4542-AEE4-7CADEAEFC180 - 5052cebba7739256"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.RestaurantHomeVC.openOptions(cell: TipTap.ViewAllReviewsTVC, options: TipTap.commandOptions) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ToqSoft/Downloads/TipTabParameterAPI%2018/TipTap/Views/RestaurantHomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3755"
+                  endingLineNumber = "3755"
+                  offsetFromSymbolStart = "4160">
+               </Location>
+               <Location
+                  uuid = "C82D8DD9-6A84-4542-AEE4-7CADEAEFC180 - 5052cebba7739256"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.RestaurantHomeVC.openOptions(cell: TipTap.ViewAllReviewsTVC, options: TipTap.commandOptions) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ToqSoft/Downloads/TipTabParameterAPI%2018/TipTap/Views/RestaurantHomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3755"
+                  endingLineNumber = "3755"
+                  offsetFromSymbolStart = "4168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF836711-CD7A-426F-AA10-7D379E62AD55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipTap/Views/RestaurantHomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3751"
+            endingLineNumber = "3751"
+            landmarkName = "openOptions(cell:options:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AF836711-CD7A-426F-AA10-7D379E62AD55 - 5052cebba77392da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.RestaurantHomeVC.openOptions(cell: TipTap.ViewAllReviewsTVC, options: TipTap.commandOptions) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ToqSoft/Downloads/TipTabParameterAPI%2018/TipTap/Views/RestaurantHomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3751"
+                  endingLineNumber = "3751"
+                  offsetFromSymbolStart = "2732">
+               </Location>
+               <Location
+                  uuid = "AF836711-CD7A-426F-AA10-7D379E62AD55 - 5052cebba77392da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipTap.RestaurantHomeVC.openOptions(cell: TipTap.ViewAllReviewsTVC, options: TipTap.commandOptions) -&gt; ()"
+                  moduleName = "TipTap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ToqSoft/Downloads/TipTabParameterAPI%2018/TipTap/Views/RestaurantHomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3751"
+                  endingLineNumber = "3751"
+                  offsetFromSymbolStart = "2740">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

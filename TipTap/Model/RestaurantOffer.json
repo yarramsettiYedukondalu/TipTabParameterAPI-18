@@ -1,0 +1,114 @@
+
+[
+  {
+    "offerID": 1,
+    "restaurantID": 1,
+    "offerTitle": "Weekend Special",
+    "description": "Enjoy a 10% discount on all orders during weekends!",
+    "discount": 10,
+    "startDate": "2023-01-01",
+    "endDate": "2023-12-31",
+    "restaurantOfferIsValid": true,
+    "disabled": false
+  },
+  {
+    "offerID": 2,
+    "restaurantID": 2,
+    "offerTitle": "Lunch Combo",
+    "description": "Get a free dessert with every lunch combo!",
+    "discount": 0,
+    "startDate": "2023-02-15",
+    "endDate": "2023-03-15",
+    "restaurantOfferIsValid": true,
+    "disabled": false
+  },
+  {
+    "offerID": 3,
+    "restaurantID": 11,
+    "offerTitle": "Happy Hour",
+    "description": "Half-price on selected drinks from 5 PM to 7 PM!",
+    "discount": 50,
+    "startDate": "2023-03-01",
+    "endDate": "2023-03-31",
+    "restaurantOfferIsValid": false,
+    "disabled": true
+  },
+  {
+    "offerID": 4,
+    "restaurantID": 12,
+    "offerTitle": "Weekend Special",
+    "description": "Enjoy a 10% discount on all orders during weekends!",
+    "discount": 10,
+    "startDate": "2023-01-07",
+    "endDate": "2023-12-30",
+    "restaurantOfferIsValid": true,
+    "disabled": false
+  },
+  {
+    "offerID": 5,
+    "restaurantID": 13,
+    "offerTitle": "Lunch Combo",
+    "description": "Get a free dessert with every lunch combo!",
+    "discount": 0,
+    "startDate": "2023-02-17",
+    "endDate": "2023-03-17",
+    "restaurantOfferIsValid": true,
+    "disabled": false
+  },
+  {
+    "offerID": 6,
+    "restaurantID": 15,
+    "offerTitle": "Happy Hour",
+    "description": "Half-price on selected drinks from 5 PM to 7 PM!",
+    "discount": 50,
+    "startDate": "2023-03-01",
+    "endDate": "2023-03-01",
+    "restaurantOfferIsValid": false,
+    "disabled": true
+  },
+  {
+    "offerID": 7,
+    "restaurantID": 16,
+    "offerTitle": "Weekend Special",
+    "description": "Enjoy a 10% discount on all orders during weekends!",
+    "discount": 10,
+    "startDate": "2023-01-09",
+    "endDate": "2023-12-29",
+    "restaurantOfferIsValid": true,
+    "disabled": false
+  },
+  {
+    "offerID": 8,
+    "restaurantID": 17,
+    "offerTitle": "Lunch Combo",
+    "description": "Get a free dessert with every lunch combo!",
+    "discount": 20,
+    "startDate": "2023-02-15",
+    "endDate": "2023-03-15",
+    "restaurantOfferIsValid": true,
+    "disabled": false
+  },
+  {
+    "offerID": 9,
+    "restaurantID": 18,
+    "offerTitle": "Happy Hour",
+    "description": "Half-price on selected drinks from 5 PM to 7 PM!",
+    "discount": 50,
+    "startDate": "2023-03-03",
+    "endDate": "2023-03-30",
+    "restaurantOfferIsValid": false,
+    "disabled": true
+  },
+  {
+    "offerID": 10,
+    "restaurantID": 19,
+    "offerTitle": "Happy Hour",
+    "description": "Half-price on selected drinks from 5 PM to 7 PM!",
+    "discount": 50,
+    "startDate": "2023-03-08",
+    "endDate": "2023-03-30",
+    "restaurantOfferIsValid": false,
+    "disabled": true
+  }
+]
+

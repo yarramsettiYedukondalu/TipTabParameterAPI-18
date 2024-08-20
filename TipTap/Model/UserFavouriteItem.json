@@ -1,0 +1,73 @@
+
+[
+    {
+        "UserFavouriteItemID": 1,
+        "UserID": 10,
+        "RestaurantID":1,
+        "ItemID": 1,
+        "Disabled": false
+    },
+    {
+        "UserFavouriteItemID": 2,
+        "UserID": 11,
+        "RestaurantID":8,
+        "ItemID": 2,
+        "Disabled": false
+    },
+    {
+        "UserFavouriteItemID": 3,
+        "UserID": 12,
+        "RestaurantID":8,
+        "ItemID": 2,
+        "Disabled": false
+    },
+    {
+        "UserFavouriteItemID": 4,
+        "UserID": 7,
+        "RestaurantID":11,
+        "ItemID": 2,
+        "Disabled": false
+      },
+      {
+        "UserFavouriteItemID": 5,
+        "UserID": 14,
+        "RestaurantID":12,
+        "ItemID": 3,
+        "Disabled": false
+      },
+      {
+        "UserFavouriteItemID": 6,
+        "UserID": 15,
+        "RestaurantID":12,
+        "ItemID": 3,
+        "Disabled": false
+      },
+      {
+        "UserFavouriteItemID": 7,
+        "UserID": 7,
+        "RestaurantID":11,
+        "ItemID": 11,
+        "Disabled": false
+      },
+      {
+        "UserFavouriteItemID": 8,
+        "UserID": 12,
+        "RestaurantID":13,
+        "ItemID": 4,
+        "Disabled": false
+      },
+      {
+        "UserFavouriteItemID": 9,
+        "UserID": 7,
+        "RestaurantID":12,
+        "ItemID": 19,
+        "Disabled": false
+      },
+      {
+        "UserFavouriteItemID": 10,
+        "UserID": 7,
+        "RestaurantID":11,
+        "ItemID": 5,
+        "Disabled": false
+      }
+      ]
