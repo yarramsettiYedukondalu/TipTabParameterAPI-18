@@ -423,7 +423,6 @@
 		4886E4B62C637F9000AF683D /* Payment */ = {
 			isa = PBXGroup;
 			children = (
-				B594DCE12C7C7429002FC861 /* OptionalChaining */,
 				4886E4B72C637FBE00AF683D /* PaymentViewController.swift */,
 				4886E4B92C637FCC00AF683D /* PaymentMethodViewController.swift */,
 				4886E4BB2C637FEE00AF683D /* HistoryPaymentTableViewCell.swift */,
@@ -484,13 +483,6 @@
 				B562400D2B70C342004BEF3E /* InternetViewController.swift */,
 			);
 			path = INTERNET;
-			sourceTree = "<group>";
-		};
-		B594DCE12C7C7429002FC861 /* OptionalChaining */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OptionalChaining;
 			sourceTree = "<group>";
 		};
 		B59753672BEC9F1E00FBFB0F /* MBProgressHUD */ = {
