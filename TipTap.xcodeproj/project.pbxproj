@@ -94,7 +94,6 @@
 		B58BB5A62AFBBB3E000B06E1 /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BB5A52AFBBB3E000B06E1 /* TermsAndConditionsVC.swift */; };
 		B58BB5A82AFBBDD6000B06E1 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BB5A72AFBBDD6000B06E1 /* PrivacyPolicyVC.swift */; };
 		B58BB5AA2AFBC510000B06E1 /* ReportAnAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BB5A92AFBC510000B06E1 /* ReportAnAppVC.swift */; };
-		B594DCE32C7C7448002FC861 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594DCE22C7C7448002FC861 /* Optional.swift */; };
 		B59753692BEC9F3B00FBFB0F /* MbProgressHUd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59753682BEC9F3B00FBFB0F /* MbProgressHUd.swift */; };
 		B597536C2BEC9F5900FBFB0F /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B597536B2BEC9F5900FBFB0F /* MBProgressHUD */; };
 		B59C6FFC2B04A16F00362F27 /* RewardsTableViewCellTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C6FFB2B04A16F00362F27 /* RewardsTableViewCellTVC.swift */; };
@@ -278,7 +277,6 @@
 		B58BB5A52AFBBB3E000B06E1 /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsVC.swift; sourceTree = "<group>"; };
 		B58BB5A72AFBBDD6000B06E1 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
 		B58BB5A92AFBC510000B06E1 /* ReportAnAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAnAppVC.swift; sourceTree = "<group>"; };
-		B594DCE22C7C7448002FC861 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		B59753682BEC9F3B00FBFB0F /* MbProgressHUd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbProgressHUd.swift; sourceTree = "<group>"; };
 		B59C6FFB2B04A16F00362F27 /* RewardsTableViewCellTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsTableViewCellTVC.swift; sourceTree = "<group>"; };
 		B59C6FFD2B04BC9200362F27 /* VisitedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedCVC.swift; sourceTree = "<group>"; };
@@ -491,7 +489,6 @@
 		B594DCE12C7C7429002FC861 /* OptionalChaining */ = {
 			isa = PBXGroup;
 			children = (
-				B594DCE22C7C7448002FC861 /* Optional.swift */,
 			);
 			path = OptionalChaining;
 			sourceTree = "<group>";
@@ -934,7 +931,6 @@
 				B5CBACBA2AF12A950081936B /* TrendingCell.swift in Sources */,
 				B5573DC32AFB4E390094CC3C /* LeftMenuViewController.swift in Sources */,
 				B5A784B22AF176C700B12B6F /* supportFile.swift in Sources */,
-				B594DCE32C7C7448002FC861 /* Optional.swift in Sources */,
 				B58BB5A62AFBBB3E000B06E1 /* TermsAndConditionsVC.swift in Sources */,
 				B512A30A2C64A53800612BA4 /* TipsHistoryTableViewCell.swift in Sources */,
 				B5254E962B2AF5760030051D /* SourceFile.swift in Sources */,
