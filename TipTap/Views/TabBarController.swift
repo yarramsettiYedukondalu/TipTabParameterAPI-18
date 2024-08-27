@@ -69,12 +69,11 @@ class TabBarController: UITabBarController {
     
     //MARK: center button click event
     @objc func CenterButtonAction(sender: UIButton) {
-        //  self.selectedIndex = -1   // set your index here
-        
-        //  self.view.backgroundColor = UIColor.black
-        let controlle = storyboard?.instantiateViewController(withIdentifier: "ScannerViewController") as! ScannerViewController
-        self.present(controlle, animated: true)
+        let controller = storyboard?.instantiateViewController(withIdentifier: "ScannerViewController") as! ScannerViewController
+        controller.modalPresentationStyle = .overFullScreen // Ensure this style is used
+        self.present(controller, animated: true)
     }
+
     func setupTabBarIconAnimation() {
         if let tabBarItems = tabBar.items {
             for (index, tabBarItem) in tabBarItems.enumerated() {

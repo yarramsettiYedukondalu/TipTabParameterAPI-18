@@ -114,24 +114,7 @@ class ListViewCollectionViewCell: UICollectionViewCell {
             }
             SVProgressHUD.dismiss()
         } else {
-            //            deleteFavoriteRecord(restaurantID: restaurantID){ success in
-            //                if success {
-            //                    print("Favorite status deleted successfully")
-            //                    DispatchQueue.main.async { [self] in
-            //                        heartBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-            //                    }
-            //
-            //                    self.reloadTrendingCVAfterFavActionClosure?()
-            //                } else {
-            //                    print("Failed to delete favorite status")
-            //                   
-            //                    // Handle failure case, if needed
-            //                }
-            //            }
-            //            SVProgressHUD.dismiss()
-            //        }
-            //        
-            //        
+          
             
             SVProgressHUD.show()
             var userFavoriteRestaurantIdToDelete: String?
@@ -216,64 +199,5 @@ class ListViewCollectionViewCell: UICollectionViewCell {
         }.resume()
     }
 
-//    func deleteFavoriteRecord(restaurantID: String, completion: @escaping (Bool) -> Void) {
-//        let matchingIDs = JsonDataArrays.UserFavoriteRestauranArray
-//            .filter { $0.UserID == loginUserID && $0.RestaurantID == restaurantID }
-//            .map { $0.UserFavoriteRestaurantID }
-//        guard matchingIDs.count > 0 else {
-//            return
-//        }
-//        let deleteUrlString = FavRestaurantURL
-//                
-//        guard let deleteApiUrl = URL(string: deleteUrlString) else {
-//            print("Invalid URL: \(deleteUrlString)")
-//            completion(false)
-//            return
-//        }
-//        
-//        
-//        
-//        var request = URLRequest(url: deleteApiUrl)
-//        request.httpMethod = "DELETE"
-//        
-//        let requestBody: [String: Any] = [
-//            "rowKey": matchingIDs[0] ?? "",
-//            "partitionKey": "UserFavRes"
-//        ]
-//        
-//        do {
-//            request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
-//        } catch {
-//            print("Error encoding request body: \(error)")
-//            completion(false)
-//            return
-//        }
-//        
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//        
-//        URLSession.shared.dataTask(with: request) { (data, response, error) in
-//            if let error = error {
-//                print("Error: \(error)")
-//                completion(false)
-//                return
-//            }
-//            
-//            if let httpResponse = response as? HTTPURLResponse {
-//                print("HTTP Status Code: \(httpResponse.statusCode)")
-//                
-//                if httpResponse.statusCode == 200 {
-//                    print("Favorite status updated successfully")
-//                    completion(true)
-//                } else {
-//                    print("HTTP Status Code: \(httpResponse.statusCode)")
-//                    completion(false)
-//                }
-//            }
-//        }.resume()
-//        
-//        
-//        
-//    }
 
-    
 }

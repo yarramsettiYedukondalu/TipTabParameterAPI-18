@@ -237,7 +237,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                     self.fetchItemRatingJsonData(Item: self.selectedCuisine[0])
                     DispatchQueue.main.async{
                         self.restaurantReviewCountIntro.text = "(\(self.selectedCuisine[0].ItemRatings.count))"
-
+                        
                         
                     }
                 }else{
@@ -245,8 +245,8 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                     DispatchQueue.main.async{
                         self.setImagesInCollectionView(selectedFor:"")
                         self.restaurantReviewCountIntro.text = "(\(self.selectedSignatureItem[0].ItemRatings.count))"
-                      //  self.starsView.rating = self.selectedSignatureItem[0].itemAverageRating ?? 0.0
-                      //  self.starsView.text = "\(self.selectedSignatureItem[0].itemAverageRating ?? 0.0)"
+                        //  self.starsView.rating = self.selectedSignatureItem[0].itemAverageRating ?? 0.0
+                        //  self.starsView.text = "\(self.selectedSignatureItem[0].itemAverageRating ?? 0.0)"
                         
                         self.reviewTableView.reloadData()
                         
@@ -283,11 +283,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    //    if  self.restaurantRatingsDataArray.count >= 3  {
-    //        self.seeAllReviewsButton.isHidden = true
-    //    }else{
-    //        self.seeAllReviewsButton.isHidden = false
-    //    }
+    
     @IBAction func contactButtonAction(_ sender: Any) {
         
         let controller = self.storyboard?.instantiateViewController(identifier: "RestaurnatContactViewController")as! RestaurnatContactViewController
@@ -324,7 +320,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             openTimeLabel.text = selectedRestaurantData[0].restaurant.OpeningHours
             resstaurantCategoryName.text = selectedRestaurantData[0].restaurant.Description
             
-          
+            
         }else if selectedFor == "cuisines"{
             headerView.isHidden = true
             contactViewHeightConstrn.constant = 0
@@ -362,7 +358,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             restaurantDescriptionLabel.text = selectedSignatureItem.first?.Item.CusineTitle
             openAtLabel.text = "Description: "
             resstaurantCategoryName.text = selectedSignatureItem.first?.Item.Description
-          
+            
             
         }
         
@@ -420,7 +416,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                 calculateTableViewHeight()
                 MenuTableView.reloadData()
             }
-          
+            
         }
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -668,27 +664,13 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                 self.ratingView.rating = 0 // To avoid division by zero
                 self.ratingView.text = "0.0"
                 self.restaurantReviewCountIntro.text = "(0)"
-//                self.starsView.rating = 0
-//                self.starsView.text = "0.00"
+                self.starsView.rating = 0
+                self.starsView.text = "0.00"
                 self.reviewTableView.reloadData()
                 self.ratingViewHeightConstarints.constant = 0
                 self.ratingsAndreviewsView.isHidden = true
                 self.rateAndReviewButton.isHidden = true
-                //                if self.ratingsAndreviewsView.isHidden == true {
-                //                                    // If ratingsAndreviewsView is hidden, set allRatingdAndReviewsView height to 0
-                //                                    self.allRatingdAndReviewsView.heightAnchor.constraint(equalToConstant: 0).isActive = true
-                //                                    // Deactivate allRatingAndReviewView
-                //                                   // self.allRatingdAndReviewsView.isHidden = true
-                //                                    // Deactivate the constraint that sets height to 471 if it's currently active
-                //                                    self.allRatingdAndReviewsView.heightAnchor.constraint(equalToConstant: 471).isActive = false
-                //                                } else {
-                //                                    // If ratingsAndreviewsView is visible, set allRatingdAndReviewsView height to 471
-                //                                    self.allRatingdAndReviewsView.heightAnchor.constraint(equalToConstant: 471).isActive = true
-                //                                    // Activate allRatingAndReviewView
-                //                                    self.allRatingdAndReviewsView.isHidden = false
-                //                                    // Deactivate the constraint that sets height to 0 if it's currently active
-                //                                    self.allRatingdAndReviewsView.heightAnchor.constraint(equalToConstant: 0).isActive = false
-                //                                }
+                
             }
             return
         }
@@ -767,112 +749,22 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                 self.hideHUD()
             }
             
-          
+            
         }else{
             waiterListButton.isHidden = true
-           
+            
             hideHUD()
         }
         
     }
-//
-    /*
-     @IBAction func waiterListButtonAction(_ sender: UIButton) {
-         self.showHUD()
-         
-         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-             self.hideHUD()
-             
-             // Ensure waiterModelForSearch is optional type [WaiterCompleteData]?
-             if let waiters = self.waiterModelForSearch, !waiters.isEmpty {
-                 // If there are waiters, present the waiterListViewController
-                 let controller = self.storyboard?.instantiateViewController(identifier: "waiterListViewController") as! waiterListViewController
-                 controller.modalTransitionStyle = .coverVertical
-                 controller.waiterModelForSearch = waiters
-                 self.present(controller, animated: true, completion: nil)
-             } else {
-                 // If there are no waiters, show an alert
-                 let alert = UIAlertController(title: "No Waiters Found", message: "There are no waiters available.", preferredStyle: .alert)
-                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                 self.present(alert, animated: true, completion: nil)
-             }
-         }
-     }
-     */
-   
-
-    //    func fetchItemCategoryData(restaurantID: Int) {
-    //
-    //
-    //        let apiUrlString = "https://itemcategory.azurewebsites.net/api/ItemCategory?"
-    //
-    //        guard let apiUrl = URL(string: apiUrlString) else {
-    //            print("Invalid API URL")
-    //            return
-    //        }
-    //
-    //        fetchJSONData(from: apiUrl) { (result: Result<fetchItemCategoryApiResponse, APIError>) in
-    //            switch result {
-    //            case .success(let jsondata):
-    //
-    //                DispatchQueue.main.async { [self] in
-    ////                    let itemCategoryForSelectedRestaurant = jsondata.Records.filter { itemCategory in
-    ////                        return itemCategory.restaurantID == self.selectedRestaurantData[0].restaurant.RestaurantID
-    ////                    }
-    //
-    //                 //   self.restaurantMenuItemCategoryData = itemCategoryForSelectedRestaurant
-    //
-    //                    for category in restaurantMenuItemCategoryData {
-    //                        for (index, element) in JsonDataArrays.itemCompleteDataArray.enumerated() {
-    //                            if element.Item.CategoryID == category.categoryID  {
-    //                                // itemCompleteDataArray[index].ItemRatings = rating
-    //                                JsonDataArrays.itemCompleteDataArray[index].ItemCategory = category
-    //                                print("Category Name...", category)
-    //                            }
-    //                        }
-    //                    }
-    //                    calculateTableViewHeight()
-    //                    self.MenuTableView.reloadData()
-    //                    //   print("Data received: \(self.restaurantMenuItemCategoryData)")
-    //                }
-    //            case .failure(let error):
-    //                print("Error on fetchItemCategoryData: \(error)")
-    //            }
-    //
-    //
-    //        }
-    //    }
     
     
-    //    func fetchRestaurantMenuItemData(restaurantID: String) -> [[ItemCompleteData]] {
-    //        var allItemsInRestaurant = JsonDataArrays.itemCompleteDataArray.filter { $0.Item.RestaurantID == restaurantID }
-    //
-    //        if allItemsInRestaurant.isEmpty {
-    //            return []
-    //        }
-    //
-    //        let categories = Set(allItemsInRestaurant.map { $0.Item.CategoryID }) // Get unique category IDs
-    //
-    //        var result: [[ItemCompleteData]] = []
-    //        var uniqueItemsSet: Set<String> = Set()
-    //
-    //        for categoryID in categories {
-    //            let itemsInCategory = allItemsInRestaurant.filter { $0.Item.CategoryID == categoryID }
-    //
-    //            // Filter out items that are already in the set
-    //            let newItems = itemsInCategory.filter { uniqueItemsSet.insert($0.Item.ItemID).inserted }
-    //
-    //            if !newItems.isEmpty {
-    //                result.append(newItems)
-    //            }
-    //        }
-    //
-    //        return result
-    //    }
+    
     
     
     
     func setRatingOnView() {
+        
         var ratingCounts: [Int: Int] = [:]
         var totalRatings: Int = 0
         
@@ -996,11 +888,11 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             }
             if totalRatings > 0 {
                 let averageRating = Double(sumOfRatings) / Double(totalRatings)
-                            self.ratingView.rating = averageRating
-                            self.ratingView.text = "\(averageRating.rounded(toPlaces: 2))"
+                self.ratingView.rating = averageRating
+                self.ratingView.text = "\(averageRating.rounded(toPlaces: 2))"
                 self.starsView.rating = averageRating
                 self.starsView.text = "\(averageRating.rounded(toPlaces: 2))"
-                 self.ratedOutofLabel.text = "Rated \(averageRating.rounded(toPlaces: 2)) out of 5"
+                self.ratedOutofLabel.text = "Rated \(averageRating.rounded(toPlaces: 2)) out of 5"
                 
             } else {
                 self.ratingView.rating = 0
@@ -1009,22 +901,32 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             }
         } else if  self.selectedFor == "cuisines"{
             
-                let sumOfRatings = self.ItemRatingReviewDataArray.reduce(0) { total, ratingData in
-                    return total + (ratingData.Rating ?? 0)
-                }
-                if totalRatings > 0 {
-                    let averageRating = Double(sumOfRatings) / Double(totalRatings)
-                    self.ratingView.rating = averageRating
-                    self.ratingView.text = "\(averageRating.rounded(toPlaces: 2))"
-                    self.starsView.rating = averageRating
-                    self.starsView.text = "\(averageRating.rounded(toPlaces: 2))"
-                      self.ratedOutofLabel.text = "Rated \(averageRating.rounded(toPlaces: 2)) out of 5"
-                    
-                } else {
-                    self.ratingView.rating = 0
-                    self.ratingView.text = ""
-                    self.ratedOutofLabel.text = "Rated 0.0 out of 5"
-                }
+            let sumOfRatings = self.ItemRatingReviewDataArray.reduce(0) { total, ratingData in
+                return total + (ratingData.Rating ?? 0)
+            }
+            if totalRatings > 0 {
+                let averageRating = Double(sumOfRatings) / Double(totalRatings)
+                self.ratingView.rating = averageRating
+                self.ratingView.text = "\(averageRating.rounded(toPlaces: 2))"
+                self.starsView.rating = averageRating
+                self.starsView.text = "\(averageRating.rounded(toPlaces: 2))"
+                self.ratedOutofLabel.text = "Rated \(averageRating.rounded(toPlaces: 2)) out of 5"
+                
+            } else {
+                self.ratingView.rating = 0
+                self.ratingView.text = ""
+                self.ratedOutofLabel.text = "Rated 0.0 out of 5"
+            }
+        }
+        if  previousRestaurantRatingByLoginUser.isEmpty  {
+            userEnteredRating.isUserInteractionEnabled = true
+        }else{
+            userEnteredRating.isUserInteractionEnabled = false
+        }
+        if  previousItemRatingByLoginUser.isEmpty  {
+            userEnteredRating.isUserInteractionEnabled = true
+        }else{
+            userEnteredRating.isUserInteractionEnabled = false
         }
     }
     
@@ -1076,8 +978,8 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                 // No ratings
                 self.ratingView.rating = 0
                 self.restaurantReviewCountIntro.text = "(0)"
-              //  self.starsView.rating = 0
-              //  self.starsView.text = "0.00"
+                //  self.starsView.rating = 0
+                //  self.starsView.text = "0.00"
                 self.reviewTableView.reloadData()
                 self.ratingViewHeightConstarints.constant = 0
                 self.ratingsAndreviewsView.isHidden = true
@@ -1166,7 +1068,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             
             hideActivityIndicator()
         }
-       
+        
         leaveCommentTF.text = ""
     }
     
@@ -1245,29 +1147,12 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                                     if let record = json["record"] as? [String: Any] {
                                         if let ItemRatingId = record["RowKey"] as? String {
                                             print("Review: \(record["Review"] ?? "No Review")")
-                                           
-    
+                                            
+                                            
                                             self.fetchUpdatedItemReview(UpdatedItemRatingID: ItemRatingId){
                                                 self.viewDidLoad()
                                                 SVProgressHUD.dismiss()
-//                                                if let restaurantRating = self.ItemRatingReviewDataArray as? [ItemRatingReviewData] {
-//                                                    let count = restaurantRating.filter { $0.Rating != nil }.count + 1
-//                                                    let totalRating = restaurantRating.reduce(0) { $0 + ($1.Rating ?? 0) }
-//                                                    let PlusValue =   totalRating + (Int(self.givenRating ) )
-//                                                    let averageRating: Double = count > 0 ? Double(PlusValue ) / Double(count) : 0
-//
-//                                                    self.getRatingAfterDelate = Double(averageRating.rounded(toPlaces: 2))
-//                                                    self.getRatingAfterDelate = Double(averageRating)
-//                                                    DispatchQueue.main.async { [self] in
-//
-//                                                        self.ratingView.rating = getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
-//                                                        self.ratingView.text = "\(String(describing:getRatingAfterDelate?.rounded(toPlaces: 2)))"
-//                                                        self.starsView.rating = getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
-//                                                        self.starsView.text = "\(getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0)"
-//                                                        self.ratedOutofLabel.text = "Rated \(getRatingAfterDelate?.rounded(toPlaces: 1) ?? 0) out of 5"
-//
-//                                                    }
-//                                                }
+                                                
                                             }
                                         }
                                     }
@@ -1293,119 +1178,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
         hideActivityIndicator()
     }
     
-    //    func updateItemReview(review: String, reviewType: String) {
-    //
-    //        guard let updateURL = URL(string: ItemRatingURL) else {
-    //            print("Invalid API URL")
-    //            return
-    //        }
-    //        var request = URLRequest(url: updateURL)
-    //        request.httpMethod = "PUT"
-    //        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-    //
-    //        guard let previuosItemRatingID = previousItemRatingByLoginUser.first?.ItemRatingId else {
-    //            return
-    //        }
-    //
-    //        var updatedDetails: [String: Any] = [:]
-    //        guard let loginUserID = loginUserID, loginUserID != "" else{return}
-    //        guard selectedCuisine.count > 0 || selectedSignatureItem.count > 0 else{return}
-    //        let dateFormatter = DateFormatter()
-    //        dateFormatter.dateFormat = "yyyy/MM/dd"
-    //        let currentDate = dateFormatter.string(from: Date())
-    //        switch reviewType{
-    //        case "cuisines":
-    //
-    //            updatedDetails =  [
-    //                "PartitionKey": "ItemRating",
-    //                "RowKey": previuosItemRatingID,
-    //                "ItemRatingId" : previuosItemRatingID,
-    //                "ItemID": selectedCuisine[0].Item.ItemID ?? "",
-    //                "RestaurantID": selectedCuisine[0].Item.RestaurantID ?? "",
-    //                "Rating": userRating,
-    //                "RateDate": currentDate,
-    //                "Review": review,
-    //                "UserID": loginUserID,
-    //                "Disable": false
-    //            ]
-    //        case "dishes":
-    //
-    //            updatedDetails =  [
-    //                "PartitionKey": "ItemRating",
-    //                "RowKey": previuosItemRatingID,
-    //                "ItemRatingId": previuosItemRatingID,
-    //                "ItemID": selectedSignatureItem[0].Item.ItemID ?? "",
-    //                "RestaurantID": selectedSignatureItem[0].Item.RestaurantID ?? "",
-    //                "Rating": userRating,
-    //                "RateDate": currentDate,
-    //                "Review": review,
-    //                "UserID": loginUserID,
-    //                "Disable": false
-    //            ]
-    //        default:
-    //            break
-    //        }
-    //        do {
-    //            let jsonData = try JSONSerialization.data(withJSONObject: updatedDetails)
-    //            if let jsonString = String(data: jsonData, encoding: .utf8) {
-    //                print("JSON data sent to server: \(jsonString)")
-    //            }
-    //            request.httpBody = jsonData
-    //        } catch {
-    //            print("Error encoding JSON: \(error.localizedDescription)")
-    //            return
-    //        }
-    //
-    //        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-    //            if let error = error {
-    //                print("Error updating waiter details: \(error.localizedDescription)")
-    //                DispatchQueue.main.async {
-    //                    self.showAlert(title: "Update Failed", message: "Failed to update item ratings. Please try again.")
-    //
-    //                }
-    //            } else if let response = response as? HTTPURLResponse {
-    //                if (200..<300).contains(response.statusCode) {
-    //                    SVProgressHUD.show()
-    //                    if let data = data {
-    //                        let responseString = String(data: data, encoding: .utf8)
-    //                        print("Server response: \(responseString ?? "")")
-    //                    }
-    //
-    //
-    //                    DispatchQueue.main.async {
-    //                        SVProgressHUD.dismiss()
-    //                        self.fetchUpdatedItemReview(UpdatedItemRatingID: previuosItemRatingID){
-    //
-    //                        }
-    //                        let controller = self.storyboard?.instantiateViewController(identifier: "ResponsePageViewController") as! ResponsePageViewController
-    //                        controller.modalPresentationStyle = .fullScreen
-    //                        controller.message = "Item ratings updated successfully"
-    //                        self.ReviewDelegate?.didPostReviewSuccessfully(for: .item)
-    //                        self.present(controller, animated: true)
-    //                        //  print("Restaurant ratings updated successfully")
-    //
-    //                        SVProgressHUD.dismiss()
-    //
-    //
-    //                    }
-    //
-    //
-    //                } else {
-    //                    print("Server returned an error: \(response.statusCode)")
-    //                    // Handle the error appropriately (e.g., show an alert)
-    //
-    //                    DispatchQueue.main.async {
-    //                        self.showAlert(title: "Update Failed", message: "Failed to update restaurant ratings. Please try again.")
-    //
-    //                    }
-    //
-    //                }
-    //            }
-    //        }
-    //
-    //        task.resume()
-    //
-    //    }
+    
     
     func updateItemReview(review: String, reviewType: String) {
         
@@ -1501,17 +1274,17 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                         } catch {
                             print("Error parsing JSON: \(error.localizedDescription)")
                         }
-
-
-
+                        
+                        
+                        
                     }
                     DispatchQueue.main.async {
                         SVProgressHUD.dismiss()
                         self.fetchUpdatedItemReview(UpdatedItemRatingID: previousItemRatingID) {
                             self.updatingprogress()
-                           // self.viewDidLoad()
+                            // self.viewDidLoad()
                             // Reload table/collection view data to reflect changes
-                          // or self.collectionView.reloadData()
+                            // or self.collectionView.reloadData()
                         }
                         let controller = self.storyboard?.instantiateViewController(identifier: "ResponsePageViewController") as! ResponsePageViewController
                         controller.modalPresentationStyle = .fullScreen
@@ -1528,64 +1301,8 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             }
         }
         task.resume()
-
+        
     }
-    
-    //    func fetchUpdatedItemReview(UpdatedItemRatingID: String, completion: @escaping () -> Void) {
-    //        var updatedReviewData: ItemRatings?
-    //        var selectedItem: ItemCompleteData?
-    //        if selectedSignatureItem.isEmpty{
-    //            selectedItem = selectedCuisine[0]
-    //        }else{
-    //            selectedItem = selectedSignatureItem[0]
-    //        }
-    //        let apiUrlString = ItemRatingURL + "?rowkey=\(UpdatedItemRatingID)"
-    //
-    //        guard let apiUrl = URL(string: apiUrlString) else {
-    //            print("Invalid API URL")
-    //            return
-    //        }
-    //
-    //        fetchJSONData(from: apiUrl) { [self] (result: Result<fetchItemRatingsApiResponse, APIError>) in
-    //            switch result {
-    //            case .success(let jsondata):
-    //                if let records = jsondata.record{
-    //                    updatedReviewData = records
-    //
-    //                    if let IndexOfRatingInSelectedItem = selectedItem?.ItemRatings.firstIndex(where: {$0.itemRatingId == UpdatedItemRatingID}){
-    //                        selectedItem?.ItemRatings[IndexOfRatingInSelectedItem] = updatedReviewData!
-    //                    }else{
-    //                        selectedItem?.ItemRatings.append(updatedReviewData!)
-    //                    }
-    //
-    //                    // Find the index of the item in the array
-    //                    if let index = JsonDataArrays.itemCompleteDataArray.firstIndex(where: { $0.Item.ItemID == selectedItem?.Item.ItemID }) {
-    //                        // Make sure ItemRatings property is accessible
-    //                        var updatedItemCompleteData = JsonDataArrays.itemCompleteDataArray[index]
-    //
-    //                        // Update the ItemRatings array in the found item
-    //                        updatedItemCompleteData.ItemRatings = updatedItemCompleteData.ItemRatings.map { itemRating in
-    //                            var updatedItemRating = itemRating
-    //                            if itemRating.itemRatingId == UpdatedItemRatingID {
-    //                                // Update the properties of the ItemRating based on your logic
-    //                                updatedItemRating = updatedReviewData!
-    //                            }
-    //                            let averageRating = averageRating(forItemID: (updatedItemCompleteData.Item.ItemID)!)
-    //                            updatedItemCompleteData.itemAverageRating = averageRating
-    //                            return updatedItemRating
-    //                        }
-    //
-    //
-    //                        JsonDataArrays.itemCompleteDataArray[index] = updatedItemCompleteData
-    //
-    //                    }
-    //                }
-    //                completion()
-    //            case .failure(let error):
-    //                print("Error on fetchItemRatingJsonData: \(error)")
-    //            }
-    //        }
-    //    }
     
     
     func fetchUpdatedItemReview(UpdatedItemRatingID: String, completion: @escaping () -> Void) {
@@ -1744,19 +1461,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                                                 
                                                 
                                                 self.viewDidLoad()
-//                                                if let restaurantRating = self.restaurantRatingsDataArray as? [RestaurantRatingData] {
-//                                                    let count = restaurantRating.filter { $0.Rating != nil }.count + 1
-//                                                    let totalRating = restaurantRating.reduce(0) { $0 + ($1.Rating ?? 0) }
-//                                                    let PlusValue =   totalRating + (Int(self.givenRating ) )
-//                                                    let averageRating: Double = count > 0 ? Double(PlusValue ) / Double(count) : 0
-//
-//                                                    self.getRatingAfterDelate = Double(averageRating.rounded(toPlaces: 1))
-//                                                    self.getRatingAfterDelate = Double(averageRating)
-//                                                    DispatchQueue.main.async {
-//
-//                                                        self.ratedOutofLabel.text = "Rated \(self.getRatingAfterDelate?.rounded(toPlaces: 1) ?? 0) out of 5"
-//                                                    }
-//                                                }
+                                                
                                             }
                                         }
                                     }
@@ -1882,7 +1587,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
         }
         task.resume()
     }
-
+    
     func updateAverageRating(with updatedRating: Int) {
         if let restaurantRatings = self.restaurantRatingsDataArray as? [RestaurantRatingData] {
             let count = restaurantRatings.filter { $0.Rating != nil }.count
@@ -1905,37 +1610,37 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
     }
     func updateAverageRatingCusines(with updatedRating: Int) {
         // Ensure this is on the main thread
-      
-            if let restaurantRatings = self.ItemRatingReviewDataArray as? [ItemRatingReviewData] {
-                let count = restaurantRatings.filter { $0.Rating != nil }.count
-              //  let id = selectedSignatureItem[0].Item.ItemID
-                let cusineData = self.selectedCuisine.first?.ItemRatings.first?.rating
-                let dishesData = previousItemRatingByLoginUser.first?.Rating
-                let commonTotal = (cusineData ?? 0) + (dishesData ?? 0)
-
-                let totalRating = restaurantRatings.reduce(0) { $0 + ($1.Rating ?? 0) } - (commonTotal )
-                let plusValue = totalRating + updatedRating
-                let averageRating: Double = count > 0 ? Double(plusValue) / Double(count) : 0
-                
-                self.getRatingAfterDelate = averageRating.rounded(toPlaces: 1)
-                
-                // Debugging prints
-                print("Updated Rating: \(updatedRating)")
-                print("Average Rating: \(self.getRatingAfterDelate ?? 0.0)")
-
-                // Ensure UI components are not nil
-                if let ratingView = self.ratingView, let starsView = self.starsView, let ratedOutofLabel = self.ratedOutofLabel {
-                    ratingView.rating = self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
-                    ratingView.text = "\(self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0)"
-                    starsView.rating = self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
-                    starsView.text = "\(self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0)"
-                    ratedOutofLabel.text = "Rated \(self.getRatingAfterDelate?.rounded(toPlaces: 1) ?? 0) out of 5"
-                } else {
-                    print("UI components are not properly initialized.")
-                }
+        
+        if let restaurantRatings = self.ItemRatingReviewDataArray as? [ItemRatingReviewData] {
+            let count = restaurantRatings.filter { $0.Rating != nil }.count
+            //  let id = selectedSignatureItem[0].Item.ItemID
+            let cusineData = self.selectedCuisine.first?.ItemRatings.first?.rating
+            let dishesData = previousItemRatingByLoginUser.first?.Rating
+            let commonTotal = (cusineData ?? 0) + (dishesData ?? 0)
+            
+            let totalRating = restaurantRatings.reduce(0) { $0 + ($1.Rating ?? 0) } - (commonTotal )
+            let plusValue = totalRating + updatedRating
+            let averageRating: Double = count > 0 ? Double(plusValue) / Double(count) : 0
+            
+            self.getRatingAfterDelate = averageRating.rounded(toPlaces: 1)
+            
+            // Debugging prints
+            print("Updated Rating: \(updatedRating)")
+            print("Average Rating: \(self.getRatingAfterDelate ?? 0.0)")
+            
+            // Ensure UI components are not nil
+            if let ratingView = self.ratingView, let starsView = self.starsView, let ratedOutofLabel = self.ratedOutofLabel {
+                ratingView.rating = self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
+                ratingView.text = "\(self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0)"
+                starsView.rating = self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
+                starsView.text = "\(self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0)"
+                ratedOutofLabel.text = "Rated \(self.getRatingAfterDelate?.rounded(toPlaces: 1) ?? 0) out of 5"
             } else {
-                print("ItemRatingReviewDataArray is not properly initialized or cast.")
+                print("UI components are not properly initialized.")
             }
+        } else {
+            print("ItemRatingReviewDataArray is not properly initialized or cast.")
+        }
         
     }
     func updateAverageRatingItem(with updatedRating: Int) {
@@ -1953,7 +1658,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
                 // Debugging prints
                 print("Updated Rating: \(updatedRating)")
                 print("Average Rating: \(self.getRatingAfterDelate ?? 0.0)")
-
+                
                 // Ensure UI components are not nil
                 if let ratingView = self.ratingView, let starsView = self.starsView, let ratedOutofLabel = self.ratedOutofLabel {
                     ratingView.rating = self.getRatingAfterDelate?.rounded(toPlaces: 2) ?? 0.0
@@ -2016,17 +1721,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
             }
         }
     }
-//    func fetchWaiterDataForSelectedREstaurant(completion: @escaping () -> Void){
-//        waiterModelForSearch.removeAll()
-//        waitersForSelectedRestaurant = JsonDataArrays.WaiterCompleteDataArray.filter { waiter in
-//            return waiter.waiter.restaurantID == self.selectedRestaurantData[0].restaurant.RestaurantID
-//        }
-//
-//        self.waiterModelForSearch = waitersForSelectedRestaurant
-//        self.calculateTableViewHeight()
-//        self.MenuTableView.reloadData()
-//        SVProgressHUD.dismiss()
-//    }
+    
     func fetchWaiterDataForSelectedRestaurant(completion: @escaping () -> Void) {
         waiterModelForSearch.removeAll()
         
@@ -2042,9 +1737,9 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
         if waitersForSelectedRestaurant.isEmpty {
             waiterListButton.isHidden = true
         } else {
-          //  self.waiterListButton.titleLabel?.font = UIFont(name: fontName, size: 8)
+            //  self.waiterListButton.titleLabel?.font = UIFont(name: fontName, size: 8)
             //self.waiterListButton.setTitle("Waiters Available", for: .normal)
-        
+            
         }
         
         // Calculate the table view height and reload data
@@ -2057,7 +1752,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
         // Call the completion handler
         completion()
     }
-
+    
     
     
     @IBAction func rateAndReviewAutoscrollBtnAction(_ sender: UIButton) {
@@ -2083,26 +1778,7 @@ class RestaurantHomeVC: UIViewController, UITextFieldDelegate {
         self.present(allReviews, animated: true)
     }
     
-    //    @objc func scrollToNextItem() {
-    //        currentIndex += 1
-    //        if currentIndex >= totalItems {
-    //            currentIndex = 0
     
-    //        }
-    //
-    //        let indexPath = IndexPath(item: currentIndex, section: 0)
-    //        introCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-    //    }
-    //
-    //
-    //
-    //    func startAutoScroll() {
-    //        isScrolling = true
-    //        scrollTimer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollToNextItem), userInfo: nil, repeats: true)
-    //    }
-    //    deinit {
-    //        stopAutoScroll()
-    //    }
     
     func stopAutoScroll() {
         isScrolling = false
@@ -2230,59 +1906,7 @@ extension RestaurantHomeVC:
         reviewTableView.reloadData()
     }
     
-    //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //           // menuTableviewHeight.constant = (130 * 11) + 250 // (130 -> rowheight , 11 -> number of cells , 300 -> heightForHeaderInSection and paddings) make this calculations dynamic when needed.
-    //           if tableView == MenuTableView{
-    //
-    //
-    //
-    //               if selectedFor == "restaurant" {
-    //
-    //                   if section < itemsGroupedByCategoryForSearch.count {
-    //                       //                    if itemsGroupedByCategoryForSearch[section].item.isEmpty {
-    //                       //
-    //                       //                        return 1
-    //                       //                    } else {
-    //                       let categoryItemCount = itemsGroupedByCategoryForSearch[section].item.count
-    //
-    //                       return categoryItemCount
-    //                       // }
-    //                   } else {
-    //                       return waiterModelForSearch.count
-    //
-    //                   }
-    //               }
-    //
-    //
-    //               else{
-    //                   menuTableviewHeight.constant = CGFloat((170 * filterRestaurantsForSearch.count) + 50)
-    //                   return filterRestaurantsForSearch.count
-    //               }
-    //           }else{
-    //
-    //               if selectedFor == "restaurant"{
-    //                   let maxRowCount = min(3, restaurantRatingsDataArray.count)
-    //                   reviewTableHeightConstraint.constant = CGFloat(120 * maxRowCount)
-    //                   return maxRowCount
-    //               }else{
-    //
-    //                   if self.ItemRatingReviewDataArray.isEmpty{
-    //                       reviewTableHeightConstraint.constant = 80
-    //                       return 1
-    //                   }else{
-    //   //                    if self.ItemRatingReviewDataArray.count == 1{
-    //                           reviewTableHeightConstraint.constant =  CGFloat(120 * self.ItemRatingReviewDataArray.count)
-    //   //                    }else{
-    //   //                        reviewTableHeightConstraint.constant = 430
-    //   //                    }
-    //                       return self.ItemRatingReviewDataArray.count < 2 ? self.ItemRatingReviewDataArray.count : min(self.ItemRatingReviewDataArray.count, 3)
-    //
-    //                       //return min(self.ItemRatingReviewDataArray.count, 2)
-    //                   }
-    //               }
-    //           }
-    //
-    //       }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView == MenuTableView{
@@ -2318,275 +1942,16 @@ extension RestaurantHomeVC:
         }
         
     }
-    //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    //        if tableView == MenuTableView{
-    //            if selectedFor == "restaurant"{
-    //
-    //                if indexPath.section < itemsGroupedByCategoryForSearch.count {
-    //
-    //                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath) as! RestaurantMenuTVC
-    //                    let item = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
-    //                    if item.Item.ItemTitle != ""{
-    //                        menuCell.configure(with: item)
-    //                    }
-    //                    SVProgressHUD.dismiss()
-    //                    return menuCell
-    //                    // }
-    //                } else {
-    //                    //                    if waiterModelForSearch.isEmpty {
-    //                    //                        let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-    //                    //                        emptyCell.textLabel?.text = "No waiters Found"
-    //                    //                        emptyCell.textLabel?.textAlignment = .center
-    //                    //                        return emptyCell
-    //                    //                    } else {
-    //                    let waiterCell = MenuTableView.dequeueReusableCell(withIdentifier: "WailterListTVC", for: indexPath) as! WailterListTVC
-    //                    let waiter = waiterModelForSearch[indexPath.row]
-    //                    waiterCell.configure(with: waiter)
-    //                    SVProgressHUD.dismiss()
-    //                    return waiterCell
-    //                    //  }
-    //                }
-    //            }
-    //
-    //            else if selectedFor == "cuisines"{
-    //
-    //                if filterRestaurantsForSearch.isEmpty{
-    //                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-    //                    emptyCell.textLabel?.text = "No Restaurants found"
-    //                    emptyCell.textLabel?.textAlignment = .center
-    //                    return emptyCell
-    //                }else{
-    //                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
-    //                    if indexPath.row < filterRestaurantsForSearch.count {
-    //
-    //                        let GetIndex = filterRestaurantsForSearch[indexPath.row]
-    //                        menuCell.setcellUI()
-    //                        menuCell.RestuarantNameLabel.text = GetIndex.restaurant.RestaurantTitle
-    //                        menuCell.resturantDescriptnLabl.text = GetIndex.restaurant.RestaurantCategory
-    //                        menuCell.estimatedTimeLabel.text = GetIndex.restaurant.RestaurantAddress
-    //                        menuCell.RatingLabel.text = "\(GetIndex.restaurantAverageRating ?? 0.0) (\(GetIndex.restaurantRatings.count))"
-    //                        if GetIndex.rstaurantOffers?.offerID ?? "" != ""{
-    //                            menuCell.OfferTitlelabel.text = GetIndex.rstaurantOffers?.offerTitle
-    //                            menuCell.OfferNameLabel.text = "\(GetIndex.rstaurantOffers?.discount ?? 0)"
-    //                        }else{
-    //                            menuCell.OfferTitlelabel.isHidden = true
-    //                            menuCell.OfferNameLabel.isHidden = true
-    //                        }
-    //
-    //                        if let image = GetIndex.restaurant.RestaurantImage{
-    //                            loadImage(from: image ) { image  in
-    //                                if let img = image {
-    //                                    DispatchQueue.main.async {
-    //                                        menuCell.ItemImgView.image = img
-    //                                    }
-    //                                }
-    //                            }
-    //                        }else{
-    //                            DispatchQueue.main.async {
-    //                                menuCell.ItemImgView.image = emptyImage
-    //                            }
-    //                        }
-    //
-    //
-    //                    }
-    //
-    //                    return menuCell
-    //                }
-    //            }
-    //
-    //            else {
-    //                if filterRestaurantsForSearch.isEmpty{
-    //                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-    //                    emptyCell.textLabel?.text = "No Restaurants found"
-    //                    emptyCell.textLabel?.textAlignment = .center
-    //                    return emptyCell
-    //                }else{
-    //                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
-    //                    let restaurantsWithSignatureItems = filterRestaurantsForSearch[indexPath.row]
-    //                    menuCell.configureRestaurant(with: restaurantsWithSignatureItems )
-    //                    return menuCell
-    //                }
-    //            }
-    //        }else {
-    //
-    //
-    //            if selectedFor == "restaurant"{
-    //                if self.restaurantRatingsDataArray.isEmpty {
-    //                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-    //                    emptyCell.textLabel?.text = "No Reviews"
-    //                    emptyCell.textLabel?.textAlignment = .center
-    //                    return emptyCell
-    //                }else{
-    //                    let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC")as! ViewAllReviewsTVC
-    //                    let review = self.restaurantRatingsDataArray[indexPath.row]
-    //                    reviewCell.configure(with: review, currentUserId: loginUserID!)
-    //                    reviewCell.delegate = self
-    //                    return reviewCell
-    //                }
-    //            }else{
-    //                if self.ItemRatingReviewDataArray.isEmpty {
-    //                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-    //                    emptyCell.textLabel?.text = "No Reviews"
-    //                    emptyCell.textLabel?.textAlignment = .center
-    //                    return emptyCell
-    //                }else{
-    //                    let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC")as! ViewAllReviewsTVC
-    //                    let review = self.ItemRatingReviewDataArray[indexPath.row]
-    //                    reviewCell.configureWithItem(with: review, currentUserId: loginUserID!)
-    //                    return reviewCell
-    //                }
-    //            }
-    //        }
-    //    }
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if tableView == MenuTableView{
-//            if selectedFor == "restaurant"{
-//
-//                if indexPath.section < itemsGroupedByCategoryForSearch.count {
-//
-//                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath) as! RestaurantMenuTVC
-//                    let item = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
-//                    if item.Item.ItemTitle != ""{
-//                        menuCell.configure(with: item)
-//                    }
-//                    if !loginuserFavouriteItemArray.isEmpty{
-//                        if loginuserFavouriteItemArray.contains(where: {$0.Item.ItemID == item.Item.ItemID && $0.Item.RestaurantID == item.Item.RestaurantID}){
-//                            menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-//                            menuCell.favoriteBtn.tintColor = .systemRed
-//                            menuCell.isFavorite = true
-//                        }else{
-//                            menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-//                            menuCell.isFavorite = false
-//                        }
-//                    }
-//                    SVProgressHUD.dismiss()
-//                    return menuCell
-//                    // }
-//                } else {
-//
-//                    let waiterCell = MenuTableView.dequeueReusableCell(withIdentifier: "WailterListTVC", for: indexPath) as! WailterListTVC
-//                    let waiter = waiterModelForSearch[indexPath.row]
-//                    waiterCell.configure(with: waiter)
-//                    SVProgressHUD.dismiss()
-//                    return waiterCell
-//                    //  }
-//                }
-//            }
-//
-//            else if selectedFor == "cuisines"{
-//
-//                if filterRestaurantsForSearch.isEmpty{
-//                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-//                    emptyCell.textLabel?.text = "No Restaurants found"
-//                    emptyCell.textLabel?.textAlignment = .center
-//                    return emptyCell
-//                }else{
-//                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
-//                    if indexPath.row < filterRestaurantsForSearch.count {
-//
-//                        let GetIndex = filterRestaurantsForSearch[indexPath.row]
-//                        menuCell.setcellUI()
-//                        menuCell.RestuarantNameLabel.text = GetIndex.restaurant.RestaurantTitle
-//                        menuCell.resturantDescriptnLabl.text = GetIndex.restaurant.RestaurantCategory
-//                        menuCell.estimatedTimeLabel.text = GetIndex.restaurant.RestaurantAddress
-//                        menuCell.RatingLabel.text = "\(GetIndex.restaurantAverageRating ?? 0.0) (\(GetIndex.restaurantRatings.count))"
-//                        if GetIndex.rstaurantOffers?.offerID ?? "" != ""{
-//                            menuCell.OfferTitlelabel.text = GetIndex.rstaurantOffers?.offerTitle
-//                            menuCell.OfferNameLabel.text = "\(GetIndex.rstaurantOffers?.discount ?? 0)"
-//                        }else{
-//                            menuCell.OfferTitlelabel.isHidden = true
-//                            menuCell.OfferNameLabel.isHidden = true
-//                        }
-//
-//                        if let image = GetIndex.restaurant.RestaurantImage{
-//                            loadImage(from: image ) { image  in
-//                                if let img = image {
-//                                    DispatchQueue.main.async {
-//                                        menuCell.ItemImgView.image = img
-//                                    }
-//                                }
-//                            }
-//                        }else{
-//                            DispatchQueue.main.async {
-//                                menuCell.ItemImgView.image = emptyImage
-//                            }
-//                        }
-//
-//
-//                    }
-//
-//                    return menuCell
-//                }
-//            } else {
-//                if filterRestaurantsForSearch.isEmpty{
-//                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-//                    emptyCell.textLabel?.text = "No Restaurants found"
-//                    emptyCell.textLabel?.textAlignment = .center
-//                    return emptyCell
-//                }else{
-//                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
-//                    let restaurantsWithSignatureItems = filterRestaurantsForSearch[indexPath.row]
-//                    menuCell.configureRestaurant(with: restaurantsWithSignatureItems )
-//                    return menuCell
-//                }
-//            }
-//        }else {
-//
-//
-//            if selectedFor == "restaurant" {
-//                if self.restaurantRatingsDataArray.isEmpty {
-//                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-//                    emptyCell.textLabel?.text = "No Reviews"
-//                    emptyCell.textLabel?.textAlignment = .center
-//                    return emptyCell
-//                } else {
-//                    var sortedRatingsDataArray = self.restaurantRatingsDataArray
-//                    if let userReviewIndex = self.restaurantRatingsDataArray.firstIndex(where: { $0.UserID == loginUserID }) {
-//                        submitCommentButton.isEnabled = false
-//                        // leaveCommentTF.isEnabled = false
-//                        // Move the user's review to the top
-//                        let userReview = sortedRatingsDataArray.remove(at: userReviewIndex)
-//                        sortedRatingsDataArray.insert(userReview, at: 0)
-//                    }
-//                    let review = sortedRatingsDataArray[indexPath.row]
-//                    let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC") as! ViewAllReviewsTVC
-//                    reviewCell.configure(with: review, currentUserId: loginUserID!)
-//                    reviewCell.delegate = self
-//                    return reviewCell
-//                }
-//            }else{
-//                if self.ItemRatingReviewDataArray.isEmpty {
-//                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-//                    emptyCell.textLabel?.text = "No Reviews"
-//                    emptyCell.textLabel?.textAlignment = .center
-//                    return emptyCell
-//                }else{
-//                    var sortedItemRating = ItemRatingReviewDataArray
-//                    if let findIndex = ItemRatingReviewDataArray.firstIndex(where: { $0.UserID == loginUserID }) {
-//                        submitCommentButton.isEnabled = false
-//                        //  leaveCommentTF.isEnabled = false
-//                        let removeUserFromArray = sortedItemRating.remove(at: findIndex)
-//                        sortedItemRating.insert(removeUserFromArray, at: 0)
-//                    }
-//
-//                    let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC")as! ViewAllReviewsTVC
-//                    reviewCell.delegate = self
-//                    let review = sortedItemRating[indexPath.row]
-//                    reviewCell.configureWithItem(with: review, currentUserId: loginUserID!)
-//                    return reviewCell
-//                }
-//            }
-//        }
-//    }
+    
     func fetchUserFavouriteItemsID(){
-            
-    fetchFavouriteItems{
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.loginuserFavouriteItemArray = JsonDataArrays.FavouriteItemsIDArray
-            self.MenuTableView.reloadData()
+        
+        fetchFavouriteItems{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.loginuserFavouriteItemArray = JsonDataArrays.FavouriteItemsIDArray
+                self.MenuTableView.reloadData()
+            }
         }
     }
-}
     func fetchUserFavouriteRestaurantID(){
         fetchFavioureRestaurant {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
@@ -2597,230 +1962,230 @@ extension RestaurantHomeVC:
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           if tableView == MenuTableView{
-               if selectedFor == "restaurant"{
-                   
-                   if indexPath.section < itemsGroupedByCategoryForSearch.count {
-                       
-                       let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath) as! RestaurantMenuTVC
-                       menuCell.forRestaurant = false
-                       
-                       let item = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
-                       if item.Item.ItemTitle != ""{
-                           menuCell.configure(with: item)
-                       }
-                       
-                       menuCell.reloadDataAfterFavActionClosure = { [weak self] in
-//                           SVProgressHUD.show()
-                           fetchFavouriteItems  {
-                               self?.fetchUserFavouriteItemsID()
-                               DispatchQueue.main.async {
-                                   
-                                   self?.MenuTableView.reloadRows(at: [indexPath], with: .automatic)
-                               }
-                               
-                           }
-                       }
-                       
-                       
-                       if !loginuserFavouriteItemArray.isEmpty{
-                           if loginuserFavouriteItemArray.contains(where: { $0.itemID == item.Item.ItemID }){
-                               menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-                               menuCell.favoriteBtn.tintColor = .systemRed
-                               menuCell.isFavorite = true
-                           }else{
-                               menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-                               menuCell.isFavorite = false
-                           }
-                       }else{
-                           menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-                           menuCell.isFavorite = false
-                       }
-                       
-                       
-                       SVProgressHUD.dismiss()
-                       return menuCell
-                       // }
-                   } else {
-                     
-                       let waiterCell = MenuTableView.dequeueReusableCell(withIdentifier: "WailterListTVC", for: indexPath) as! WailterListTVC
-                       let waiter = waiterModelForSearch[indexPath.row]
-                       waiterCell.configure(with: waiter)
-                       SVProgressHUD.dismiss()
-                       return waiterCell
-                       //  }
-                   }
-               }
-               
-               else if selectedFor == "cuisines"{
-                   
-                   if filterRestaurantsForSearch.isEmpty{
-                       let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-                       emptyCell.textLabel?.text = "No Restaurants found"
-                       emptyCell.textLabel?.textAlignment = .center
-                       return emptyCell
-                   }else{
-                       let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
-                       menuCell.forRestaurant = true
-                       if indexPath.row < filterRestaurantsForSearch.count {
-                           
-                           let GetIndex = filterRestaurantsForSearch[indexPath.row]
-                           
-                           
-                           
-                           menuCell.reloadDataAfterFavActionClosure = { [weak self] in
-    //                           SVProgressHUD.show()
-                               fetchFavioureRestaurant {
-                                   self?.fetchUserFavouriteRestaurantID()
-                                   DispatchQueue.main.async {
-                                       
-                                       self?.MenuTableView.reloadRows(at: [indexPath], with: .automatic)
-                                   }
-                                   
-                               }
-                           }
-                           
-                           if !loginuserFavouriteRestaurantArray.isEmpty {
-                               if let restaurantID = GetIndex.restaurant.RestaurantID {
-                                   if loginuserFavouriteRestaurantArray.contains(restaurantID) {
-                                       menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-                                       menuCell.isFavorite = true
-                                   } else {
-                                       menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-                                       menuCell.isFavorite = false
-                                   }
-                               }
-                           }else{
-                               menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-                               menuCell.isFavorite = false
-                           }
-                           
-                           menuCell.setcellUI()
-                           menuCell.RestuarantNameLabel.text = GetIndex.restaurant.RestaurantTitle
-                           menuCell.resturantDescriptnLabl.text = GetIndex.restaurant.RestaurantCategory
-                           menuCell.estimatedTimeLabel.text = GetIndex.restaurant.RestaurantAddress
-                           menuCell.RatingLabel.text = "\(GetIndex.restaurantAverageRating ?? 0.0) (\(GetIndex.restaurantRatings.count))"
-                           if GetIndex.rstaurantOffers?.offerID ?? "" != ""{
-                               menuCell.OfferTitlelabel.text = GetIndex.rstaurantOffers?.offerTitle
-                               menuCell.OfferNameLabel.text = "\(GetIndex.rstaurantOffers?.discount ?? 0)"
-                           }else{
-                               menuCell.OfferTitlelabel.isHidden = true
-                               menuCell.OfferNameLabel.isHidden = true
-                           }
-                           
-                           if let image = GetIndex.restaurant.RestaurantImage{
-                               loadImage(from: image ) { image  in
-                                   if let img = image {
-                                       DispatchQueue.main.async {
-                                           menuCell.ItemImgView.image = img
-                                       }
-                                   }
-                               }
-                           }else{
-                               DispatchQueue.main.async {
-                                   menuCell.ItemImgView.image = emptyImage
-                               }
-                           }
-                           
-                           
-                       }
-                       
-                       return menuCell
-                   }
-               } else {
-                   if filterRestaurantsForSearch.isEmpty{
-                       let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-                       emptyCell.textLabel?.text = "No Restaurants found"
-                       emptyCell.textLabel?.textAlignment = .center
-                       return emptyCell
-                   }else{
-                       let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
-                       menuCell.forRestaurant = true
-                       let restaurantsWithSignatureItems = filterRestaurantsForSearch[indexPath.row]
-                       menuCell.configureRestaurant(with: restaurantsWithSignatureItems )
-                       
-                       
-                       menuCell.reloadDataAfterFavActionClosure = { [weak self] in
-//                           SVProgressHUD.show()
-                           fetchFavioureRestaurant {
-                               self?.fetchUserFavouriteRestaurantID()
-                               DispatchQueue.main.async {
-                                   
-                                   self?.MenuTableView.reloadRows(at: [indexPath], with: .automatic)
-                               }
-                               
-                           }
-                       }
-                      
-                       if !loginuserFavouriteRestaurantArray.isEmpty {
-                           if let restaurantID = restaurantsWithSignatureItems.restaurant.RestaurantID {
-                               if loginuserFavouriteRestaurantArray.contains(restaurantID) {
-                                   menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-                                   menuCell.isFavorite = true
-                               } else {
-                                   menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-                                   menuCell.isFavorite = false
-                               }
-                           }
-                       }else{
-                           menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-                           menuCell.isFavorite = false
-                       }
-                       
-                       return menuCell
-                   }
-               }
-           }else {
-               
-               
-               if selectedFor == "restaurant" {
-                   if self.restaurantRatingsDataArray.isEmpty {
-                       let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-                       emptyCell.textLabel?.text = "No Reviews"
-                       emptyCell.textLabel?.textAlignment = .center
-                       return emptyCell
-                   } else {
-                       var sortedRatingsDataArray = self.restaurantRatingsDataArray
-                       if let userReviewIndex = self.restaurantRatingsDataArray.firstIndex(where: { $0.UserID == loginUserID }) {
-                           submitCommentButton.isEnabled = false
-//                           ratingView.isUserInteractionEnabled = false
+        if tableView == MenuTableView{
+            if selectedFor == "restaurant"{
+                
+                if indexPath.section < itemsGroupedByCategoryForSearch.count {
                     
-//                           leaveCommentTF.isEnabled = false
-                           // Move the user's review to the top
-                           let userReview = sortedRatingsDataArray.remove(at: userReviewIndex)
-                           sortedRatingsDataArray.insert(userReview, at: 0)
-                       }
-                       let review = sortedRatingsDataArray[indexPath.row]
-                       let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC") as! ViewAllReviewsTVC
-                       reviewCell.configure(with: review, currentUserId: loginUserID!)
-                       reviewCell.delegate = self
-                       return reviewCell
-                   }
-               }else{
-                   if self.ItemRatingReviewDataArray.isEmpty {
-                       let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
-                       emptyCell.textLabel?.text = "No Reviews"
-                       emptyCell.textLabel?.textAlignment = .center
-                       return emptyCell
-                   }else{
-                       var sortedItemRating = ItemRatingReviewDataArray
-                       if let findIndex = ItemRatingReviewDataArray.firstIndex(where: { $0.UserID == loginUserID }) {
-                           submitCommentButton.isEnabled = false
-                           ratingView.isUserInteractionEnabled = false
-                           leaveCommentTF.isEnabled = false
-                           let removeUserFromArray = sortedItemRating.remove(at: findIndex)
-                           sortedItemRating.insert(removeUserFromArray, at: 0)
-                       }
-                       
-                       let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC")as! ViewAllReviewsTVC
-                       reviewCell.delegate = self
-                       let review = sortedItemRating[indexPath.row]
-                       reviewCell.configureWithItem(with: review, currentUserId: loginUserID!)
-                       return reviewCell
-                   }
-               }
-           }
-       }
+                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath) as! RestaurantMenuTVC
+                    menuCell.forRestaurant = false
+                    
+                    let item = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
+                    if item.Item.ItemTitle != ""{
+                        menuCell.configure(with: item)
+                    }
+                    
+                    menuCell.reloadDataAfterFavActionClosure = { [weak self] in
+                        //                           SVProgressHUD.show()
+                        fetchFavouriteItems  {
+                            self?.fetchUserFavouriteItemsID()
+                            DispatchQueue.main.async {
+                                
+                                self?.MenuTableView.reloadRows(at: [indexPath], with: .automatic)
+                            }
+                            
+                        }
+                    }
+                    
+                    
+                    if !JsonDataArrays.FavouriteItemsIDArray.isEmpty{
+                        if JsonDataArrays.FavouriteItemsIDArray.contains(where: { $0.itemID == item.Item.ItemID }){
+                            menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                            menuCell.favoriteBtn.tintColor = .systemRed
+                            menuCell.isFavorite = true
+                        }else{
+                            menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+                            menuCell.isFavorite = false
+                        }
+                    }else{
+                        menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+                        menuCell.isFavorite = false
+                    }
+                    
+                    
+                    SVProgressHUD.dismiss()
+                    return menuCell
+                    // }
+                } else {
+                    
+                    let waiterCell = MenuTableView.dequeueReusableCell(withIdentifier: "WailterListTVC", for: indexPath) as! WailterListTVC
+                    let waiter = waiterModelForSearch[indexPath.row]
+                    waiterCell.configure(with: waiter)
+                    SVProgressHUD.dismiss()
+                    return waiterCell
+                    //  }
+                }
+            }
+            
+            else if selectedFor == "cuisines"{
+                
+                if filterRestaurantsForSearch.isEmpty{
+                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
+                    emptyCell.textLabel?.text = "No Restaurants found"
+                    emptyCell.textLabel?.textAlignment = .center
+                    return emptyCell
+                }else{
+                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
+                    menuCell.forRestaurant = true
+                    if indexPath.row < filterRestaurantsForSearch.count {
+                        
+                        let GetIndex = filterRestaurantsForSearch[indexPath.row]
+                        
+                        
+                        
+                        menuCell.reloadDataAfterFavActionClosure = { [weak self] in
+                            //                           SVProgressHUD.show()
+                            fetchFavioureRestaurant {
+                                self?.fetchUserFavouriteRestaurantID()
+                                DispatchQueue.main.async {
+                                    
+                                    self?.MenuTableView.reloadRows(at: [indexPath], with: .automatic)
+                                }
+                                
+                            }
+                        }
+                        
+                        menuCell.restaurantData = GetIndex
+                        
+                        if !JsonDataArrays.FavouriteRestaurantIDArray.isEmpty {
+                            if let restaurantID = GetIndex.restaurant.RestaurantID {
+                                if JsonDataArrays.FavouriteRestaurantIDArray.contains(restaurantID) {
+                                    menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                                    menuCell.isFavorite = true
+                                } else {
+                                    menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+                                    menuCell.isFavorite = false
+                                }
+                            }
+                        }else{
+                            menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+                            menuCell.isFavorite = false
+                        }
+                        
+                        menuCell.setcellUI()
+                        menuCell.RestuarantNameLabel.text = GetIndex.restaurant.RestaurantTitle
+                        
+                        menuCell.resturantDescriptnLabl.text = GetIndex.restaurant.RestaurantCategory
+                        menuCell.estimatedTimeLabel.text = GetIndex.restaurant.RestaurantAddress
+                        menuCell.RatingLabel.text = "\(GetIndex.restaurantAverageRating ?? 0.0) (\(GetIndex.restaurantRatings.count))"
+                        if GetIndex.rstaurantOffers?.offerID ?? "" != ""{
+                            menuCell.OfferTitlelabel.text = GetIndex.rstaurantOffers?.offerTitle
+                            menuCell.OfferNameLabel.text = "\(GetIndex.rstaurantOffers?.discount ?? 0)"
+                        }else{
+                            menuCell.OfferTitlelabel.isHidden = true
+                            menuCell.OfferNameLabel.isHidden = true
+                        }
+                        
+                        if let image = GetIndex.restaurant.RestaurantImage{
+                            loadImage(from: image ) { image  in
+                                if let img = image {
+                                    DispatchQueue.main.async {
+                                        menuCell.ItemImgView.image = img
+                                    }
+                                }
+                            }
+                        }else{
+                            DispatchQueue.main.async {
+                                menuCell.ItemImgView.image = emptyImage
+                            }
+                        }
+                    }
+                    return menuCell
+                }
+            } else {
+                if filterRestaurantsForSearch.isEmpty{
+                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
+                    emptyCell.textLabel?.text = "No Restaurants found"
+                    emptyCell.textLabel?.textAlignment = .center
+                    return emptyCell
+                }else{
+                    let menuCell = MenuTableView.dequeueReusableCell(withIdentifier: "RestaurantMenuTVC", for: indexPath)as! RestaurantMenuTVC
+                    menuCell.forRestaurant = true
+                    let restaurantsWithSignatureItems = filterRestaurantsForSearch[indexPath.row]
+                    menuCell.configureRestaurant(with: restaurantsWithSignatureItems )
+                    
+                    
+                    menuCell.reloadDataAfterFavActionClosure = { [weak self] in
+                        //                           SVProgressHUD.show()
+                        fetchFavioureRestaurant {
+                            self?.fetchUserFavouriteRestaurantID()
+                            DispatchQueue.main.async {
+                                
+                                self?.MenuTableView.reloadRows(at: [indexPath], with: .automatic)
+                            }
+                            
+                        }
+                    }
+                    
+                    if !JsonDataArrays.FavouriteRestaurantIDArray.isEmpty {
+                        if let restaurantID = restaurantsWithSignatureItems.restaurant.RestaurantID {
+                            if JsonDataArrays.FavouriteRestaurantIDArray.contains(restaurantID) {
+                                menuCell.favoriteBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                                menuCell.isFavorite = true
+                            } else {
+                                menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+                                menuCell.isFavorite = false
+                            }
+                        }
+                    }else{
+                        menuCell.favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+                        menuCell.isFavorite = false
+                    }
+                    
+                    return menuCell
+                }
+            }
+        }else {
+            
+            
+            if selectedFor == "restaurant" {
+                if self.restaurantRatingsDataArray.isEmpty {
+                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
+                    emptyCell.textLabel?.text = "No Reviews"
+                    emptyCell.textLabel?.textAlignment = .center
+                    return emptyCell
+                } else {
+                    var sortedRatingsDataArray = self.restaurantRatingsDataArray
+                    if let userReviewIndex = self.restaurantRatingsDataArray.firstIndex(where: { $0.UserID == loginUserID }) {
+                        submitCommentButton.isEnabled = false
+                        //                           ratingView.isUserInteractionEnabled = false
+                        
+                        //                           leaveCommentTF.isEnabled = false
+                        // Move the user's review to the top
+                        let userReview = sortedRatingsDataArray.remove(at: userReviewIndex)
+                        sortedRatingsDataArray.insert(userReview, at: 0)
+                    }
+                    let review = sortedRatingsDataArray[indexPath.row]
+                    let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC") as! ViewAllReviewsTVC
+                    reviewCell.configure(with: review, currentUserId: loginUserID!)
+                    reviewCell.delegate = self
+                    return reviewCell
+                }
+            }else{
+                if self.ItemRatingReviewDataArray.isEmpty {
+                    let emptyCell = UITableViewCell(style: .default, reuseIdentifier: nil)
+                    emptyCell.textLabel?.text = "No Reviews"
+                    emptyCell.textLabel?.textAlignment = .center
+                    return emptyCell
+                }else{
+                    var sortedItemRating = ItemRatingReviewDataArray
+                    if let findIndex = ItemRatingReviewDataArray.firstIndex(where: { $0.UserID == loginUserID }) {
+                        submitCommentButton.isEnabled = false
+                        ratingView.isUserInteractionEnabled = false
+                        leaveCommentTF.isEnabled = false
+                        let removeUserFromArray = sortedItemRating.remove(at: findIndex)
+                        sortedItemRating.insert(removeUserFromArray, at: 0)
+                    }
+                    
+                    let reviewCell = reviewTableView.dequeueReusableCell(withIdentifier: "ViewAllReviewsTVC")as! ViewAllReviewsTVC
+                    reviewCell.delegate = self
+                    let review = sortedItemRating[indexPath.row]
+                    reviewCell.configureWithItem(with: review, currentUserId: loginUserID!)
+                    return reviewCell
+                }
+            }
+        }
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == MenuTableView {
             return 170
@@ -2834,492 +2199,130 @@ extension RestaurantHomeVC:
     }
     
     
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        if tableView == MenuTableView{
-    //            switch selectedFor {
-    //            case "restaurant": //menuItems
-    //                if indexPath.section < itemsGroupedByCategoryForSearch.count{
-    //                    //
-    //                    if !itemsGroupedByCategoryForSearch[indexPath.section].item.isEmpty{
-    //                        print("-> itemsGroupedByCategoryForSearch.count",indexPath.section ,itemsGroupedByCategoryForSearch.count)
-    //                        let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-    //                        let dishes = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
-    //                        let selectedFoodName = dishes.Item.ItemTitle
-    //                        restarantHomeVC.selectedFor = "dishes"
-    //                        restarantHomeVC.selectedSignatureItem = [dishes]
-    //                        restarantHomeVC.modalPresentationStyle = .fullScreen
-    //                        restarantHomeVC.modalTransitionStyle = .coverVertical
-    //                        restarantHomeVC.restaurantName = selectedFoodName ?? ""
-    //
-    //                        self.present(restarantHomeVC, animated: true, completion: nil)
-    //                    } }
-    //                else{
-    //                    if !waiterModelForSearch.isEmpty{
-    //                        let waiterCell = storyboard?.instantiateViewController(identifier: "WaiterDetailsVC") as! WaiterDetailsVC
-    //                        let waiter = waiterModelForSearch[indexPath.row]
-    //                        waiterCell.userDataArray = JsonDataArrays.userDataArray
-    //                        waiterCell.waiterData = [waiter]
-    //                        waiterCell.modalPresentationStyle = .fullScreen
-    //                        waiterCell.modalTransitionStyle = .coverVertical
-    //
-    //                        self.present(waiterCell, animated: true, completion: nil)
-    //                    }
-    //                }
-    //            case "cuisines": // available restaurants
-    //
-    //                if !filterRestaurantsForSearch.isEmpty{
-    //                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-    //                    let selectedFood = filterRestaurantsForSearch[indexPath.row]
-    //                    restarantHomeVC.selectedFor = "restaurant"
-    //                    restarantHomeVC.modalPresentationStyle = .fullScreen
-    //                    restarantHomeVC.modalTransitionStyle = .coverVertical
-    //                    // restarantHomeVC.restaurantName = selectedFoodName
-    //
-    //                    restarantHomeVC.selectedRestaurantData = [selectedFood]
-    //                    self.present(restarantHomeVC, animated: true, completion: nil)
-    //                }
-    //            default: // available restaurants
-    //                if !filterRestaurantsForSearch.isEmpty{
-    //                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-    //                    let selectedFood = filterRestaurantsForSearch[indexPath.row]
-    //                    restarantHomeVC.selectedFor = "restaurant"
-    //                    restarantHomeVC.modalPresentationStyle = .fullScreen
-    //                    restarantHomeVC.modalTransitionStyle = .coverVertical
-    //                    //     restarantHomeVC.restaurantName = selectedFoodName
-    //
-    //                    restarantHomeVC.selectedRestaurantData = [selectedFood]
-    //                    self.present(restarantHomeVC, animated: true, completion: nil)}
-    //            }
-    //        }
-    //
-    //        else{
-    //            //review tableview
-    //        }
-    //    }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if tableView == MenuTableView{
-//            switch selectedFor {
-//            case "restaurant": //menuItems
-//                if indexPath.section < itemsGroupedByCategoryForSearch.count{
-//                    //
-//                    if !itemsGroupedByCategoryForSearch[indexPath.section].item.isEmpty{
-//                        print("-> itemsGroupedByCategoryForSearch.count",indexPath.section ,itemsGroupedByCategoryForSearch.count)
-//                        let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-//
-//                        let dishes = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
-//                        let selectedFoodName = dishes.Item.ItemTitle
-//                        restarantHomeVC.selectedFor = "dishes"
-//                        restarantHomeVC.selectedSignatureItem = [dishes]
-//                        restarantHomeVC.modalPresentationStyle = .fullScreen
-//                        restarantHomeVC.modalTransitionStyle = .coverVertical
-//                        restarantHomeVC.restaurantName = selectedFoodName ?? ""
-//                        self.present(restarantHomeVC, animated: true, completion: nil)
-//                    }
-//                }
-//                else{
-////                    if !waiterModelForSearch.isEmpty{
-////                        let waiterCell = storyboard?.instantiateViewController(identifier: "WaiterDetailsVC") as! WaiterDetailsVC
-////                        let waiter = waiterModelForSearch[indexPath.row]
-////                        waiterCell.userDataArray = JsonDataArrays.userDataArray
-////                        waiterCell.waiterData = [waiter]
-////                        waiterCell.modalPresentationStyle = .fullScreen
-////                        waiterCell.modalTransitionStyle = .coverVertical
-////
-////                        self.present(waiterCell, animated: true, completion: nil)
-////                    }
-//               }
-//            case "cuisines": // available restaurants
-//
-//                if !filterRestaurantsForSearch.isEmpty{
-//                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-//                    let selectedFood = filterRestaurantsForSearch[indexPath.row]
-//                    restarantHomeVC.selectedFor = "restaurant"
-//                    restarantHomeVC.modalPresentationStyle = .fullScreen
-//                    restarantHomeVC.modalTransitionStyle = .coverVertical
-//                    // restarantHomeVC.restaurantName = selectedFoodName
-//
-//
-//                    getRestarantImage.removeAll()
-//                    //                                        let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
-//                    let selectedId = selectedCuisine[0].Item.RestaurantID
-//                    let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
-//
-//                    getRestarantImage.append(contentsOf: getRestarantImages)
-//                    if getRestarantImage.isEmpty {
-//
-//                        let res = JsonDataArrays.restaurantCompleteDataArray.filter { $0.restaurant.RestaurantID == selectedId }
-//                        getImageArray = [res[0].restaurant.RestaurantImage ?? ""]
-//                        restarantHomeVC.getImageArray = self.getImageArray
-//                    }else {
-//
-//                        if let firstRestaurantImage = getRestarantImage.first {
-//                            let image1 = firstRestaurantImage.ImageOne
-//                            let image2 = firstRestaurantImage.ImageTwo
-//                            let image3 = firstRestaurantImage.ImageThree
-//                            getImageArray.removeAll()
-//                            getImageArray.append(image1)
-//                            getImageArray.append(image2)
-//                            getImageArray.append(image3)
-//                            restarantHomeVC.getImageArray = self.getImageArray
-//                        }
-//
-//                    }
-//
-//                    restarantHomeVC.selectedRestaurantData = [selectedFood]
-//                    self.present(restarantHomeVC, animated: true, completion: nil)
-//                }
-//            default: // available restaurants
-//                if !filterRestaurantsForSearch.isEmpty{
-//                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-//                    let selectedFood = filterRestaurantsForSearch[indexPath.row]
-//                    restarantHomeVC.selectedFor = "restaurant"
-//
-//
-//                    getRestarantImage.removeAll()
-//                    //                                        let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
-//                    let selectedId = selectedSignatureItem[0].Item.RestaurantID
-//                    let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
-//
-//                    getRestarantImage.append(contentsOf: getRestarantImages)
-//                    if getRestarantImage.isEmpty {
-//
-//                        let res = JsonDataArrays.restaurantCompleteDataArray.filter { $0.restaurant.RestaurantID == selectedId }
-//
-//                        getImageArray = [res[0].restaurant.RestaurantImage ?? ""]
-//                        restarantHomeVC.getImageArray = self.getImageArray
-//                    }else {
-//
-//                        if let firstRestaurantImage = getRestarantImage.first {
-//                            let image1 = firstRestaurantImage.ImageOne
-//                            let image2 = firstRestaurantImage.ImageTwo
-//                            let image3 = firstRestaurantImage.ImageThree
-//                            getImageArray.removeAll()
-//                            getImageArray.append(image1)
-//                            getImageArray.append(image2)
-//                            getImageArray.append(image3)
-//                            restarantHomeVC.getImageArray = self.getImageArray
-//                        }
-//
-//                    }
-//
-//                    restarantHomeVC.modalPresentationStyle = .fullScreen
-//                    restarantHomeVC.modalTransitionStyle = .coverVertical
-//                    //     restarantHomeVC.restaurantName = selectedFoodName
-//
-//                    restarantHomeVC.selectedRestaurantData = [selectedFood]
-//                    self.present(restarantHomeVC, animated: true, completion: nil)}
-//            }
-//        }
-//
-//        else{
-//            //review tableview
-//        }
-//    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           if tableView == MenuTableView{
-               switch selectedFor {
-               case "restaurant": //menuItems
-                   if indexPath.section < itemsGroupedByCategoryForSearch.count{
-                       //
-                       if !itemsGroupedByCategoryForSearch[indexPath.section].item.isEmpty{
-                           print("-> itemsGroupedByCategoryForSearch.count",indexPath.section ,itemsGroupedByCategoryForSearch.count)
-                           let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-                           
-                          
-                           let dishes = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
-                           let selectedFoodName = dishes.Item.ItemTitle
-                           restarantHomeVC.selectedFor = "dishes"
-                           restarantHomeVC.selectedSignatureItem = [dishes]
-                           restarantHomeVC.modalPresentationStyle = .fullScreen
-                           restarantHomeVC.modalTransitionStyle = .coverVertical
-                           restarantHomeVC.restaurantName = selectedFoodName ?? ""
-                           self.present(restarantHomeVC, animated: true, completion: nil)
-                       } }
-                   else{
-                       if !waiterModelForSearch.isEmpty{
-                           let waiterCell = storyboard?.instantiateViewController(identifier: "WaiterDetailsVC") as! WaiterDetailsVC
-                           let waiter = waiterModelForSearch[indexPath.row]
-                           waiterCell.userDataArray = JsonDataArrays.userDataArray
-                           waiterCell.waiterData = [waiter]
-                           waiterCell.modalPresentationStyle = .fullScreen
-                           waiterCell.modalTransitionStyle = .coverVertical
-                           
-                           self.present(waiterCell, animated: true, completion: nil)
-                       }
-                   }
-               case "cuisines": // available restaurants
-                   
-                   if !filterRestaurantsForSearch.isEmpty{
-                       let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-                       let selectedFood = filterRestaurantsForSearch[indexPath.row]
-                       restarantHomeVC.selectedFor = "restaurant"
-                      
-                       restarantHomeVC.modalPresentationStyle = .fullScreen
-                       restarantHomeVC.modalTransitionStyle = .coverVertical
-                       // restarantHomeVC.restaurantName = selectedFoodName
-                      
-                                           
-                                           getRestarantImage.removeAll()
-   //                                        let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
-                                           let selectedId = selectedCuisine[0].Item.RestaurantID
-                                            let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
-                                           
-                                           getRestarantImage.append(contentsOf: getRestarantImages)
-                                           if getRestarantImage.isEmpty {
-                                               
-                                               let res = JsonDataArrays.restaurantCompleteDataArray.filter { $0.restaurant.RestaurantID == selectedId }
-                                               getImageArray = [res[0].restaurant.RestaurantImage ?? ""]
-                                               restarantHomeVC.getImageArray = self.getImageArray
-                                           }else {
-                                               
-                                               if let firstRestaurantImage = getRestarantImage.first {
-                                                   let image1 = firstRestaurantImage.ImageOne
-                                                   let image2 = firstRestaurantImage.ImageTwo
-                                                   let image3 = firstRestaurantImage.ImageThree
-                                                   getImageArray.removeAll()
-                                                   getImageArray.append(image1)
-                                                   getImageArray.append(image2)
-                                                   getImageArray.append(image3)
-                                                   restarantHomeVC.getImageArray = self.getImageArray
-                                               }
-                                               
-                                           }
-    
-                       restarantHomeVC.selectedRestaurantData = [selectedFood]
-                       self.present(restarantHomeVC, animated: true, completion: nil)
-                   }
-               default: // available restaurants
-                   if !filterRestaurantsForSearch.isEmpty{
-                       let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-                       let selectedFood = filterRestaurantsForSearch[indexPath.row]
-                       restarantHomeVC.selectedFor = "restaurant"
-                       
-                       
-                                           getRestarantImage.removeAll()
-   //                                        let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
-                                           let selectedId = selectedSignatureItem[0].Item.RestaurantID
-                                            let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
-                                           
-                                           getRestarantImage.append(contentsOf: getRestarantImages)
-                                           if getRestarantImage.isEmpty {
-                                               
-                                               let res = JsonDataArrays.restaurantCompleteDataArray.filter { $0.restaurant.RestaurantID == selectedId }
-                                               
-                                               getImageArray = [res[0].restaurant.RestaurantImage ?? ""]
-                                               restarantHomeVC.getImageArray = self.getImageArray
-                                           }else {
-                                               
-                                               if let firstRestaurantImage = getRestarantImage.first {
-                                                   let image1 = firstRestaurantImage.ImageOne
-                                                   let image2 = firstRestaurantImage.ImageTwo
-                                                   let image3 = firstRestaurantImage.ImageThree
-                                                   getImageArray.removeAll()
-                                                   getImageArray.append(image1)
-                                                   getImageArray.append(image2)
-                                                   getImageArray.append(image3)
-                                                   restarantHomeVC.getImageArray = self.getImageArray
-                                               }
-                                               
-                                           }
-    
-                       restarantHomeVC.modalPresentationStyle = .fullScreen
-                       restarantHomeVC.modalTransitionStyle = .coverVertical
-                       //     restarantHomeVC.restaurantName = selectedFoodName
-                       
-                       restarantHomeVC.selectedRestaurantData = [selectedFood]
-                       self.present(restarantHomeVC, animated: true, completion: nil)}
-               }
-           }
-           
-           else{
-               //review tableview
-           }
-       }
+        if tableView == MenuTableView{
+            switch selectedFor {
+            case "restaurant": //menuItems
+                if indexPath.section < itemsGroupedByCategoryForSearch.count{
+                    //
+                    if !itemsGroupedByCategoryForSearch[indexPath.section].item.isEmpty{
+                        print("-> itemsGroupedByCategoryForSearch.count",indexPath.section ,itemsGroupedByCategoryForSearch.count)
+                        let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
+                        
+                        
+                        let dishes = itemsGroupedByCategoryForSearch[indexPath.section].item[indexPath.row]
+                        let selectedFoodName = dishes.Item.ItemTitle
+                        restarantHomeVC.selectedFor = "dishes"
+                        restarantHomeVC.selectedSignatureItem = [dishes]
+                        restarantHomeVC.modalPresentationStyle = .fullScreen
+                        restarantHomeVC.modalTransitionStyle = .coverVertical
+                        restarantHomeVC.restaurantName = selectedFoodName ?? ""
+                        self.present(restarantHomeVC, animated: true, completion: nil)
+                    } }
+                else{
+                    if !waiterModelForSearch.isEmpty{
+                        let waiterCell = storyboard?.instantiateViewController(identifier: "WaiterDetailsVC") as! WaiterDetailsVC
+                        let waiter = waiterModelForSearch[indexPath.row]
+                        waiterCell.userDataArray = JsonDataArrays.userDataArray
+                        waiterCell.waiterData = [waiter]
+                        waiterCell.modalPresentationStyle = .fullScreen
+                        waiterCell.modalTransitionStyle = .coverVertical
+                        
+                        self.present(waiterCell, animated: true, completion: nil)
+                    }
+                }
+            case "cuisines": // available restaurants
+                
+                if !filterRestaurantsForSearch.isEmpty{
+                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
+                    let selectedFood = filterRestaurantsForSearch[indexPath.row]
+                    restarantHomeVC.selectedFor = "restaurant"
+                    
+                    restarantHomeVC.modalPresentationStyle = .fullScreen
+                    restarantHomeVC.modalTransitionStyle = .coverVertical
+                    // restarantHomeVC.restaurantName = selectedFoodName
+                    
+                    
+                    getRestarantImage.removeAll()
+                    //                                        let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
+                    let selectedId = selectedCuisine[0].Item.RestaurantID
+                    let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
+                    
+                    getRestarantImage.append(contentsOf: getRestarantImages)
+                    if getRestarantImage.isEmpty {
+                        
+                        let res = JsonDataArrays.restaurantCompleteDataArray.filter { $0.restaurant.RestaurantID == selectedId }
+                        getImageArray = [res[0].restaurant.RestaurantImage ?? ""]
+                        restarantHomeVC.getImageArray = self.getImageArray
+                    }else {
+                        
+                        if let firstRestaurantImage = getRestarantImage.first {
+                            let image1 = firstRestaurantImage.ImageOne
+                            let image2 = firstRestaurantImage.ImageTwo
+                            let image3 = firstRestaurantImage.ImageThree
+                            getImageArray.removeAll()
+                            getImageArray.append(image1)
+                            getImageArray.append(image2)
+                            getImageArray.append(image3)
+                            restarantHomeVC.getImageArray = self.getImageArray
+                        }
+                        
+                    }
+                    
+                    restarantHomeVC.selectedRestaurantData = [selectedFood]
+                    self.present(restarantHomeVC, animated: true, completion: nil)
+                }
+            default: // available restaurants
+                if !filterRestaurantsForSearch.isEmpty{
+                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
+                    let selectedFood = filterRestaurantsForSearch[indexPath.row]
+                    restarantHomeVC.selectedFor = "restaurant"
+                    
+                    
+                    getRestarantImage.removeAll()
+                    //                                        let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
+                    let selectedId = selectedSignatureItem[0].Item.RestaurantID
+                    let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
+                    
+                    getRestarantImage.append(contentsOf: getRestarantImages)
+                    if getRestarantImage.isEmpty {
+                        
+                        let res = JsonDataArrays.restaurantCompleteDataArray.filter { $0.restaurant.RestaurantID == selectedId }
+                        
+                        getImageArray = [res[0].restaurant.RestaurantImage ?? ""]
+                        restarantHomeVC.getImageArray = self.getImageArray
+                    }else {
+                        
+                        if let firstRestaurantImage = getRestarantImage.first {
+                            let image1 = firstRestaurantImage.ImageOne
+                            let image2 = firstRestaurantImage.ImageTwo
+                            let image3 = firstRestaurantImage.ImageThree
+                            getImageArray.removeAll()
+                            getImageArray.append(image1)
+                            getImageArray.append(image2)
+                            getImageArray.append(image3)
+                            restarantHomeVC.getImageArray = self.getImageArray
+                        }
+                        
+                    }
+                    
+                    restarantHomeVC.modalPresentationStyle = .fullScreen
+                    restarantHomeVC.modalTransitionStyle = .coverVertical
+                    //     restarantHomeVC.restaurantName = selectedFoodName
+                    
+                    restarantHomeVC.selectedRestaurantData = [selectedFood]
+                    self.present(restarantHomeVC, animated: true, completion: nil)}
+            }
+        }
+        
+        else{
+            //review tableview
+        }
+    }
 }
-//extension RestaurantHomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//
-//        if selectedFor == "restaurant" {
-//            return getImageArray.count
-//        }else if selectedFor == "cuisines" {
-//            return 1
-//
-//
-//        }else {
-//            return 1
-//        }
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let introCell = introCollectionView.dequeueReusableCell(withReuseIdentifier: "RestuarantHomeIntroCVC", for: indexPath) as! RestuarantHomeIntroCVC
-//
-//        if selectedFor == "restaurant" {
-//            let imageUrl = getImageArray[indexPath.item]
-//            // Assuming you have a function to load image asynchronously
-//            loadImage(from: imageUrl) { image in
-//                DispatchQueue.main.async {
-//                    introCell.foodImage.image = image
-//
-//                }
-//            }
-//            //   }
-//        } else if selectedFor == "cuisines" {
-//            if let firstItem = selectedCuisine.first {
-//                let imageUrl = firstItem.Item.itemImage
-//
-//                loadImage(from: imageUrl!) { image in
-//                    DispatchQueue.main.async {
-//                        introCell.foodImage.image = image
-//                        introCell.foodImage.contentMode = .scaleToFill
-//                        introCell.foodImage.layer.cornerRadius = 5
-//                        introCell.foodImage.layer.borderWidth = 1
-//                        introCell.foodImage.layer.borderColor = UIColor.lightGray.cgColor
-//                    }
-//                }
-//            } else {
-//                // Handle the case where `selectedCuisine` is empty
-//                print("No cuisine items selected.")
-//            }
-//        }
-//
-//        else{
-//            // let img = getImageArray[indexPath.item]
-//            for item in selectedSignatureItem {
-//                let imageUrl = item.Item.itemImage
-//
-//                loadImage(from: imageUrl!) { image in
-//                    DispatchQueue.main.async {
-//                        introCell.foodImage.image = image
-//                        introCell.foodImage.contentMode = .scaleToFill
-//                        introCell.foodImage.layer.cornerRadius = 5
-//                        introCell.foodImage.layer.borderWidth = 1
-//                        introCell.foodImage.layer.borderColor = UIColor.lightGray.cgColor
-//                    }
-//                }
-//            }
-//
-//        }
-//        return introCell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        if selectedFor == "cuisines" {
-//            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-//        }else if selectedFor == "restaurant" {
-//            if getImageArray.count == 1 {
-//                return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-//            }else{
-//
-//            }
-//        }else{
-//            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-//        }
-//        // return self.introCollectionView.bounds.size
-//        let width = self.view.frame.size.width / 1.3
-//        let height = introCollectionView.bounds.height / 1.1
-//        return CGSize(width: width, height: height)
-//    }
-//
-//}
-//
-//extension RestaurantHomeVC  : commandOptionsProtocal {
-//    func deleteRestaurantRating(withId rateId: String) {
-//
-//        guard let url = URL(string: "https://tiptabapi.azurewebsites.net/api/restaurantRating") else {
-//            fatalError("Invalid URL")
-//        }
-//
-//
-//
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "DELETE"
-//
-//        let requestBody: [String: Any] = [
-//            "partitionKey": "RestaurantRating",
-//            "rowKey": rateId
-//
-//        ]
-//
-//        do {
-//            request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
-//        } catch {
-//            print("Error encoding request body: \(error)")
-//
-//            return
-//        }
-//
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//
-//        URLSession.shared.dataTask(with: request) { (data, response, error) in
-//            if let error = error {
-//                print("Error: \(error)")
-//
-//                return
-//            }
-//
-//            if let httpResponse = response as? HTTPURLResponse {
-//                print("HTTP Status Code: \(httpResponse.statusCode)")
-//
-//                if httpResponse.statusCode == 200 {
-//
-//                    DispatchQueue.main.async {
-//                        self.reviewTableView.reloadData()
-//                        self.showAlert(withTitle: "Success Massage", message: "Deleted Your Command And Ratings!!!", viewController: self)
-//                    }
-//
-//                } else {
-//                    print("HTTP Status Code: \(httpResponse.statusCode)")
-//
-//                }
-//            }
-//        }.resume()
-//    }
-//    func showAlert(withTitle title: String, message: String, viewController: UIViewController, completion: (() -> Void)? = nil) {
-//        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-//            completion?()
-//
-//        }
-//    //    let cancel = UIAlertAction(title: "Cancel", style: .cancel)
-//        alertController.addAction(okAction)
-//      //  alertController.addAction(cancel)
-//        viewController.present(alertController, animated: true, completion: nil)
-//    }
-//    func showAlert2(withTitle title: String, message: String, viewController: UIViewController, completion: (() -> Void)? = nil) {
-//        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let okAction = UIAlertAction(title: "OK", style: .destructive) { _ in
-//            completion?()
-//
-//        }
-//        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
-//        alertController.addAction(okAction)
-//        alertController.addAction(cancel)
-//        viewController.present(alertController, animated: true, completion: nil)
-//    }
-//    func openOptions(cell: ViewAllReviewsTVC, options: commandOptions) {
-//        switch options {
-//        case .Delete:
-//            if let rateId = cell.restaurantRateID{
-//                DispatchQueue.main.async { [self] in
-//                    handleDeleteAction(for: rateId, viewController: self)
-//                }
-//
-//            } else {
-//                print("Rate ID or Partition Key ID not found")
-//            }
-//        case .Edit:
-//            leaveCommentTF.text = previousRestaurantRatingByLoginUser.first?.Review
-//            leaveCommentTF.becomeFirstResponder()
-//        }
-//    }
-//    func handleDeleteAction(for rateId: String, viewController: UIViewController) {
-//        showAlert2(withTitle: "Confirm Delete", message: "Are you sure you want to delete this rating?", viewController: viewController) {
-//            self.deleteRestaurantRating(withId: rateId)
-//        }
-//    }
-//
-//}
-//
+
+
 extension RestaurantHomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -3397,78 +2400,9 @@ extension RestaurantHomeVC: UICollectionViewDelegate,UICollectionViewDataSource,
 }
 
 extension RestaurantHomeVC  : commandOptionsProtocal {
-    //    func deleteRestaurantRating(withId rateId: String) {
-    //
-    //        guard let url = URL(string: "https://tiptabapi.azurewebsites.net/api/restaurantRating") else {
-    //            fatalError("Invalid URL")
-    //        }
-    //
-    //        var request = URLRequest(url: url)
-    //        request.httpMethod = "DELETE"
-    //
-    //        let requestBody: [String: Any] = [
-    //            "partitionKey": "RestaurantRating",
-    //            "rowKey": rateId
-    //
-    //        ]
-    //
-    //        do {
-    //            request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
-    //        } catch {
-    //            print("Error encoding request body: \(error)")
-    //
-    //            return
-    //        }
-    //
-    //        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-    //
-    //        URLSession.shared.dataTask(with: request) { (data, response, error) in
-    //            if let error = error {
-    //                print("Error: \(error)")
-    //
-    //                return
-    //            }
-    //
-    //            if let httpResponse = response as? HTTPURLResponse {
-    //                print("HTTP Status Code: \(httpResponse.statusCode)")
-    //
-    //                if httpResponse.statusCode == 200 {
-    //
-    //                    DispatchQueue.main.async {
-    //
-    //                        fetchUserRatingJsonData { [self] in // again fetching reviews from api
-    //
-    //
-    //                            if let index = JsonDataArrays.restaurantCompleteDataArray.firstIndex(where: { $0.restaurant.RestaurantID == selectedRestaurantData[0].restaurant.RestaurantID }) {
-    //                                // Make sure ItemRatings property is accessible
-    //                                let updatedRestauranrtCompleteData = JsonDataArrays.restaurantCompleteDataArray[index]
-    //
-    //                                selectedRestaurantData[0].restaurantRatings = updatedRestauranrtCompleteData.restaurantRatings
-    //                                filterRestaurantRatingReview()
-    //
-    //                            }
-    //
-    //                        }
-    //                    }
-    //
-    //                } else {
-    //                    print("HTTP Status Code: \(httpResponse.statusCode)")
-    //
-    //                }
-    //                DispatchQueue.main.async {
-    //                    let controller = self.storyboard?.instantiateViewController(identifier: "ResponsePageViewController") as! ResponsePageViewController
-    //                    controller.modalPresentationStyle = .fullScreen
-    //                    self.ReviewDelegate?.didPostReviewSuccessfully(for: .restaurant)
-    //
-    //                    controller.message = "Restaurant ratings Deleted successfully"
-    //                    self.present(controller, animated: true)
-    //                }
-    //            }
-    //        }.resume()
-    //    }
     
     func deleteRestaurantRating(withId rateId: String,restaurantID:String) {
-        guard let url = URL(string: "https://tiptabapi.azurewebsites.net/api/restaurantRating") else {
+        guard let url = URL(string: restaurantRatingURL) else {
             fatalError("Invalid URL")
         }
         
@@ -3502,7 +2436,7 @@ extension RestaurantHomeVC  : commandOptionsProtocal {
                     DispatchQueue.main.async {
                         
                         self.fetchUserRestaurantRatingJsonData(restaurantID: restaurantID, completion: {
-                              self.filterRestaurantRatingReview()
+                            self.filterRestaurantRatingReview()
                         }
                                                                
                         )
@@ -3575,7 +2509,7 @@ extension RestaurantHomeVC  : commandOptionsProtocal {
     
     func deleteItemRating(withId rateId: String) {
         
-        guard let url = URL(string: "https://tiptabapi.azurewebsites.net/api/ItemRatingFunction") else {
+        guard let url = URL(string: ItemRatingURL) else {
             fatalError("Invalid URL")
         }
         
@@ -3629,7 +2563,7 @@ extension RestaurantHomeVC  : commandOptionsProtocal {
                             }
                         }
                     }
-                   
+                    
                 } else {
                     print("HTTP Status Code: \(httpResponse.statusCode)")
                     
@@ -3732,7 +2666,8 @@ extension RestaurantHomeVC  : commandOptionsProtocal {
                 if let rateId = cell.restaurantRateID{
                     
                     handleDeleteAction(for: rateId, restaurantID: selectedRestaurantData[0].restaurant.RestaurantID ?? "",viewController: self)
-                    
+                    self.userEnteredRating.rating = 0
+                    self.userEnteredRating.isUserInteractionEnabled = true
                 } else {
                     print("Rate ID or Partition Key ID not found")
                 }
@@ -3740,13 +2675,16 @@ extension RestaurantHomeVC  : commandOptionsProtocal {
                 if let itemId = cell.itemID {
                     handleDeleteAction(for: itemId, restaurantID: "", viewController: self)
                 }
+                self.userEnteredRating.isUserInteractionEnabled = true
             }
         case .Edit:
             if selectedFor == "restaurant"{
                 leaveCommentTF.text = previousRestaurantRatingByLoginUser.first?.Review
-                leaveCommentTF.becomeFirstResponder()
+                let offset = CGPoint(x: 0, y: rateThisPlaceView.frame.origin.y - scrollView.contentInset.top)
+                
+                scrollView.setContentOffset(offset, animated: true)
                 submitCommentButton.isEnabled = true
-             
+                self.userEnteredRating.isUserInteractionEnabled = true
             }else{
                 leaveCommentTF.text = previousItemRatingByLoginUser.first?.Review
                 
@@ -3757,7 +2695,7 @@ extension RestaurantHomeVC  : commandOptionsProtocal {
                 scrollView.setContentOffset(offset, animated: true)
                 leaveCommentTF.isEnabled = true
                 submitCommentButton.isEnabled = true
-                
+                self.userEnteredRating.isUserInteractionEnabled = true
             }
         }
     }
@@ -3779,7 +2717,7 @@ extension RestaurantHomeVC {
     
     
     func fetchRestaurantImages(completion : @escaping () -> Void) {
-        let urlString = "https://tiptabapi.azurewebsites.net/api/RestaurantImages"
+        let urlString = "https://thetiptabapi.azurewebsites.net/api/RestaurantImages"
         
         guard let url = URL(string: urlString) else {
             print("Invalid URL")

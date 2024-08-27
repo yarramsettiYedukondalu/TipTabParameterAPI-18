@@ -94,7 +94,7 @@
 		B58BB5A62AFBBB3E000B06E1 /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BB5A52AFBBB3E000B06E1 /* TermsAndConditionsVC.swift */; };
 		B58BB5A82AFBBDD6000B06E1 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BB5A72AFBBDD6000B06E1 /* PrivacyPolicyVC.swift */; };
 		B58BB5AA2AFBC510000B06E1 /* ReportAnAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BB5A92AFBC510000B06E1 /* ReportAnAppVC.swift */; };
-		B58FBBCC2C4E2DA7002B8880 /* CustomQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FBBCB2C4E2DA7002B8880 /* CustomQRViewController.swift */; };
+		B594DCE32C7C7448002FC861 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594DCE22C7C7448002FC861 /* Optional.swift */; };
 		B59753692BEC9F3B00FBFB0F /* MbProgressHUd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59753682BEC9F3B00FBFB0F /* MbProgressHUd.swift */; };
 		B597536C2BEC9F5900FBFB0F /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B597536B2BEC9F5900FBFB0F /* MBProgressHUD */; };
 		B59C6FFC2B04A16F00362F27 /* RewardsTableViewCellTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C6FFB2B04A16F00362F27 /* RewardsTableViewCellTVC.swift */; };
@@ -174,6 +174,20 @@
 		DA9BAB592C53953B00625910 /* alartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BAB582C53953B00625910 /* alartView.swift */; };
 		F3568E07E777C13DAB0D706D /* Pods_TipTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF6C010CC5AEEE979E7E4F /* Pods_TipTap.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		B5AF115B2C7DD61D00F5A387 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		3AC579CC37A7F86D22009EBC /* Pods-TipTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipTap.debug.xcconfig"; path = "Target Support Files/Pods-TipTap/Pods-TipTap.debug.xcconfig"; sourceTree = "<group>"; };
@@ -264,7 +278,7 @@
 		B58BB5A52AFBBB3E000B06E1 /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsVC.swift; sourceTree = "<group>"; };
 		B58BB5A72AFBBDD6000B06E1 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
 		B58BB5A92AFBC510000B06E1 /* ReportAnAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAnAppVC.swift; sourceTree = "<group>"; };
-		B58FBBCB2C4E2DA7002B8880 /* CustomQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomQRViewController.swift; sourceTree = "<group>"; };
+		B594DCE22C7C7448002FC861 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		B59753682BEC9F3B00FBFB0F /* MbProgressHUd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbProgressHUd.swift; sourceTree = "<group>"; };
 		B59C6FFB2B04A16F00362F27 /* RewardsTableViewCellTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsTableViewCellTVC.swift; sourceTree = "<group>"; };
 		B59C6FFD2B04BC9200362F27 /* VisitedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedCVC.swift; sourceTree = "<group>"; };
@@ -411,6 +425,7 @@
 		4886E4B62C637F9000AF683D /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				B594DCE12C7C7429002FC861 /* OptionalChaining */,
 				4886E4B72C637FBE00AF683D /* PaymentViewController.swift */,
 				4886E4B92C637FCC00AF683D /* PaymentMethodViewController.swift */,
 				4886E4BB2C637FEE00AF683D /* HistoryPaymentTableViewCell.swift */,
@@ -471,6 +486,14 @@
 				B562400D2B70C342004BEF3E /* InternetViewController.swift */,
 			);
 			path = INTERNET;
+			sourceTree = "<group>";
+		};
+		B594DCE12C7C7429002FC861 /* OptionalChaining */ = {
+			isa = PBXGroup;
+			children = (
+				B594DCE22C7C7448002FC861 /* Optional.swift */,
+			);
+			path = OptionalChaining;
 			sourceTree = "<group>";
 		};
 		B59753672BEC9F1E00FBFB0F /* MBProgressHUD */ = {
@@ -670,7 +693,6 @@
 				4865F1B32B0B3EF3007FBB50 /* CustomPopupView.xib */,
 				B5DC7C3B2AFCB8770033CCB3 /* AskViewController.swift */,
 				B50022212AFD124800C2FB47 /* ScannerViewController.swift */,
-				B58FBBCB2C4E2DA7002B8880 /* CustomQRViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -707,6 +729,7 @@
 				2D431C28C42307264B0D9FDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				B5AF115B2C7DD61D00F5A387 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -856,7 +879,6 @@
 				B5DC7C3C2AFCB8770033CCB3 /* AskViewController.swift in Sources */,
 				B5DF12292B0737B3005E7394 /* FilterVC.swift in Sources */,
 				DA9006882C5B597600D3CFBC /* waiterListViewController.swift in Sources */,
-				B58FBBCC2C4E2DA7002B8880 /* CustomQRViewController.swift in Sources */,
 				B58BB5A42AFBAECB000B06E1 /* ListViewCollectionViewCell.swift in Sources */,
 				B5F21F9D2B31BB74000B83CB /* UserReportTableViewCell.swift in Sources */,
 				B5D515B82B6CFD9F00848D39 /* InterNetCheck.swift in Sources */,
@@ -912,6 +934,7 @@
 				B5CBACBA2AF12A950081936B /* TrendingCell.swift in Sources */,
 				B5573DC32AFB4E390094CC3C /* LeftMenuViewController.swift in Sources */,
 				B5A784B22AF176C700B12B6F /* supportFile.swift in Sources */,
+				B594DCE32C7C7448002FC861 /* Optional.swift in Sources */,
 				B58BB5A62AFBBB3E000B06E1 /* TermsAndConditionsVC.swift in Sources */,
 				B512A30A2C64A53800612BA4 /* TipsHistoryTableViewCell.swift in Sources */,
 				B5254E962B2AF5760030051D /* SourceFile.swift in Sources */,
@@ -1129,8 +1152,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1169,8 +1192,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

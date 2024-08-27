@@ -212,11 +212,7 @@ public struct fetchRestaurantOfferApiResponse : Codable{
     let StatusMessage: String?
 }
 
-//public struct fetchuserLogsApiResponse : Codable{
-//    var Records: [userLogs]?
-//    let StatusCode: Int?
-//    let StatusMessage: String?
-//}
+
 public struct fetchItemRatingsApiResponse : Codable{
     var records: [ItemRatings]?
     var record: ItemRatings?
@@ -323,7 +319,7 @@ public struct RestaurantOffer : Codable{
     let endDate: String?
     //    let restaurantOfferIsValid : Bool
     //   let disabled : Bool
-    let offerImage : String
+ //   let offerImage : String
     enum CodingKeys: String, CodingKey {
         case offerID = "OfferID"
         case restaurantID = "RestaurantID"
@@ -332,9 +328,7 @@ public struct RestaurantOffer : Codable{
         case discount = "Discount"
         case startDate = "startDate"
         case endDate = "EndDate"
-        //     case restaurantOfferIsValid = "restaurantOfferIsValid"
-        //     case disabled = "disabled"
-        case offerImage = "offerImage"
+      
     }
 }
 
@@ -473,15 +467,7 @@ public struct ReviewModel  : Codable{
     var reviewPersonImage : String?
 }
 
-//public struct userRatings: Codable{
-//    var ratingID : Int?
-//    var  restaurantID : Int?
-//    var userID : Int?
-//    var rating : Int?
-//    var review : String?
-//    var rating_date : String?
-//    var disabled : Bool
-//}
+
 
 public struct userRatings: Codable{
     var RestaurantRateId : String?
@@ -520,27 +506,7 @@ public struct ItemRatingByLoginUserData {
     var itemTitle : String?
     var RateDate : String?
 }
-//public struct ItemRatings : Codable{
-//    var itemRatingId : String?
-//    var restaurantID : String?
-//    var  itemID : String?
-//    var rating : Int?
-//    var review : String?
-//    var userID : String?
-//    var disabled : Bool
-//    var RateDate : String?
-//    
-//    enum CodingKeys: String, CodingKey {
-//        case itemRatingId = "ItemRatingId"
-//        case restaurantID = "RestaurantID"
-//        case itemID = "ItemID"
-//        case rating = "Rating"
-//        case review = "Review"
-//        case userID = "UserID"
-//        case disabled = "disable"
-//        case RateDate = "RateDate"
-//    }
-//}
+
 public struct ItemRatings : Codable{
     var RowKey : String?
     var itemRatingId : String?
@@ -608,18 +574,6 @@ struct ItemCategory : Codable {
     }
 }
 
-//public struct ItemRatingReviewData{
-//    //Here we have to store user details also
-//    var ItemRatingId : String?
-//    var RestaurantID : String?
-//    var UserID : String?
-//    var UserTitle : String?
-//    var UserImage : String?
-//    var Rating : Int?
-//    var Review : String?
-//    var ratingDate : String?
-//    
-//}
 
 
 public struct companyfeedback : Codable{
@@ -630,12 +584,7 @@ public struct companyfeedback : Codable{
     var mostusedfeature : String?
     var toimprove : String?
 }
-//"feedbackID": 4,
-//         "UserID": 7,
-//         "oftenuseapp": "daily",
-//         "motivationtouse": "efficient task management",
-//         "mostusedfeature": "calendar integration",
-//         "toimprove": "faster response times"
+
 public struct UserEnquiry : Codable{
     var EnquiryID : String?
     var UserID : String?
@@ -674,15 +623,7 @@ public struct ItemOffer: Codable {
     }
     
 }
-//public struct waiterRating : Codable{
-//    let ratingID: Int?
-//    let WaiterID: Int?
-//    let userID: Int?
-//    let rating: Double
-//    let comments: String?
-//    let ratingDate: String?
-//    let disabled: Bool
-//}
+
 public struct waiterRatingUserData : Codable{
     let WaiterRatingID: String?
     let waiterID: String?
@@ -724,17 +665,6 @@ public struct RestaurantCompleteData: Codable{
     }
 }
 
-//public struct restaurantOffers: Codable {
-//    var offerID : Int?
-//    var restaurantID: Int?
-//    var offerTitle: String?
-//    var description: String?
-//    var discount: Double
-//    var startDate: String?
-//    var endDate: String?
-//    var restaurantOfferIsValid: Bool
-//    var disabled: Bool
-//}
 
 struct CuisineModel {
     var cuisineName : String?

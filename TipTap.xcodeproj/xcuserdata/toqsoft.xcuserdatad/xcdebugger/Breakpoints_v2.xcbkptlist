@@ -19,22 +19,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "106AA686-9621-4135-93B0-2B52FE51695C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TipTap/LeftMenu/FavoritesVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "433"
-            endingLineNumber = "433"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "939F0472-7CB7-4BD3-A603-0D09558E82B8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -58,8 +42,8 @@
             filePath = "TipTap/Model/JSONParse.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "567"
-            endingLineNumber = "567"
+            startingLineNumber = "489"
+            endingLineNumber = "489"
             landmarkName = "averageRating(forItemID:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1172,9 +1156,9 @@
             filePath = "TipTap/Cells/MostSalesTVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
-            landmarkName = "updateFavoriteStatus(itemId:restaurantId:isFavorite:completion:)"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "favoriteBtnAction(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1206,163 +1190,6 @@
                   startingLineNumber = "220"
                   endingLineNumber = "220"
                   offsetFromSymbolStart = "508">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A47FC5FB-7137-475D-8521-00861D6400D9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TipTap/Views/GoogleSignInVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "305"
-            endingLineNumber = "305"
-            landmarkName = "postUserData(firstName:lastName:email:userImage:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TipTap/Views/WaiterDetailsVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
-            landmarkName = "SubmitReviewButtonAction(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - 4575440b46eb4711"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.WaiterDetailsVC.postCommentToWaiterRating(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "273"
-                  endingLineNumber = "273"
-                  offsetFromSymbolStart = "3120">
-               </Location>
-               <Location
-                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - c889a5885b4cfb94"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "273"
-                  endingLineNumber = "273"
-                  offsetFromSymbolStart = "564">
-               </Location>
-               <Location
-                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - c889a5885b4cfb94"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Desktop/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "273"
-                  endingLineNumber = "273"
-                  offsetFromSymbolStart = "704">
-               </Location>
-               <Location
-                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - 94e3de6a11f3340b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "273"
-                  endingLineNumber = "273"
-                  offsetFromSymbolStart = "704">
-               </Location>
-               <Location
-                  uuid = "D279F7AB-FAE2-41AB-A85F-B5FD53F015A1 - 94e3de6a11f3340b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "273"
-                  endingLineNumber = "273"
-                  offsetFromSymbolStart = "564">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7FC103AC-E4B6-4191-A732-54B9B5A51D92"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TipTap/Views/WaiterDetailsVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "344"
-            endingLineNumber = "344"
-            landmarkName = "WaiterDetailsVC"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "7FC103AC-E4B6-4191-A732-54B9B5A51D92 - 94e3de6a11f335d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "286"
-                  endingLineNumber = "286"
-                  offsetFromSymbolStart = "1332">
-               </Location>
-               <Location
-                  uuid = "7FC103AC-E4B6-4191-A732-54B9B5A51D92 - 94e3de6a11f335d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TipTap.WaiterDetailsVC.updateWaiterReview(review: Swift.String) -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Views/WaiterDetailsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "286"
-                  endingLineNumber = "286"
-                  offsetFromSymbolStart = "1192">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1563,26 +1390,10 @@
             filePath = "TipTap/Cells/SignatureDishesCVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "favouriteBtnAction(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0FFFCCDF-A4A6-44A8-8711-CA90E97EA59B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TipTap/Cells/SignatureDishesListViewCVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "unknown"
-            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1645,84 +1456,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
             endingLineNumber = "113">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "20B5993C-E576-4E3F-B507-0053966D270D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "GoogleProfileSplashScreenCVC"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - 5ca21b2e666718bc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "724">
-               </Location>
-               <Location
-                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - 5ca21b2e666718df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "300">
-               </Location>
-               <Location
-                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - 31053fd4005925e9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Downloads/TipTabParameterAPI%202/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "300">
-               </Location>
-               <Location
-                  uuid = "20B5993C-E576-4E3F-B507-0053966D270D - a455e8aafa548b58"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TipTap.GoogleProfileSplashScreenCVC.setup() -&gt; ()"
-                  moduleName = "TipTap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toqsoft/Desktop/Kondalu/TipTabParameterAPI%202/TipTap/Cells/GoogleProfileSplashScreenCVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "300">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

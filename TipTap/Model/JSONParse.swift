@@ -37,17 +37,6 @@ func fetchJSONData<T: Decodable>(from url: URL, completion: @escaping (Result<T,
 }
 
 
-//func fetchJsonData<T: Decodable>(from url: URL, dataType: T.Type, completion: @escaping (Result<T, APIError>) -> Void) {
-//    fetchJSONData(from: url) { (result: Result<T, APIError>) in
-//        switch result {
-//        case .success(let jsonData):
-//            completion(.success(jsonData))
-//        case .failure(let error):
-//            print("Error: \(error)")
-//            completion(.failure(error))
-//        }
-//    }
-//}
 
 func loadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
     
@@ -164,73 +153,6 @@ func fetchUserRatingJsonData(completion: @escaping () -> Void) {
     }
 }
 
-//
-//func fetchUserRatingJsonData(completion: @escaping () -> Void){
-//    
-//    let url = URL(string:  restaurantRatingURL)
-//    fetchJSONData(from: url!) { (result: Result<fetchRestaurantRatingApiResponse, APIError>) in
-//        switch result {
-//        case .success(let jsondata):
-//            JsonDataArrays.userRatingsDataArray.removeAll()
-//            restaurantRatingArray = jsondata
-//            
-//            if let records = jsondata.records{
-//                JsonDataArrays.UserRatingArray = records.filter{ $0.UserId == loginUserID }
-//            }
-//            // JsonDataArrays.RestaurantIDArray =  JsonDataArrays.UserRatingArray.map{$0.RestaurantId}
-//            
-//            
-//            let userRatedRestaurantsIDArray = JsonDataArrays.UserRatingArray.compactMap { rating in
-//                if let restaurantId = rating.RestaurantId {
-//                    return restaurantId
-//                } else {
-//                    return nil
-//                }
-//            }
-//            //            
-//            JsonDataArrays.userRatingsRestaurantArray = JsonDataArrays.restaurantModel.filter { restaurant in
-//                if let restaurantID = restaurant.RestaurantID {
-//                    return userRatedRestaurantsIDArray.contains(restaurantID)
-//                } else {
-//                    return false // or handle the case where RestaurantID is nil
-//                }
-//            }
-//            
-//            for i in  JsonDataArrays.UserRatingArray {
-//                // Check if the userVisitedResstaurantArray contains a restaurant with the given RestaurantID
-//                if let matchingRestaurant =  JsonDataArrays.userRatingsRestaurantArray.first(where: { $0.RestaurantID == i.RestaurantId }) {
-//                    // If found, create a new userVisitedRestaurantData instance with the restaurant
-//                    let userRatingData = userRatingData(RestaurantID: matchingRestaurant.RestaurantID, RestaurantTitle: matchingRestaurant.RestaurantTitle, Rating: i.Rating, Review: i.Review, ratingDate: i.RatingDate, RestaurantImage: matchingRestaurant.RestaurantImage)
-//                    
-//                    // Append the new instance to the array
-//                    JsonDataArrays.userRatingsDataArray.append(userRatingData)
-//                }
-//                // Handle the case where the restaurant is not found if needed
-//                else {
-//                    // Handle the case where the restaurant is not found
-//                    // You might want to log an error or handle it in some way
-//                }
-//            }
-//            //  fetchrestaurantOffers()
-//            onDataFetched?( JsonDataArrays.userRatingsDataArray)
-//            if let records = jsondata.records{
-//                for rating in records {
-//                    if let index =  JsonDataArrays.restaurantCompleteDataArray.firstIndex(where: { $0.restaurant.RestaurantID == rating.RestaurantId }) {
-//                        // Check if the rating is not already present in the restaurantRatings array
-//                        if !JsonDataArrays.restaurantCompleteDataArray[index].restaurantRatings.contains(where: { $0.RestaurantRateId == rating.RestaurantRateId }) {
-//                            JsonDataArrays.restaurantCompleteDataArray[index].restaurantRatings.append(rating)
-//                            JsonDataArrays.restaurantCompleteDataArray[index].restaurantAverageRating = averageRating(for_restaurantID: rating.RestaurantId ?? "")
-//                        }
-//                    }
-//                }
-//            }
-//            completion()
-//            //            }
-//        case .failure(let error):
-//            print("Error: \(error)")
-//        }
-//    }
-//}
 
 
 func averageRating(for_restaurantID restaurantID: String ) -> (Double)? {
@@ -604,7 +526,7 @@ class OffersViewModel: ObservableObject {
     @Published var errorMessage: String? = nil
     
     func fetchOffers() {
-        guard let url = URL(string: "https://tiptabapi.azurewebsites.net/api/restaurantOffer") else {
+        guard let url = URL(string: restaurantOfferURL) else {
             self.errorMessage = "Invalid URL"
             return
         }

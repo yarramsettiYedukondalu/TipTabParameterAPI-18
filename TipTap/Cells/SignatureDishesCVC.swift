@@ -139,22 +139,7 @@ class SignatureDishesCVC: UICollectionViewCell {
         }
             
          else {
-//             deleteFavoriteRecord(restaurantID: restaurantId, itemId: itemID) {[self] success in
-//                 if success {
-//                     print("Favorite status deleted successfully")
-//                     DispatchQueue.main.async { [self] in
-//                         favoriteBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-//                     }
-//
-//                     reloadDishesCVAfterFavActionClosure?()
-//                 } else {
-//                     print("Failed to delete favorite status")
-//                    
-//                     // Handle failure case, if needed
-//                 }
-//
-//             }
-             
+
              SVProgressHUD.show()
              var userFavoriteItemIdToDelete: String?
              fetchUserFavouriteItemIdToDelete(restaurantID: restaurantId, itemId: itemID) { (matchingID) in
@@ -232,66 +217,6 @@ class SignatureDishesCVC: UICollectionViewCell {
     }
 
 
-//        func deleteFavoriteRecord(restaurantID: String, itemId: String, completion: @escaping (Bool) -> Void) {
-//            
-//            let matchingIDs = JsonDataArrays.userFavouriteItemsArray
-//                .filter { $0.UserID == loginUserID && $0.RestaurantID == restaurantID && $0.ItemID == itemId }
-//                .map { $0.UserFavouriteItemID }
-//            
-//            guard !matchingIDs.isEmpty else {
-//                completion(false)
-//                return
-//            }
-//            let deleteUrlString = FavouriteItemURL
-//            guard let deleteApiUrl = URL(string: deleteUrlString) else {
-//                print("Invalid URL: \(deleteUrlString)")
-//                return
-//            }
-//            
-//            
-//            var request = URLRequest(url: deleteApiUrl)
-//            request.httpMethod = "DELETE"
-//            
-//            let requestBody: [String: Any] = [
-//                "rowKey": matchingIDs[0] ?? "",
-//                      "partitionKey": "UserFavouriteItems"
-//            ]
-//            
-//            do {
-//                request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
-//            } catch {
-//                print("Error encoding request body: \(error)")
-//                completion(false)
-//                return
-//            }
-//            
-//            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//            
-//            URLSession.shared.dataTask(with: request) { (data, response, error) in
-//                if let error = error {
-//                    print("Error: \(error)")
-//                    completion(false)
-//                    return
-//                }
-//                
-//                if let httpResponse = response as? HTTPURLResponse {
-//                    print("HTTP Status Code: \(httpResponse.statusCode)")
-//                    
-//                    if httpResponse.statusCode == 200 {
-//                        print("Favorite status updated successfully")
-//                        completion(true)
-//                    } else {
-//                        print("HTTP Status Code: \(httpResponse.statusCode)")
-//                        completion(false)
-//                    }
-//                }
-//            }.resume()
-//            
-//            
-//            
-//            
-//            
-//        }
 
 }
 

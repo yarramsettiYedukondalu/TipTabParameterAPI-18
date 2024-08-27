@@ -46,17 +46,7 @@ class MostSalesTVC: UITableViewCell {
         self.contentView.layer.cornerRadius = 2
         self.contentView.layer.masksToBounds = true
         
-//        let bezierPath = UIBezierPath.init(roundedRect: self.contentView.bounds, cornerRadius: 12.69)
-//        self.contentView.layer.shadowPath = bezierPath.cgPath
-        
-       
-        
-//        self.contentView.layer.cornerRadius = 5
-//        self.contentView.layer.shadowColor = UIColor.darkGray.cgColor
-//        self.contentView.layer.shadowOpacity = 0.5
-//        self.contentView.layer.shadowOffset = CGSize(width: 2, height: 2)
-//        self.contentView.layer.shadowRadius = 4
-//        self.contentView.layer.masksToBounds = false
+
         
         setCellUI()
        
@@ -125,13 +115,7 @@ class MostSalesTVC: UITableViewCell {
            }
         RatingLabel.text = "\(dishes.itemAverageRating ?? 0.0)(\(dishes.ItemRatings.count))"
         if let image = dishes.Item.itemImage{
-//            loadImage(from: image ) { image  in
-//                if let img = image {
-//                    DispatchQueue.main.async {
-//                        self.ItemImgView.image = img
-//                    }
-//                }
-//            }
+
             guard let imageUrl = URL(string: image) else {
                       print("Invalid URL: \(image)")
                       return
@@ -171,21 +155,7 @@ class MostSalesTVC: UITableViewCell {
         }
         
         else {
-            //             SVProgressHUD.show()
-            //             deleteFavoriteRecord(restaurantID: restaurantId, itemId: itemID) {[self] success in
-            //                 if success {
-            //                     SVProgressHUD.dismiss()
-            //                     print("Favorite status deleted successfully")
-            //                     reloadMostSalesTVAfterFavActionClosure?()
-            //                     
-            //                 } else {
-            //                     SVProgressHUD.dismiss()
-            //                     print("Failed to delete favorite status")
-            //                   
-            //                 }
-            //                 
-            //             }
-            //        }
+           
             
             
             

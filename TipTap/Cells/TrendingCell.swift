@@ -185,11 +185,7 @@ class TrendingCell: UICollectionViewCell {
                 if httpResponse.statusCode == 200 {
                     print("Favorite status updated successfully")
                     completion(true)
-//                    if isFavorite {
-//                        self.RestaurantIDArray.append(restaurantID)
-//                    } else {
-//                        self.RestaurantIDArray.removeAll { $0 == restaurantID }
-//                    }
+
                 } else {
                     print("HTTP Status Code: \(httpResponse.statusCode)")
                     completion(false)
@@ -200,10 +196,5 @@ class TrendingCell: UICollectionViewCell {
     
     
     
-//    func updateFavoriteUI(_ isFavorite: Bool) {
-//        let imageName = isFavorite ? "heart.fill" : "heart"
-//        favoriteButton.setImage(UIImage(systemName: imageName), for: .normal)
-//    }
 
-    
 }

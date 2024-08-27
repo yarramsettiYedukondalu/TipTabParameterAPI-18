@@ -20,9 +20,10 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
     //Payment
     var transactionHistory: [Transaction] = []
     //RestaurantOffer
-       private var viewModel = OffersViewModel()
-       private var cancellables: Set<AnyCancellable> = []
-       private let tableView = UITableView()
+    private var viewModel = OffersViewModel()
+    
+    private var cancellables: Set<AnyCancellable> = []
+    private let tableView = UITableView()
     //LocalNotification
     var getImageArray = [String]()
     var restaurantImages = [RestaurantImage]()
@@ -66,13 +67,13 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
     var itemOffersDataFetched = false
     var itemCategoryDataFetched = false
     var menus: [FirstCV] = [
-    FirstCV(icons: UIImage(systemName:"dollarsign")!, titles: "My Tip"),
-    FirstCV(icons: UIImage(systemName: "mappin.and.ellipse")!, titles: "My Visits"),
-    FirstCV(icons: UIImage(systemName: "heart")!, titles: "My Favourites"),
-    FirstCV(icons: UIImage(systemName: "star")!, titles: "My Ratings"),
-    FirstCV(icons: UIImage(systemName: "rosette")!, titles: "My Rewards"),
-    FirstCV(icons: UIImage(systemName: "bubble")!, titles: "My Feedbacks")
-   // FirstCV(icons: UIImage(systemName: "person")!, titles: "My Profile")
+        FirstCV(icons: UIImage(systemName:"dollarsign")!, titles: "My Tip"),
+        FirstCV(icons: UIImage(systemName: "mappin.and.ellipse")!, titles: "My Visits"),
+        FirstCV(icons: UIImage(systemName: "heart")!, titles: "My Favourites"),
+        FirstCV(icons: UIImage(systemName: "star")!, titles: "My Ratings"),
+        FirstCV(icons: UIImage(systemName: "rosette")!, titles: "My Rewards"),
+        FirstCV(icons: UIImage(systemName: "bubble")!, titles: "My Feedbacks")
+        // FirstCV(icons: UIImage(systemName: "person")!, titles: "My Profile")
         // FirstCV(icons: UIImage(named: "Tips")!, titles: "Tips"),
     ]
     var cuisineModel = [CuisineModel]()
@@ -175,11 +176,7 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
             print("Feedback data fetching and processing completed!")
             // Perform any additional actions or UI updates
         }
-        //        fetchWaiterData{
-        //            fetchWaiterRatingsData{
-        //                print("Waiter data fetching completed!, waiter ")
-        //            }
-        //        }
+        
         fetchWaiterData()
         locationManagerPage = LocationManager()
         // You may optionally pass the array of restaurants to the location manager
@@ -226,6 +223,7 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
         let indexPath = IndexPath(item: 1, section: 0)
         self.FoodGroupCollectionView.reloadItems(at: [indexPath])
     }
+    
     private func setupBind() {
         OfferViewModelDataArray.$offers
             .receive(on: DispatchQueue.main)
@@ -244,62 +242,62 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
             }
             .store(in: &cancellables)
     }
-
+    
     // Restaurant Offer
     private func setupBindings() {
-          viewModel.$offers
-              .receive(on: DispatchQueue.main)
-              .sink { [weak self] _ in
-                  self?.tableView.reloadData()
-              }
-              .store(in: &cancellables)
-          
-          viewModel.$errorMessage
-              .receive(on: DispatchQueue.main)
-              .sink { [weak self] errorMessage in
-                  if let errorMessage = errorMessage {
-                      self?.showError(message: errorMessage)
-                  }
-              }
-              .store(in: &cancellables)
-      }
+        viewModel.$offers
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.tableView.reloadData()
+            }
+            .store(in: &cancellables)
+        
+        viewModel.$errorMessage
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] errorMessage in
+                if let errorMessage = errorMessage {
+                    self?.showError(message: errorMessage)
+                }
+            }
+            .store(in: &cancellables)
+    }
     private func showError(message: String) {
-           let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-           alert.addAction(UIAlertAction(title: "OK", style: .default))
-           present(alert, animated: true)
-       }
- 
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
     func fetchRestaurantImages() {
-            let urlString = "https://tiptabapi.azurewebsites.net/api/RestaurantImages"
-            
-            guard let url = URL(string: urlString) else {
-                print("Invalid URL")
+        
+        
+        guard let url = URL(string: restaurantImagesURL) else {
+            print("Invalid URL")
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("Error fetching data: \(error)")
                 return
             }
             
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                if let error = error {
-                    print("Error fetching data: \(error)")
-                    return
-                }
-                
-                guard let data = data else {
-                    print("No data received")
-                    return
-                }
-                
-                do {
-                    let decoder = JSONDecoder()
-                    self.restaurantImages = try decoder.decode([RestaurantImage].self, from: data)
-                   
-                   
-                } catch {
-                    print("Error decoding data: \(error)")
-                }
+            guard let data = data else {
+                print("No data received")
+                return
             }
             
-            task.resume()
+            do {
+                let decoder = JSONDecoder()
+                self.restaurantImages = try decoder.decode([RestaurantImage].self, from: data)
+                
+                
+            } catch {
+                print("Error decoding data: \(error)")
+            }
         }
+        
+        task.resume()
+    }
     
     @objc func deleteFavFromFavVCPressedNotification(_ notification: Notification) {
         SVProgressHUD.show()
@@ -344,7 +342,7 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
                             self.TrandingthisweekCollectonView.reloadData()
                             self.MostSalesTableView.reloadData()
                             
-                           
+                            
                             self.popularCollectionView.reloadData()
                         }
                     }
@@ -566,7 +564,7 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
         navNotificationButton.NavigationButtonImageStyle(withImage: nil, systemImageName: "bell")
         navSquareButton.NavigationButtonImageStyle(withImage: nil, systemImageName: "square.grid.2x2")
         navThreeDotsButton.NavigationButtonImageStyle(withImage: UIImage(named: "more"), systemImageName: nil)
-        // leftMenuButton.NavigationButtonImageStyle(withImage: nil, systemImageName: "line.3.horizontal")
+        
         
     }
     func setUI(){
@@ -663,11 +661,7 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
                     notificationCount += 1
                 }
                 
-                //        Show Current Restaurant Page
-                //                let controller = storyboard?.instantiateViewController(withIdentifier: "CurrentRestaurantViewController") as! CurrentRestaurantViewController
-                //                currentRestauran = nearbyRestaurants.first
-                //                //  controller.modalPresentationStyle = .none
-                //                self.present(controller, animated: true)
+               
                 
             }
         } else {
@@ -793,11 +787,13 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
     @IBAction func notificationButtonAction(_ sender: UIButton) {
         let controller = storyboard?.instantiateViewController(identifier: "NotificationViewController") as! NotificationViewController
         controller.modalTransitionStyle = .crossDissolve
-        controller.modalPresentationStyle = .popover
+        controller.modalPresentationStyle = .overFullScreen
         self.present(controller, animated: true)
     }
     @IBAction func favritesButtonAction(_ sender: UIButton) {
         let controller = storyboard?.instantiateViewController(identifier: ReuseIdentifierConstant.favoritesVCIdentifier) as! FavoritesVC
+        controller.modalPresentationStyle = .overFullScreen
+        controller.modalTransitionStyle = .crossDissolve
         controller.cellTitle = "My Favourites"
         controller.loginuserFavouriteRestaurantArray = self.loginuserFavouriteRestaurantArray
         controller.loginuserFavouriteItemArray = loginuserFavouriteItemArray
@@ -820,15 +816,17 @@ class TipTapHomeVC: UIViewController,UITextFieldDelegate,GMSMapViewDelegate, CLL
         self.present(controller, animated: true)
     }
     @IBAction func threeDotsButtonAction(_ sender: UIButton) {
+        
         hideForTable = true
         if hideForTable {
             rightMenuDismissBtn.isHidden = false
         }
         RightMenuTableView.isHidden = !RightMenuTableView.isHidden
+        
     }
     
     // Function to fetch and display data
-   
+    
     @IBAction func viewAllButton1Action(_ sender: UIButton) {
         let controller = storyboard?.instantiateViewController(identifier: ReuseIdentifierConstant.trendingThisWeekVCIdentifier) as! TrendingThisWeekVC
         controller.restaurantImages = self.restaurantImages
@@ -959,19 +957,22 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         if tableView == RightMenuTableView {
             if indexPath.row == 0 {
                 let controller = storyboard?.instantiateViewController(identifier: "FeedbackVC") as! FeedbackVC
+                controller.modalPresentationStyle = .overFullScreen
                 RightMenuTableView.isHidden = true
                 
-                //controller.modalPresentationStyle = .fullScreen
+                // controller.modalPresentationStyle = .
                 controller.modalTransitionStyle = .coverVertical
                 self.present(controller, animated: true, completion: nil)
             } else if indexPath.row == 1 {
                 let controller = storyboard?.instantiateViewController(identifier: "EnquiryVC") as! EnquiryVC
+                controller.modalPresentationStyle = .overFullScreen
                 RightMenuTableView.isHidden = true
                 //controller.modalPresentationStyle = .fullScreen
                 controller.modalTransitionStyle = .coverVertical
                 self.present(controller, animated: true, completion: nil)
             } else if indexPath.row == 2 {
                 let controller = storyboard?.instantiateViewController(identifier: "ReportAnAppVC") as! ReportAnAppVC
+                controller.modalPresentationStyle = .overFullScreen
                 RightMenuTableView.isHidden = true
                 //controller.modalPresentationStyle = .fullScreen
                 controller.modalTransitionStyle = .coverVertical
@@ -979,27 +980,24 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             } else if indexPath.row == 3 {
                 let controller = storyboard?.instantiateViewController(identifier: "TermsAndConditionsVC") as! TermsAndConditionsVC
                 RightMenuTableView.isHidden = true
-                //controller.modalPresentationStyle = .fullScreen
+                controller.modalPresentationStyle = .overFullScreen
                 controller.modalTransitionStyle = .coverVertical
                 self.present(controller, animated: true, completion: nil)
             } else if indexPath.row == 4 {
                 let controller = storyboard?.instantiateViewController(identifier: "PrivacyPolicyVC") as! PrivacyPolicyVC
+                controller.modalPresentationStyle = .overFullScreen
                 RightMenuTableView.isHidden = true
                 //controller.modalPresentationStyle = .fullScreen
                 controller.modalTransitionStyle = .coverVertical
                 self.present(controller, animated: true, completion: nil)
             } else if indexPath.row == 5 { // logout
-                //                let controller = storyboard?.instantiateViewController(identifier: "TipTapViewController") as! TipTapViewController
-                //                controller.modalPresentationStyle = .fullScreen
-                //                controller.modalTransitionStyle = .coverVertical
-                //                self.present(controller, animated: true, completion: nil)
+              
                 UserDefaults.standard.removeObject(forKey: "UserID")
                 UserDefaults.standard.removeObject(forKey: "userEmail")
                 UserDefaults.standard.removeObject(forKey: "FirstName")
                 UserDefaults.standard.removeObject(forKey: "LastName")
                 UserDefaults.standard.removeObject(forKey: "userProfilePicUrl")
                 UserDefaults.standard.removeObject(forKey: "LastLoginDate")
-                
                 
                 showLogoutORExitAler()
             }
@@ -1010,7 +1008,7 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             restarantHomeVC.selectedFor = "dishes"
             restarantHomeVC.selectedSignatureItem = [dishes]
             restarantHomeVC.ItemID = dishes.Item.ItemID
-         //   restarantHomeVC.cusineImage = dishes.Item.itemImage!
+            //   restarantHomeVC.cusineImage = dishes.Item.itemImage!
             restarantHomeVC.modalPresentationStyle = .fullScreen
             restarantHomeVC.modalTransitionStyle = .coverVertical
             restarantHomeVC.restaurantName = selectedFoodName ?? ""
@@ -1125,23 +1123,14 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             foodgrpCVC.badgeLabel.clipsToBounds = true
             
             if indexPath.row == 0{
-              
+                
                 if transactionHistory.count == 0{
                     foodgrpCVC.badgeLabel.text = nil
                     foodgrpCVC.badgeLabel.backgroundColor = nil
                 }
                 foodgrpCVC.badgeLabel.text = "\(transactionHistory.count)"
                 //Feedback
-//                if JsonDataArrays.feedbackArray.count == 0{
-//                    foodgrpCVC.badgeLabel.text = nil
-//                    foodgrpCVC.badgeLabel.backgroundColor = nil
-//                    
-//                }else{
-//                    foodgrpCVC.badgeLabel.text = "\(JsonDataArrays.feedbackArray.count)"
-//                    
-//                    print("feedbackArray foodgrpCVC.badgeLabel.text = \(JsonDataArrays.feedbackArray.count)")
-//                }
-                //                foodgrpCVC.badgeLabel.clipsToBounds = true
+                
             }else if indexPath.row == 1{
                 
                 if JsonDataArrays.userVisitedArray.count == 0{
@@ -1153,34 +1142,25 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                 }
                 
                 
-                //My Rating
-//                if JsonDataArrays.userRatingsDataArray.count == 0 && JsonDataArrays.LoginUserItemRatingDataArray.count == 0 && JsonDataArrays.LoginUserWaiterRatingDataArray.count == 0{
-//                    foodgrpCVC.badgeLabel.text = nil
-//                    foodgrpCVC.badgeLabel.backgroundColor = nil
-//                }else{
-//                    foodgrpCVC.badgeLabel.text = "\(JsonDataArrays.userRatingsDataArray.count + JsonDataArrays.LoginUserItemRatingDataArray.count + JsonDataArrays.LoginUserWaiterRatingDataArray.count)"
-//                    print("userRatingsDataArray foodgrpCVC.badgeLabel.text = \(JsonDataArrays.userRatingsDataArray.count)")
-//                    foodgrpCVC.badgeLabel.backgroundColor = UIColor(red: 102/245, green: 150/245, blue: 0/245, alpha: 1)
-//                }
-                //                foodgrpCVC.badgeLabel.clipsToBounds = true
+                
             }else if indexPath.row == 2{
                 var count = 0
-                                count = loginuserFavouriteItemArray.count + loginuserFavouriteRestaurantArray.count
+                count = loginuserFavouriteItemArray.count + loginuserFavouriteRestaurantArray.count
                 
-                                if count == 0{
-                                    foodgrpCVC.badgeLabel.text = nil
-                                    foodgrpCVC.badgeLabel.backgroundColor = nil
-                                }else{
-                                    foodgrpCVC.badgeLabel.text = "\(count)"
-                
-                                    foodgrpCVC.badgeLabel.backgroundColor = UIColor(red: 102/245, green: 150/245, blue: 0/245, alpha: 1)
-                                    //                foodgrpCVC.badgeLabel.clipsToBounds = true
-                                }
+                if count == 0{
+                    foodgrpCVC.badgeLabel.text = nil
+                    foodgrpCVC.badgeLabel.backgroundColor = nil
+                }else{
+                    foodgrpCVC.badgeLabel.text = "\(count)"
+                    
+                    foodgrpCVC.badgeLabel.backgroundColor = UIColor(red: 102/245, green: 150/245, blue: 0/245, alpha: 1)
+                    //                foodgrpCVC.badgeLabel.clipsToBounds = true
+                }
                 
                 
                 //Profile
-               // foodgrpCVC.badgeLabel.text = nil
-               // foodgrpCVC.badgeLabel.backgroundColor = nil
+                // foodgrpCVC.badgeLabel.text = nil
+                // foodgrpCVC.badgeLabel.backgroundColor = nil
             }else if indexPath.row == 3{
                 if JsonDataArrays.userRatingsDataArray.count == 0 && JsonDataArrays.LoginUserItemRatingDataArray.count == 0 && JsonDataArrays.LoginUserWaiterRatingDataArray.count == 0{
                     foodgrpCVC.badgeLabel.text = nil
@@ -1194,45 +1174,18 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                 
                 
                 
-                //Favourite
-//                var count = 0
-//                count = loginuserFavouriteItemArray.count + loginuserFavouriteRestaurantArray.count
-//                
-//                if count == 0{
-//                    foodgrpCVC.badgeLabel.text = nil
-//                    foodgrpCVC.badgeLabel.backgroundColor = nil
-//                }else{
-//                    foodgrpCVC.badgeLabel.text = "\(count)"
-//                    
-//                    foodgrpCVC.badgeLabel.backgroundColor = UIColor(red: 102/245, green: 150/245, blue: 0/245, alpha: 1)
-//                    //                foodgrpCVC.badgeLabel.clipsToBounds = true
-//                }
+                
             }else if indexPath.row == 4{
                 if JsonDataArrays.userRewardsArray.count == 0{
                     foodgrpCVC.badgeLabel.text = nil
-                                   foodgrpCVC.badgeLabel.backgroundColor = nil
-                               }else{
-                                   foodgrpCVC.badgeLabel.text = "\(JsonDataArrays.userRewardsArray.count)"
-                               }
+                    foodgrpCVC.badgeLabel.backgroundColor = nil
+                }else{
+                    foodgrpCVC.badgeLabel.text = "\(JsonDataArrays.userRewardsArray.count)"
+                }
                 
                 
-                //Visited
-//                if JsonDataArrays.userVisitedArray.count == 0{
-//                    foodgrpCVC.badgeLabel.text = nil
-//                    foodgrpCVC.badgeLabel.backgroundColor = nil
-//                }else{
-//                    foodgrpCVC.badgeLabel.text = "\(JsonDataArrays.userVisitedArray.count)"
-//                }
-                //                foodgrpCVC.badgeLabel.clipsToBounds = true
             }else if indexPath.row == 5{
-//                //Rewards
-//                if JsonDataArrays.userRewardsArray.count == 0{
-//                    foodgrpCVC.badgeLabel.text = nil
-//                    foodgrpCVC.badgeLabel.backgroundColor = nil
-//                }else{
-//                    foodgrpCVC.badgeLabel.text = "\(JsonDataArrays.userRewardsArray.count)"
-//                }
-//                //                foodgrpCVC.badgeLabel.clipsToBounds = true
+                
                 if JsonDataArrays.feedbackArray.count == 0{
                     foodgrpCVC.badgeLabel.text = nil
                     foodgrpCVC.badgeLabel.backgroundColor = nil
@@ -1261,7 +1214,7 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             discountCardCell.discountLabel.text = "\(offer.discount)"
             
             //viewModel.offers.count
-           
+            
             return discountCardCell
         }else if collectionView == TrandingthisweekCollectonView{
             
@@ -1313,37 +1266,7 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             }
         }else if collectionView == popularCollectionView{
             
-//            if cuisinesArrayfromItems.count == 0{
-//                let emptyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "emptyCell", for: indexPath) as? EmptyCell ?? EmptyCell()
-//                emptyCell.textLabel.text = "No cuisine found."
-//                emptyCell.textLabel.textAlignment = .center
-//                return emptyCell
-//            }else{
-//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularCell", for: indexPath) as! PopularCollectionViewCell
-//                let cuisineIndex = indexPath.row
-//                
-//                
-//                if let item = cuisinesArrayfromItems[cuisineIndex].first {
-//                    //  let itemOffer = getItemOffer(item: item)
-//                    if !loginuserFavouriteItemArray.isEmpty{
-//                        if loginuserFavouriteItemArray.contains(where: {$0.Item.ItemID == item.Item.ItemID && $0.Item.RestaurantID == item.Item.RestaurantID}){
-//                            cell.heartBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-//                            cell.heartBtn.tintColor = .systemRed
-//                        }else{
-//                            cell.heartBtn.setImage(UIImage(systemName: "heart"), for: .normal)
-//                        }
-//                    }
-//                    
-//                    cell.configure2(with: item)
-//                } else {
-//                    // Handle the case where there are no items in the cuisine
-//                }
-//                  //         let cuisine = cuisineModel[indexPath.item]
-//                //
-//                  //          cell.configure(with: cuisine)
-//                
-//                return cell
-//            }
+            
             //MadamImplementCode
             if cuisinesArrayfromItems.count == 0{
                 let emptyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "emptyCell", for: indexPath) as? EmptyCell ?? EmptyCell()
@@ -1392,10 +1315,7 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                 } else {
                     // Handle the case where there are no items in the cuisine
                 }
-                //            let cuisine = cuisineModel[indexPath.item]
-                //
-                //            cell.configure(with: cuisine)
-                
+               
                 return cell
             }
             
@@ -1409,209 +1329,127 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
     
     
     
-    //func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//            if collectionView == TrandingthisweekCollectonView{
-//                if !JsonDataArrays.restaurantCompleteDataArray.isEmpty{
-//                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-//                
-//                    getRestarantImage.removeAll()
-//                    let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
-//                    let selectedId = selectedRestaurant.restaurant.RestaurantID
-//                     let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
-//                    
-//                    getRestarantImage.append(contentsOf: getRestarantImages)
-//                    if getRestarantImage.isEmpty {
-//                        restarantHomeVC.gettingSingleImage1 = JsonDataArrays.restaurantCompleteDataArray[indexPath.item].restaurant.RestaurantImage ?? ""
-//                    }else {
-//                        // Assign getRestarantImage to restarantHomeVC.getRestarantImage
-//                        restarantHomeVC.getRestarantImage = getRestarantImage
-//     
-//                        // Append image URLs from getRestarantImage to getImageArray
-//                        if let firstRestaurantImage = getRestarantImage.first {
-//                            let image1 = firstRestaurantImage.ImageOne
-//                            let image2 = firstRestaurantImage.ImageTwo
-//                            let image3 = firstRestaurantImage.ImageThree
-//                            getImageArray.removeAll()
-//                            getImageArray.append(image1)
-//                            getImageArray.append(image2)
-//                            getImageArray.append(image3)
-//                        }
-//     
-//                        // Accessing getImageArray
-//                        for imageUrl in getImageArray {
-//                            print("Image URL: \(imageUrl)")
-//                        }
-//     
-//                    }
-//                   print("Images---->",getRestarantImage)
-//                    
-//                    
-//                    restarantHomeVC.selectedFor = "restaurant"
-//                    restarantHomeVC.modalPresentationStyle = .fullScreen
-//                    restarantHomeVC.modalTransitionStyle = .coverVertical
-//                    //restarantHomeVC.restaurantName = selectedFoodName
-//                    
-//                    restarantHomeVC.selectedRestaurantData = [selectedRestaurant]
-//                    self.present(restarantHomeVC, animated: true, completion: nil)
-//                }
-//            }
-        
-        //        if collectionView == popularCollectionView {
-        //            let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-        //            let selectedFoodName = cuisinesArrayfromItems[indexPath.item].first?.CusineTitle
-        //            restarantHomeVC.selectedFor = "cuisines"
-        //            restarantHomeVC.modalPresentationStyle = .fullScreen
-        //            restarantHomeVC.modalTransitionStyle = .coverVertical
-        //            restarantHomeVC.restaurantName = selectedFoodName ?? ""
-        //            self.present(restarantHomeVC, animated: true, completion: nil)
-        //        }
-//        if collectionView == popularCollectionView {
-//            if !cuisinesArrayfromItems.isEmpty{
-//                let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-//                restarantHomeVC.selectedFor = "cuisines"
-//                
-//                let selectedCuisine = cuisinesArrayfromItems[indexPath.row]
-//                restarantHomeVC.cusineImage = (selectedCuisine.first?.Item.itemImage)!
-//                restarantHomeVC.restaurantName = selectedCuisine.first?.Item.CusineTitle ?? ""
-//                if let firstItem = selectedCuisine.first {
-//                    // Find restaurant IDs matching the selected cuisine
-//                    let matchingRestaurantIDs = JsonDataArrays.itemModel.filter { $0.CusineTitle == firstItem.Item.CusineTitle }.compactMap { $0.RestaurantID }
-//                    restarantHomeVC.matchingRestaurant_ID = matchingRestaurantIDs
-//                    restarantHomeVC.selectedCuisine = selectedCuisine
-//                    restarantHomeVC.modalPresentationStyle = .fullScreen
-//                    self.present(restarantHomeVC, animated: true, completion: nil)
-//                    //  print("Matching Restaurant IDs: \(restarantHomeVC.matchingRestaurant_ID)")
-//                }
-//                
-//            }
-//        }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            if collectionView == TrandingthisweekCollectonView{
-                if !JsonDataArrays.restaurantCompleteDataArray.isEmpty{
-                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-                    let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
-                    let selectedId = selectedRestaurant.restaurant.RestaurantID
-                    if   let userID = loginUserID {
-                        
-                        getRestarantImage.removeAll()
-                        
-                        let commentedUser = selectedRestaurant.restaurantRatings.filter { $0.RestaurantId == selectedId && $0.UserId == userID }
-                        
-                        print("CommentedID--->", commentedUser)
-                        if !commentedUser.isEmpty {
-                          //  commandForChecking = true
-                        }
-                    }else{
-                       //commandForChecking = false
-                    }
-                     let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
+        if collectionView == TrandingthisweekCollectonView{
+            if !JsonDataArrays.restaurantCompleteDataArray.isEmpty{
+                let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
+                let selectedRestaurant = JsonDataArrays.restaurantCompleteDataArray[indexPath.row]
+                let selectedId = selectedRestaurant.restaurant.RestaurantID
+                if   let userID = loginUserID {
                     
-                    getRestarantImage.append(contentsOf: getRestarantImages)
-                    if getRestarantImage.isEmpty {
-                        getImageArray = [selectedRestaurant.restaurant.RestaurantImage ?? ""]
-                       
-                    }else {
-                       
-                        if let firstRestaurantImage = getRestarantImage.first {
-                            let image1 = firstRestaurantImage.ImageOne
-                            let image2 = firstRestaurantImage.ImageTwo
-                            let image3 = firstRestaurantImage.ImageThree
-                            getImageArray.removeAll()
-                            getImageArray.append(image1)
-                            getImageArray.append(image2)
-                            getImageArray.append(image3)
-                        }
-     
-                        // Accessing getImageArray
-                        for imageUrl in getImageArray {
-                            print("Image URL: \(imageUrl)")
-                        }
-                        
+                    getRestarantImage.removeAll()
+                    
+                    let commentedUser = selectedRestaurant.restaurantRatings.filter { $0.RestaurantId == selectedId && $0.UserId == userID }
+                    
+                    print("CommentedID--->", commentedUser)
+                    if !commentedUser.isEmpty {
+                        //  commandForChecking = true
                     }
-             //   print("Images---->",getRestarantImage)
-                    restarantHomeVC.getImageArray = self.getImageArray
-                    restarantHomeVC.selectedFor = "restaurant"
+                }else{
+                    //commandForChecking = false
+                }
+                let getRestarantImages = self.restaurantImages.filter({ $0.RestaurantID == selectedId })
+                
+                getRestarantImage.append(contentsOf: getRestarantImages)
+                if getRestarantImage.isEmpty {
+                    getImageArray = [selectedRestaurant.restaurant.RestaurantImage ?? ""]
+                    
+                }else {
+                    
+                    if let firstRestaurantImage = getRestarantImage.first {
+                        let image1 = firstRestaurantImage.ImageOne
+                        let image2 = firstRestaurantImage.ImageTwo
+                        let image3 = firstRestaurantImage.ImageThree
+                        getImageArray.removeAll()
+                        getImageArray.append(image1)
+                        getImageArray.append(image2)
+                        getImageArray.append(image3)
+                    }
+                    
+                    // Accessing getImageArray
+                    for imageUrl in getImageArray {
+                        print("Image URL: \(imageUrl)")
+                    }
+                    
+                }
+                //   print("Images---->",getRestarantImage)
+                restarantHomeVC.getImageArray = self.getImageArray
+                restarantHomeVC.selectedFor = "restaurant"
+                restarantHomeVC.modalPresentationStyle = .fullScreen
+                restarantHomeVC.modalTransitionStyle = .coverVertical
+                //restarantHomeVC.restaurantName = selectedFoodName
+                
+                restarantHomeVC.selectedRestaurantData = [selectedRestaurant]
+                self.present(restarantHomeVC, animated: true, completion: nil)
+            }
+            
+        }
+        
+        if collectionView == popularCollectionView {
+            if !cuisinesArrayfromItems.isEmpty{
+                let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
+                restarantHomeVC.selectedFor = "cuisines"
+                
+                let selectedCuisine = cuisinesArrayfromItems[indexPath.row]
+                restarantHomeVC.selectedImageFoRCusines = selectedCuisine.first?.Item.itemImage ?? ""
+                restarantHomeVC.restaurantName = selectedCuisine.first?.Item.CusineTitle ?? ""
+                if let firstItem = selectedCuisine.first {
+                    // Find restaurant IDs matching the selected cuisine
+                    let matchingRestaurantIDs = JsonDataArrays.itemModel.filter { $0.CusineTitle == firstItem.Item.CusineTitle }.compactMap { $0.RestaurantID }
+                    restarantHomeVC.matchingRestaurant_ID = matchingRestaurantIDs
+                    restarantHomeVC.selectedCuisine = selectedCuisine
                     restarantHomeVC.modalPresentationStyle = .fullScreen
-                    restarantHomeVC.modalTransitionStyle = .coverVertical
-                    //restarantHomeVC.restaurantName = selectedFoodName
-                    
-                    restarantHomeVC.selectedRestaurantData = [selectedRestaurant]
                     self.present(restarantHomeVC, animated: true, completion: nil)
+                    
                 }
                 
             }
-            
-            if collectionView == popularCollectionView {
-                if !cuisinesArrayfromItems.isEmpty{
-                    let restarantHomeVC = storyboard?.instantiateViewController(identifier: "RestaurantHomeVC") as! RestaurantHomeVC
-                    restarantHomeVC.selectedFor = "cuisines"
-                    
-                    let selectedCuisine = cuisinesArrayfromItems[indexPath.row]
-                    restarantHomeVC.selectedImageFoRCusines = selectedCuisine.first?.Item.itemImage ?? ""
-                    restarantHomeVC.restaurantName = selectedCuisine.first?.Item.CusineTitle ?? ""
-                    if let firstItem = selectedCuisine.first {
-                        // Find restaurant IDs matching the selected cuisine
-                        let matchingRestaurantIDs = JsonDataArrays.itemModel.filter { $0.CusineTitle == firstItem.Item.CusineTitle }.compactMap { $0.RestaurantID }
-                        restarantHomeVC.matchingRestaurant_ID = matchingRestaurantIDs
-                        restarantHomeVC.selectedCuisine = selectedCuisine
-                        restarantHomeVC.modalPresentationStyle = .fullScreen
-                        self.present(restarantHomeVC, animated: true, completion: nil)
-                        
-                    }
-                    
-                }
-            }
+        }
         if collectionView == FoodGroupCollectionView{
             if indexPath.row == 0 {
                 let controller = storyboard?.instantiateViewController(identifier: "TipsViewController") as! TipsViewController
+                
                 controller.transactionHistory = transactionHistory.self
                 controller.modalPresentationStyle = .fullScreen
                 self.present(controller, animated: true)
                 
                 
-//                let controller = storyboard?.instantiateViewController(identifier: "FeedBackViewControllerVC") as! FeedBackViewControllerVC
-               
+                //                let controller = storyboard?.instantiateViewController(identifier: "FeedBackViewControllerVC") as! FeedBackViewControllerVC
+                
             } else if indexPath.row == 1 {
                 
                 let controller = storyboard?.instantiateViewController(identifier: "VisitedVC") as! VisitedVC
+                controller.modalPresentationStyle = .overFullScreen
                 controller.cellTitle = menus[indexPath.row].titles
                 self.present(controller, animated: true)
-//                let controller = storyboard?.instantiateViewController(identifier: "RatingsViewControllerVC") as! RatingsViewControllerVC
+                //                let controller = storyboard?.instantiateViewController(identifier: "RatingsViewControllerVC") as! RatingsViewControllerVC
                 
             }else if indexPath.row == 2 {
                 let controller = storyboard?.instantiateViewController(identifier: "FavoritesVC") as! FavoritesVC
+                controller.modalPresentationStyle = .overFullScreen
                 controller.loginuserFavouriteRestaurantArray = self.loginuserFavouriteRestaurantArray
                 controller.loginuserFavouriteItemArray = loginuserFavouriteItemArray
                 controller.cellTitle = menus[indexPath.row].titles
-//                let controller = storyboard?.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
-//                controller.loginuserFavouriteRestaurantArray = self.loginuserFavouriteRestaurantArray
-//                controller.loginuserFavouriteItemArray = self.loginuserFavouriteItemArray
-//                controller.modalTransitionStyle = .coverVertical
-//                controller.modalPresentationStyle = .fullScreen
+                
                 self.present(controller, animated: true)
             }
-            //            else if indexPath.row == 3 {
-            //                let controller = storyboard?.instantiateViewController(identifier: "SectionViewController") as! SectionViewController
-            //                self.present(controller, animated: true)
-            //            }
+            
             else if indexPath.row == 3 {  let controller = storyboard?.instantiateViewController(identifier: "RatingsViewControllerVC") as! RatingsViewControllerVC
+                controller.modalPresentationStyle = .overFullScreen
                 
-//                let controller = storyboard?.instantiateViewController(identifier: "FavoritesVC") as! FavoritesVC
-//                controller.loginuserFavouriteRestaurantArray = self.loginuserFavouriteRestaurantArray
-//                controller.loginuserFavouriteItemArray = self.loginuserFavouriteItemArray
-//                controller.cellTitle = menus[indexPath.row].titles
                 self.present(controller, animated: true)
             } else if indexPath.row == 4 {
                 let controller = storyboard?.instantiateViewController(identifier: "RewardsVC") as! RewardsVC
+                controller.modalPresentationStyle = .overFullScreen
                 self.present(controller, animated: true)
                 
                 
-//                let controller = storyboard?.instantiateViewController(identifier: "VisitedVC") as! VisitedVC
-//                controller.cellTitle = menus[indexPath.row].titles
-//                self.present(controller, animated: true)
+                
             } else if indexPath.row == 5 {
                 let controller = storyboard?.instantiateViewController(identifier: "FeedBackViewControllerVC") as! FeedBackViewControllerVC
-                  self.present(controller, animated: true)
+                controller.modalPresentationStyle = .overFullScreen
+                self.present(controller, animated: true)
             } else{
                 
                 let controller = storyboard?.instantiateViewController(withIdentifier: "FoodGroupPopupViewController") as! FoodGroupPopupViewController
@@ -1622,11 +1460,11 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         if collectionView == discountCardCV{
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name if it's different
-                   guard let controller = storyboard.instantiateViewController(withIdentifier: "OffersPopupViewController") as? OffersPopupViewController else {
-                       return
-                   }
-                   
-                   let offer = OfferViewModelDataArray.offers[indexPath.row]
+            guard let controller = storyboard.instantiateViewController(withIdentifier: "OffersPopupViewController") as? OffersPopupViewController else {
+                return
+            }
+            
+            let offer = OfferViewModelDataArray.offers[indexPath.row]
             if let restaurant = OfferViewModelDataArray.restaurants.first(where: { $0.restaurantID == offer.restaurantID }) {
                 
                 //  loadImage(from: restaurant.restaurantImage, into: discountCardCell.image)
@@ -1642,15 +1480,7 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             self.present(controller, animated: true)
         }
     }
-    /*
-     var OfferrestaurantName: String?
-     var offerDescription : String?
-     var offerDiscount : String?
-     var startDate: Int?
-     var endDate : Int?
-     var ooferTitle:String?
-     
-     */
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Return the desired size for the cell at the specified indexPath
         
@@ -1698,7 +1528,7 @@ extension TipTapHomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         myLabel.layer.cornerRadius = 10
         myLabel.clipsToBounds = true
     }
-
+    
 }
 
 extension TipTapHomeVC{
@@ -1750,14 +1580,7 @@ extension TipTapHomeVC{
     }
     
     func startProgressAnimation(completion: @escaping () -> Void) {
-        //        progressBarTimer = Timer.scheduledTimer(
-        //            timeInterval: 0.2,
-        //            target: self,
-        //            selector: #selector(updateProgressView),
-        //            userInfo: ["completion": completion],
-        //            repeats: true
-        //        )
-        
+       
         if !isRunning {
             progressView.progressTintColor = UIColor.blue
             progressView.progressViewStyle = .default
@@ -1828,31 +1651,12 @@ extension TipTapHomeVC:  ReviewPostingDelegate{
                 print("Item data fetching completed!")
             }
         case .waiter:
-            //            fetchWaiterData {
-            //                fetchWaiterRatingsData {
-            //                    print("Waiter ratings data fetching completed!")
-            //                }
-            //            }
+            
             fetchWaiterData()
         }
         
         
     }
-    //    func didPostReviewSuccessfully() {
-    //
-    //        fetchRestaurantData {
-    //            self.fetchItemData {
-    //                fetchWaiterData{
-    //                    fetchWaiterRatingsData{
-    //                        print("Waiter data fetching completed!, waiter ")
-    //                    }
-    //                }
-    //
-    //            }
-    //
-    //        }
-    //    }
-    
     
     
 }

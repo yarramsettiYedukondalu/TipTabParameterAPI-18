@@ -17,8 +17,13 @@ class OfferViewModel: ObservableObject {
      var restaurants = [RestaurantRecord]()
 
     func fetchOffers() {
-        let restaurantURL = URL(string: "https://tiptabapi.azurewebsites.net/api/RestaurantsFunction")!
-        let offerURL = URL(string: "https://tiptabapi.azurewebsites.net/api/restaurantOffer")!
+     guard let  restaurantURL = URL(string: RestaurantsURL) else{
+                    return
+                }
+            
+                guard let offerURL = URL(string: restaurantOfferURL) else{
+                    return
+                }
 
         // Fetch both restaurants and offers
         Publishers.Zip(fetchRestaurants(from: restaurantURL), fetchOffersData(from: offerURL))

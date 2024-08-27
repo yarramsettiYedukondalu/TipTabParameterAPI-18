@@ -132,9 +132,9 @@ class TrendingThisWeekVC: UIViewController,UICollectionViewDelegate,UICollection
     
     
     func fetchRestaurantImages() {
-            let urlString = "https://tiptabapi.azurewebsites.net/api/RestaurantImages"
+          
             
-            guard let url = URL(string: urlString) else {
+            guard let url = URL(string: restaurantImagesURL) else {
                 print("Invalid URL")
                 return
             }

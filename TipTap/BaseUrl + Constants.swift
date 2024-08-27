@@ -7,7 +7,7 @@
 
 import Foundation
  
-let baseURL = "https://tiptabapi.azurewebsites.net/api/"
+let baseURL = "https://thetiptabapi.azurewebsites.net/api/"
 let CompanyFeedbackURL = baseURL + "CompanyFeedbackFunction"
 let EnquiryURL = baseURL + "EnquiryFunction"
 let FavouriteItemURL = baseURL + "FavouriteItemFunction"
@@ -28,7 +28,7 @@ let userVisitedURL = baseURL + "userVisitedFunction"
 let waiterURL = baseURL + "waiterFunction"
 let WaiterRatingsURL = baseURL + "WaiterRatingS"
 let waiterTipDetailURL = baseURL + "waiterTipDetail"
-
+ let restaurantImagesURL = baseURL + "RestaurantImages"
 
 /*https://tiptabapi.azurewebsites.net/api/CompanyFeedbackFunction
 
